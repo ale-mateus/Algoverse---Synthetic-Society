@@ -1,0 +1,22 @@
+[project]
+name = "pyautogen-testing"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ang Li",email = "dmisno1@gmail.com"}
+]
+readme = "README.md"
+requires-python = "3.11.14"
+dependencies = [
+    "autogen (>=0.10.0,<0.11.0)",
+    "google-genai (>=1.50.1,<2.0.0)",
+    "vertexai (>=1.71.1,<2.0.0)",
+    "ag2[gemini] (>=0.10.0,<0.11.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
