@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "your_project_name"
+version = "0.1.0"
+description = "Your project description"
+authors = [
+    { name = "Prisha Priyadarshini", email = "prishapriya31@gmail.com" }
+]
+requires-python = ">=3.8"
+
+dependencies = [
+    "autogen>=0.10.0,<0.11.0",
+    "google-genai>=1.50.1,<2.0.0",
+    "vertexai>=1.71.1,<2.0.0",
+    "ag2[gemini]>=0.10.0,<0.11.0",
+]
+
+[project.urls]
+homepage = "https://github.com/ale-mateus/Algoverse---Synthetic-Society"
