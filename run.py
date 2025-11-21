@@ -1,5 +1,6 @@
 from autogen import GroupChat, GroupChatManager
 from agents.societies import createSociety
+from agents.baseAgents import create_LLM_config
 
 def run(task):
     manager, developer, tester = createSociety()
@@ -12,7 +13,7 @@ def run(task):
 
     controller = GroupChatManager(
         groupchat=groupchat,
-        llm_config={"model": "gpt-4.1-nano"}
+        llm_config=create_LLM_config(),
     )
 
     controller.initiate_chat(
@@ -23,7 +24,7 @@ def run(task):
     return groupchat
 
 if __name__ == "__main__":
-    task = "Develop a simple to-do list app with add, delete, and view functionality."
+    task = "Develop a program that prints \"Hello, World!\""
     x = run(task)
 
     print("\n=== CONVERSATION ===\n")

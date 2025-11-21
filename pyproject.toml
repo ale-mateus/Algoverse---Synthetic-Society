@@ -1,22 +1,25 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [project]
-name = "your_project_name"
+name = "Synthetic-Societies"
 version = "0.1.0"
-description = "Your project description"
+description = ""
 authors = [
+    { name = "Ang Li",email = "dmisno1@gmail.com" },
     { name = "Prisha Priyadarshini", email = "prishapriya31@gmail.com" }
 ]
-requires-python = ">=3.8"
+requires-python = ">=3.10, <3.14"
 
 dependencies = [
-    "autogen>=0.10.0,<0.11.0",
-    "google-genai>=1.50.1,<2.0.0",
-    "vertexai>=1.71.1,<2.0.0",
-    "ag2[gemini]>=0.10.0,<0.11.0",
+    "autogen (>=0.10.0,<0.11.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "ag2[gemini] (>=0.10.1,<0.11.0)"
 ]
 
 [project.urls]
 homepage = "https://github.com/ale-mateus/Algoverse---Synthetic-Society"
+
+[tool.poetry]
+package-mode = false

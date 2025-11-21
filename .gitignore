@@ -1,2 +1,6 @@
 poetry.lock
+
 example/
+__pycache__/
+
+.env
