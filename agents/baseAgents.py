@@ -9,7 +9,7 @@ load_dotenv()
 gemini_key = os.environ.get("GEMINI_API_KEY")
 openai_key = os.environ.get("OPENAI_API_KEY")
 
-def create_LLM_config(model="gemini-2.5-flash", api_type="google", temperature=None, max_tokens=None):
+def create_LLM_config(model="gemini-2.0-flash-lite", api_type="google", temperature=None, max_tokens=None):
 
     # Check for API key presence based on api_type
     if api_type == "google" and not gemini_key:
