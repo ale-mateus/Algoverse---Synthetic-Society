@@ -1,31 +1,45 @@
-from autogen import GroupChat, GroupChatManager
+import asyncio
+from autogen_agentchat.conditions import MaxMessageTermination
+from autogen_agentchat.teams import GraphFlow, DiGraphBuilder
 from agents.societies import createSociety
 
-def run(task):
-    manager, developer, tester = createSociety()
+async def main():
+    manager, developer, tester, finalizer = createSociety()
 
-    groupchat = GroupChat(
-        agents=[manager, developer, tester],
-        messages=[],
-        max_round=2
+    builder = DiGraphBuilder()
+    builder.add_node(manager)
+    builder.add_node(developer)
+    builder.add_node(tester)
+    builder.add_node(finalizer)
+
+    builder.add_edge(manager, developer)
+    builder.add_edge(developer, tester)
+    builder.add_edge(tester, manager, condition=lambda msg: "final" not in msg.to_model_text())
+    builder.add_edge(tester, finalizer, condition=lambda msg: "final" in msg.to_model_text())
+
+    builder.set_entry_point(manager)
+    graph = builder.build()
+
+    team = GraphFlow(
+        participants=[manager, developer, tester, finalizer],
+        graph=graph,
+        termination_condition=MaxMessageTermination(20),
     )
 
-    controller = GroupChatManager(
-        groupchat=groupchat,
-        llm_config={"model": "gpt-4.1-nano"}
-    )
+    conversation = []  
 
-    controller.initiate_chat(
-        recipient=manager,
-        message=task
-    )
+    async for event in team.run_stream(task="Build a short plan for a mobile app."):
+        print(event)
+        conversation.append(event)   
 
-    return groupchat
+    
+    with open("convo.txt", "w", encoding="utf-8") as f:
+        for e in conversation:
+            src = getattr(e, "source", "Unknown")
+            content = getattr(e, "content", str(e))
+            f.write(f"{src}:\n{content}\n\n")
+
+    print("Conversation saved to convo.txt")
 
 if __name__ == "__main__":
-    task = "Develop a simple to-do list app with add, delete, and view functionality."
-    x = run(task)
-
-    print("\n=== CONVERSATION ===\n")
-    for msg in x.messages:
-        print(f"{msg['role']} -> {msg.get('to','group')}:\n{msg['content']}\n{'-'*40}")
+    asyncio.run(main())
