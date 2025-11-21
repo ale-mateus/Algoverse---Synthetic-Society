@@ -2,16 +2,23 @@ from .baseAgents import create_agent
 
 def createSociety():
     manager = create_agent(
-        name="manager",
-        system_message="You are a project manager coordinating the task."
-    )
-    developer = create_agent(
-        name="developer",
-        system_message=" You are a software developer implementing the task assigned by the manager."
-    )
-    tester = create_agent(
-        name="tester",
-        system_message="You are a quality assurance tester ensuring the task meets the requirements."
+        "Manager",
+        "You are a manager. Break tasks into steps and assign work to Developer and Tester. Say 'final' when work is complete."
     )
 
-    return [manager, developer, tester]
+    developer = create_agent(
+        "Developer",
+        "You are a developer. Implement solutions for the Manager's tasks."
+    )
+
+    tester = create_agent(
+        "Tester",
+        "You are a tester. Verify developer output. If everything looks good, say 'final'."
+    )
+
+    finalizer = create_agent(
+        "Finalizer",
+        "You generate the final polished answer and end the task."
+    )
+
+    return manager, developer, tester, finalizer
