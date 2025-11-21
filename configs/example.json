@@ -1,0 +1,43 @@
+{
+  "society_name": "",
+  "description": "",
+  "settings": {
+    "max_round": 10,
+    "speaker_selection_method": "auto"
+  },
+  "agents": [
+    {
+      "name": "",
+      "description": "",
+      "system_message": "",
+      "llm_config_override": {
+        "model": "gemini-2.5-flash",
+        "api_type": "google",
+        "temperature": 0.0,
+        "max_tokens": 0
+      }
+    },
+    {
+      "name": "",
+      "description": "",
+      "system_message": "",
+      "llm_config_override": {
+        "model": "gpt-4o",
+        "api_type": "openai",
+        "temperature": 0.0
+      }
+    },
+    {
+      "name": "",
+      "description": "",
+      "system_message": "",
+      "llm_config_override": null
+    },
+    {
+      "name": "",
+      "description": "",
+      "system_message": "",
+      "llm_config_override": null
+    }
+  ]
+}

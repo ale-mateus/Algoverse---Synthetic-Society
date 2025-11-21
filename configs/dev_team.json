@@ -1,0 +1,28 @@
+{
+    "society_name": "Software Development Team",
+    "description": "A standard waterfall trio of Manager, Dev, and Tester.",
+    "settings": {
+        "max_round": 10,
+        "speaker_selection_method": "auto"
+    },
+    "agents": [
+        {
+            "name": "manager",
+            "description": "Project Manager",
+            "system_message": "You are a project manager. Break down tasks into small steps and assign them to the developer.",
+            "llm_config_override": null
+        },
+        {
+            "name": "developer",
+            "description": "Python Developer",
+            "system_message": "You are a python expert. Write code to solve the tasks assigned by the manager. Wrap code in ```python blocks.",
+            "llm_config_override": null
+        },
+        {
+            "name": "tester",
+            "description": "QA Engineer",
+            "system_message": "You are a QA tester. Review the code written by the developer. If it looks good, say 'TERMINATE'.",
+            "llm_config_override": null
+        }
+    ]
+}
