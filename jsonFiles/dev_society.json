@@ -1,0 +1,62 @@
+{
+    "society_name": "Software Development Team",
+    "description": "A standard waterfall trio of Manager, Dev, Tester, and a Finalizer.",
+    
+    "settings": {
+      "max_round": 20,
+      "speaker_selection_method": "auto"
+    },
+  
+    "agents": [
+      {
+        "name": "manager",
+        "description": "Project Manager",
+        "system_message": "You are a project manager. Break down tasks and assign to the developer.",
+        "llm_config_override": null
+      },
+      {
+        "name": "developer",
+        "description": "Python Developer",
+        "system_message": "You are a python expert. Write code for the assigned tasks.",
+        "llm_config_override": null
+      },
+      {
+        "name": "tester",
+        "description": "QA Engineer",
+        "system_message": "You are a QA tester. Validate outputs. If complete, say FINAL.",
+        "llm_config_override": null
+      },
+      {
+        "name": "finalizer",
+        "description": "Final Summary Generator",
+        "system_message": "You produce the FINAL answer.",
+        "llm_config_override": null
+      }
+    ],
+  
+    "graph": {
+      "entry_point": "manager",
+  
+      "edges": [
+        {
+          "from": "manager",
+          "to": "developer"
+        },
+        {
+          "from": "developer",
+          "to": "tester"
+        },
+        {
+          "from": "tester",
+          "to": "manager",
+          "condition": "not contains: final"
+        },
+        {
+          "from": "tester",
+          "to": "finalizer",
+          "condition": "contains: final"
+        }
+      ]
+    }
+  }
+  
