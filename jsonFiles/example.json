@@ -1,0 +1,56 @@
+{
+    "society_name": "Example Society",
+    "description": "A simple four-agent flow demonstrating sequential message passing.",
+    
+    "settings": {
+      "max_round": 10,
+      "speaker_selection_method": "auto"
+    },
+  
+    "agents": [
+      {
+        "name": "agent_1",
+        "description": "Starts the conversation.",
+        "system_message": "Begin the discussion with an introductory statement.",
+        "llm_config_override": null
+      },
+      {
+        "name": "agent_2",
+        "description": "Responds to agent_1.",
+        "system_message": "Respond concisely to the previous message.",
+        "llm_config_override": null
+      },
+      {
+        "name": "agent_3",
+        "description": "Analyzes the interaction.",
+        "system_message": "Analyze the last response.",
+        "llm_config_override": null
+      },
+      {
+        "name": "agent_4",
+        "description": "Generates final commentary.",
+        "system_message": "Provide final commentary based on all previous messages.",
+        "llm_config_override": null
+      }
+    ],
+  
+    "graph": {
+      "entry_point": "agent_1",
+  
+      "edges": [
+        {
+          "from": "agent_1",
+          "to": "agent_2"
+        },
+        {
+          "from": "agent_2",
+          "to": "agent_3"
+        },
+        {
+          "from": "agent_3",
+          "to": "agent_4"
+        }
+      ]
+    }
+  }
+  
