@@ -1,10 +1,75 @@
 import asyncio
 import argparse
-
-from autogen_agentchat.teams import GraphFlow, DiGraphBuilder
-from autogen_agentchat.conditions import MaxMessageTermination
-
+import re
 from agents.societies import create_society_from_json
+
+async def run_agent(agent, message):
+    content = ""
+    async for event in agent.run_stream(task=message):
+        if hasattr(event, "content") and event.content:
+            content = event.content
+    return content
+
+def sanitize_final(agent_name, response):
+    if agent_name != "finalizer":
+        if re.search(r"^\s*FINAL\s*$", response, flags=re.IGNORECASE | re.MULTILINE):
+            response = re.sub(r"^\s*FINAL\s*$", "ERROR: Only finalizer may say FINAL.", response, flags=re.IGNORECASE | re.MULTILINE)
+    return response
+
+async def autonomous_loop(agents, settings, entry_point, edges, task):
+    adjacency = {name: [] for name in agents.keys()}
+    for e in edges:
+        adjacency[e["from"]].append(e["to"])
+
+    max_round = settings.get("max_round", 20)
+    free_talk = settings.get("free_talk", False)
+
+    current_agent = agents[entry_point]
+    last_message = task
+    round_count = 0
+    conversation_log = []
+
+    print("[SYSTEM]COLLABORATION STARTED")
+
+    while round_count < max_round:
+        round_count += 1
+        print(f"\n[SYSTEM] Round {round_count}\n")
+
+        response = await run_agent(current_agent, last_message)
+        response = sanitize_final(current_agent.name, response)
+
+        print(f"[{current_agent.name.upper()}]: {response}")
+        conversation_log.append((current_agent.name, response))
+
+        if current_agent.name == "finalizer" and re.search(r"^\s*FINAL\s*$", response, flags=re.IGNORECASE | re.MULTILINE):
+            print("\n[SYSTEM] FINAL detected — conversation terminated.")
+            return conversation_log
+
+        if free_talk:
+            possible_next = list(agents.keys())
+        else:
+            possible_next = adjacency[current_agent.name]
+
+        if not possible_next:
+            print("[SYSTEM] No next agent available. Ending.")
+            return conversation_log
+
+        selector_prompt = (
+            f"Choose who speaks next from this list: {possible_next}. "
+            f"Respond ONLY with the agent name."
+        )
+
+        next_choice = await run_agent(current_agent, selector_prompt)
+        next_choice = next_choice.strip().lower()
+
+        if next_choice not in possible_next:
+            next_choice = possible_next[0]
+
+        current_agent = agents[next_choice]
+        last_message = response
+
+    print("[SYSTEM] Max rounds reached. Ending.")
+    return conversation_log
 
 async def main():
     parser = argparse.ArgumentParser()
@@ -14,36 +79,17 @@ async def main():
 
     agents, settings, entry_point, edges = create_society_from_json(args.json)
 
-    builder = DiGraphBuilder()
-    for agent in agents.values():
-        builder.add_node(agent)
-
-    for e in edges:
-        builder.add_edge(
-            agents[e["from"]],
-            agents[e["to"]],
-            condition=e["condition"]
-        )
-
-    builder.set_entry_point(agents[entry_point])
-    graph = builder.build()
-
-    team = GraphFlow(
-        participants=list(agents.values()),
-        graph=graph,
-        termination_condition=MaxMessageTermination(settings.get("max_round", 20)),
+    convo = await autonomous_loop(
+        agents=agents,
+        settings=settings,
+        entry_point=entry_point,
+        edges=edges,
+        task=args.task
     )
 
-    convo = []
-    async for event in team.run_stream(task=args.task):
-        print(event)
-        convo.append(event)
-
-    with open("convo.txt", "w", encoding="utf-8") as f:
-        for e in convo:
-            src = getattr(e, "source", "Unknown")
-            content = getattr(e, "content", str(e))
-            f.write(f"{src}:\n{content}\n\n")
+    with open("devSociety.txt", "w", encoding="utf-8") as f:
+        for speaker, msg in convo:
+            f.write(f"{speaker}:\n{msg}\n\n")
 
 if __name__ == "__main__":
     asyncio.run(main())
