@@ -10,7 +10,7 @@ async def run_agent(agent, message):
             content = event.content
     return content
 
-def sanitize_final(agent_name, response):
+def regex_final(agent_name, response):
     if agent_name != "finalizer":
         if re.search(r"^\s*FINAL\s*$", response, flags=re.IGNORECASE | re.MULTILINE):
             response = re.sub(r"^\s*FINAL\s*$", "ERROR: Only finalizer may say FINAL.", response, flags=re.IGNORECASE | re.MULTILINE)
@@ -36,7 +36,7 @@ async def autonomous_loop(agents, settings, entry_point, edges, task):
         print(f"\n[SYSTEM] Round {round_count}\n")
 
         response = await run_agent(current_agent, last_message)
-        response = sanitize_final(current_agent.name, response)
+        response = regex_final(current_agent.name, response)
 
         print(f"[{current_agent.name.upper()}]: {response}")
         conversation_log.append((current_agent.name, response))
