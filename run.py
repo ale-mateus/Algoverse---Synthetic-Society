@@ -1,6 +1,7 @@
 import asyncio
 import argparse
 import re
+import random
 from agents.societies import create_society_from_json
 
 async def run_agent(agent, message):
@@ -13,62 +14,55 @@ async def run_agent(agent, message):
 def regex_final(agent_name, response):
     if agent_name != "finalizer":
         if re.search(r"^\s*FINAL\s*$", response, flags=re.IGNORECASE | re.MULTILINE):
-            response = re.sub(r"^\s*FINAL\s*$", "ERROR: Only finalizer may say FINAL.", response, flags=re.IGNORECASE | re.MULTILINE)
+            response = re.sub(
+                r"^\s*FINAL\s*$",
+                "ERROR: Only finalizer may say FINAL.",
+                response,
+                flags=re.IGNORECASE | re.MULTILINE
+            )
     return response
 
 async def autonomous_loop(agents, settings, entry_point, edges, task):
-    adjacency = {name: [] for name in agents.keys()}
-    for e in edges:
-        adjacency[e["from"]].append(e["to"])
+    print("[SYSTEM] Free-Talk Mode Activated\n")
 
-    max_round = settings.get("max_round", 20)
-    free_talk = settings.get("free_talk", False)
-
-    current_agent = agents[entry_point]
-    last_message = task
-    round_count = 0
     conversation_log = []
+    max_round = settings.get("max_round", 20)
 
-    print("[SYSTEM]COLLABORATION STARTED")
+    global_context = f"Conversation begins:\nUser task: {task}\n"
+    current_message = task
+    agent_names = list(agents.keys())
 
-    while round_count < max_round:
-        round_count += 1
-        print(f"\n[SYSTEM] Round {round_count}\n")
+    for round_idx in range(1, max_round + 1):
+        print(f"\n[SYSTEM] ROUND {round_idx}\n")
 
-        response = await run_agent(current_agent, last_message)
-        response = regex_final(current_agent.name, response)
+        speaker_name = random.choice(agent_names)
+        speaker = agents[speaker_name]
+        last_speaker = conversation_log[-1][0] if conversation_log else "user"
 
-        print(f"[{current_agent.name.upper()}]: {response}")
-        conversation_log.append((current_agent.name, response))
-
-        if current_agent.name == "finalizer" and re.search(r"^\s*FINAL\s*$", response, flags=re.IGNORECASE | re.MULTILINE):
-            print("\n[SYSTEM] FINAL detected — conversation terminated.")
-            return conversation_log
-
-        if free_talk:
-            possible_next = list(agents.keys())
-        else:
-            possible_next = adjacency[current_agent.name]
-
-        if not possible_next:
-            print("[SYSTEM] No next agent available. Ending.")
-            return conversation_log
-
-        selector_prompt = (
-            f"Choose who speaks next from this list: {possible_next}. "
-            f"Respond ONLY with the agent name."
+        prompt = (
+            f"{global_context}\n"
+            f"The previous message is from {last_speaker}:\n{current_message}\n\n"
+            f"Please respond naturally in the conversation.\n"
+            f"Do NOT choose who speaks next.\n"
+            f"Do NOT output instructions or meta-information.\n"
+            f"ONLY continue the discussion."
         )
 
-        next_choice = await run_agent(current_agent, selector_prompt)
-        next_choice = next_choice.strip().lower()
+        response = await run_agent(speaker, prompt)
+        response = regex_final(speaker_name, response)
 
-        if next_choice not in possible_next:
-            next_choice = possible_next[0]
+        print(f"[{speaker_name.upper()}]: {response}")
 
-        current_agent = agents[next_choice]
-        last_message = response
+        conversation_log.append((speaker_name, response))
+        global_context += f"\n{speaker_name}: {response}\n"
 
-    print("[SYSTEM] Max rounds reached. Ending.")
+        if speaker_name == "finalizer" and re.search(r"^\s*FINAL\s*$", response, flags=re.IGNORECASE | re.MULTILINE):
+            print("\n[SYSTEM] FINAL detected — terminating free-talk.")
+            return conversation_log
+
+        current_message = response
+
+    print("[SYSTEM] Max rounds reached — ending free-talk.")
     return conversation_log
 
 async def main():
@@ -87,7 +81,7 @@ async def main():
         task=args.task
     )
 
-    with open("devSociety.txt", "w", encoding="utf-8") as f:
+    with open("noRoles.txt", "w", encoding="utf-8") as f:
         for speaker, msg in convo:
             f.write(f"{speaker}:\n{msg}\n\n")
 
