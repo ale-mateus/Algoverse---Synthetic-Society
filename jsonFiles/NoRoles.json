@@ -3,7 +3,7 @@
   "description": "A fully emergent, unconstrained multi-agent conversation with no predefined roles.",
 
   "settings": {
-    "max_round": 30,
+    "max_round": 20,
     "speaker_selection_method": "auto",
     "free_talk": true
   },
