@@ -13,7 +13,12 @@ def parse_condition(cond_str):
         return lambda msg: token not in msg.to_model_text().lower()
     return lambda msg: True
 
-def create_society_from_json(json_path):
+
+def create_society_from_json(
+    json_path,
+    model_name="gpt-4.1-nano",
+    provider="openai"
+):
     with open(json_path, "r") as f:
         data = json.load(f)
 
@@ -25,7 +30,9 @@ def create_society_from_json(json_path):
     for a in agent_defs:
         agents[a["name"]] = create_agent(
             name=a["name"],
-            system_message=a.get("system_message", "")
+            system_message=a.get("system_message", ""),
+            model_name=model_name,
+            provider=provider
         )
 
     entry_point = graph_def.get("entry_point")
