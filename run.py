@@ -67,9 +67,10 @@ async def autonomous_loop(agents, settings, entry_point, edges, task):
 async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--json", required=True)
-    parser.add_argument("--task", required=False, default="Build a short plan for a mobile app.")
-    parser.add_argument("--provider", required=False, default="openai")
-    parser.add_argument("--model", required=False, default="gpt-4.1-nano")
+    parser.add_argument("--task", default="Build a short plan for a mobile app.")
+    parser.add_argument("--provider", default="openai")
+    parser.add_argument("--model", default="gpt-4.1-nano")
+    parser.add_argument("--seed", type=int, default=1)
     args = parser.parse_args()
 
     json_path = args.json
@@ -81,7 +82,8 @@ async def main():
         society_name,
         safe_task,
         args.provider,
-        args.model
+        args.model,
+        f"seed_{args.seed}"
     )
     os.makedirs(output_dir, exist_ok=True)
 
