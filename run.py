@@ -2,6 +2,7 @@ import asyncio
 import argparse
 import re
 import random
+import os
 from agents.societies import create_society_from_json
 
 async def run_agent(agent, message):
@@ -14,7 +15,7 @@ async def run_agent(agent, message):
 def regex_final(agent_name, response):
     if agent_name != "finalizer":
         if re.search(r"^\s*FINAL\s*$", response, flags=re.IGNORECASE | re.MULTILINE):
-            response = re.sub(
+            return re.sub(
                 r"^\s*FINAL\s*$",
                 "ERROR: Only finalizer may say FINAL.",
                 response,
@@ -24,10 +25,8 @@ def regex_final(agent_name, response):
 
 async def autonomous_loop(agents, settings, entry_point, edges, task):
     print("[SYSTEM] Free-Talk Mode Activated\n")
-
     conversation_log = []
     max_round = settings.get("max_round", 20)
-
     global_context = f"Conversation begins:\nUser task: {task}\n"
     current_message = task
     agent_names = list(agents.keys())
@@ -69,9 +68,28 @@ async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--json", required=True)
     parser.add_argument("--task", required=False, default="Build a short plan for a mobile app.")
+    parser.add_argument("--provider", required=False, default="openai")
+    parser.add_argument("--model", required=False, default="gpt-4.1-nano")
     args = parser.parse_args()
 
-    agents, settings, entry_point, edges = create_society_from_json(args.json)
+    json_path = args.json
+    society_name = os.path.splitext(os.path.basename(json_path))[0]
+    safe_task = args.task.replace(" ", "_")[:50]
+
+    output_dir = os.path.join(
+        "conversations",
+        society_name,
+        safe_task,
+        args.provider,
+        args.model
+    )
+    os.makedirs(output_dir, exist_ok=True)
+
+    agents, settings, entry_point, edges = create_society_from_json(
+        json_path,
+        model_name=args.model,
+        provider=args.provider
+    )
 
     convo = await autonomous_loop(
         agents=agents,
@@ -81,9 +99,12 @@ async def main():
         task=args.task
     )
 
-    with open("noRoles.txt", "w", encoding="utf-8") as f:
+    output_file = os.path.join(output_dir, "conversation.txt")
+    with open(output_file, "w", encoding="utf-8") as f:
         for speaker, msg in convo:
             f.write(f"{speaker}:\n{msg}\n\n")
+
+    print(f"\n[SYSTEM] Conversation saved to: {output_file}\n")
 
 if __name__ == "__main__":
     asyncio.run(main())
