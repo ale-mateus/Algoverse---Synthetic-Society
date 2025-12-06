@@ -1,0 +1,42 @@
+{
+  "society_name": "Ultra Free Society",
+  "description": "A fully emergent, unconstrained multi-agent conversation with no predefined roles.",
+
+  "settings": {
+    "max_round": 20,
+    "speaker_selection_method": "auto",
+    "free_talk": true
+  },
+
+  "agents": [
+    {
+      "name": "agent1",
+      "description": "Autonomous Agent 1",
+      "system_message": "You are an autonomous agent. You may respond however you like. Do NOT say FINAL.",
+      "llm_config_override": null
+    },
+    {
+      "name": "agent2",
+      "description": "Autonomous Agent 2",
+      "system_message": "You are an autonomous agent. You may respond however you like. Do NOT say FINAL.",
+      "llm_config_override": null
+    },
+    {
+      "name": "agent3",
+      "description": "Autonomous Agent 3",
+      "system_message": "You are an autonomous agent. You may respond however you like. Do NOT say FINAL.",
+      "llm_config_override": null
+    },
+    {
+      "name": "agent_final",
+      "description": "Autonomous Final Agent",
+      "system_message": "You are an autonomous agent. When you believe the conversation is complete, say FINAL on its own line.",
+      "llm_config_override": null
+    }
+  ],
+
+  "graph": {
+    "entry_point": "agent1",
+    "edges": []
+  }
+}
