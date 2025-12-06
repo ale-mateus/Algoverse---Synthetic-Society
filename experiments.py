@@ -21,15 +21,16 @@ def parse_convo(filepath):
         content = f.read()
     blocks = content.strip().split("\n\n")
     for block in blocks:
-        if not block.strip():
+        lines = block.strip().split("\n")
+        if not lines:
             continue
-        if ":" not in block:
+        header = lines[0].strip()
+        if not header.endswith(":"):
             continue
-        try:
-            name, msg = block.split(":", 1)
-            data.append((name.strip(), msg.strip()))
-        except:
-            continue
+        speaker = header[:-1].strip()
+        message = "\n".join(lines[1:]).strip()
+        if speaker and message:
+            data.append((speaker, message))
     return data
 
 def compute_semantic_drift(messages):
