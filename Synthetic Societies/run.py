@@ -71,16 +71,16 @@ async def main():
     parser.add_argument("--provider", default="openai")
     parser.add_argument("--model", default="gpt-4.1-nano")
     parser.add_argument("--seed", type=int, default=1)
+    parser.add_argument("--label", required=False, default="default")
     args = parser.parse_args()
 
     json_path = args.json
     society_name = os.path.splitext(os.path.basename(json_path))[0]
-    safe_task = args.task.replace(" ", "_")[:50]
 
     output_dir = os.path.join(
         "conversations",
         society_name,
-        safe_task,
+        args.label,
         args.provider,
         args.model,
         f"seed_{args.seed}"
