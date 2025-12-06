@@ -13,3 +13,5 @@ Begin.'
 
 
 "Build a short plan for a mobile app."
+
+'A 27-year-old male is brought into the ER after collapsing at a gym. He is pale, diaphoretic, and barely responsive. Vitals: BP 82/50, HR 142, RR 28, SpO2 91%. Do whatever you would normally do.'
