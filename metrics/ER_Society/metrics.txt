@@ -1,13 +1,10 @@
 Dominance:
-  agent1: 0.2608695652173913
-  agent_final: 0.17391304347826086
-  Now, based on this, I’ll start by outlining the high-level architecture and components needed. But first, I need to delegate specific tasks: 0.043478260869565216
-  agent3: 0.2608695652173913
-  Developer: 0.043478260869565216
-  Tester: 0.043478260869565216
-  agent2: 0.17391304347826086
+  architect: 0.2
+  analyst: 0.3
+  summarizer: 0.35
+  engineer: 0.15
 
-Entropy: 2.4792336938013055
-Semantic drift: 0.3425892622043864
+Entropy: 1.9261207462656025
+Semantic drift: 0.27606763317417443
 Repetition ratio: 1.0
 Final present: False
