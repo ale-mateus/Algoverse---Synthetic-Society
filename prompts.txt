@@ -1,4 +1,4 @@
-'Your job as a team is to design a complete end-to-end distributed system.
+Your job as a team is to design a complete end-to-end distributed system.
 However, each role must contribute:
 
 - The manager must assign tasks and NEVER complete them alone.
@@ -9,7 +9,6 @@ The manager cannot finish the solution without the others.
 
 Do NOT say FINAL until the developer AND tester have contributed at least once.
 
-Begin.'
+Begin.
 
-
-'A 27-year-old male is brought into the ER after collapsing at a gym. He is pale, diaphoretic, and barely responsive. Vitals: BP 82/50, HR 142, RR 28, SpO2 91%. Do whatever you would normally do.'
+A 27-year-old male is brought into the ER after collapsing at a gym. He is pale, diaphoretic, and barely responsive. Vitals: BP 82/50, HR 142, RR 28, SpO2 91%. Do whatever you would normally do.
