@@ -1,0 +1,96 @@
+emt:
+EMS units, multiple trauma alert from scene at 123 Main Street. Patient is a 35-year-old male involved in a high-speed motor vehicle collision. Vehicle struck a tree; occupant was unrestrained. 
+
+On scene, found patient unresponsive, pulseless, apneic. Bystanders initiated CPR. Multiple visible injuries: facial trauma, suspected femur fracture, and massive chest deformity. 
+
+Initial scene assessment indicates high-energy mechanism, potential for severe multisystem trauma. 
+
+Starting c-spine precautions, initiating manual stabilization. Applying oxygen via NRB at 15 L/min. Starting IV access with 18G in right antecubital. Administering advanced airway management en route as needed. 
+
+Continue efforts to assess rhythm and provide defibrillation if indicated. Please advise if additional interventions or destination considerations are required.
+
+consult_surgeon:
+ EMS, this is the surgeon. Given the patient's presentation—unresponsive, pulseless, apneic with obvious high-energy trauma and massive chest deformity—immediate advanced airway management is critical. This patient is in cardiac arrest, likely due to a reversible thoracic injury such as tension pneumothorax, pericardial tamponade, or massive hemorrhage.
+
+I recommend continuing high-quality CPR, initiating rapid transport with the trauma alert activated, and preparing for emergent thoracotomy upon arrival if needed. Ensure that at least two large-bore IVs are maintained, and consider inserting a right femoral line en route for rapid access.
+
+Given the signs of severe thoracic trauma, a pre-hospital pericardiocentesis could be lifesaving if tamponade is suspected, but definitive management will occur in the trauma bay or OR. Transport expeditiously, and keep me updated on any return of spontaneous circulation or changes in the patient’s status.
+
+consult_surgeon:
+ EMS, this is the surgeon. Conscious recognition of the severity here is critical. While I agree with priority in transport, I want to emphasize that if during transport there's any ROSC or signs of stabilization, a rapid assessment for tension pneumothorax could be performed with needle decompression if indicated. 
+
+Otherwise, prepare to initiate definitive thoracotomy upon arrival if the patient remains in refractory cardiac arrest. Also, ensure that trauma surgical staff is alerted and ready in the OR to expedite intervention. Have the crash cart prepped with thoracotomy supplies, and consider formulating a clear plan for pericardial decompression and emergent bleeding control.
+
+Keep me updated en route, and let's aim for rapid delivery to definitive care.
+
+er_nurse:
+EMS, I hear you. We'll continue high-quality CPR, monitor for any signs of ROSC, and keep the airway secured. I'll be ready for needle decompression if we see tension pneumothorax signs—absent breath sounds, distended neck veins, hypotension during transport. 
+
+I'll alert the trauma team to be prepared for immediate thoracotomy upon arrival. Will keep you updated if anything changes en route, especially if ROSC occurs. In the meantime, I’ll ensure rapid IV infusion, monitor vitals closely, and prepare for the next steps once at the hospital.
+
+er_nurse:
+Understood. Keep me posted on any changes in the patient's status, especially if you note any spontaneous return of circulation or signs of tension pneumothorax during transport. Prioritize airway and chest compressions, maintain IV access, and prepare the trauma team for immediate intervention upon arrival. Your focus on continuous monitoring and rapid communication is vital.
+
+emt:
+EMS, we have ongoing high-quality CPR, patient remains in cardiac arrest en route. No ROSC observed. Continuous manual stabilization of cervical spine. IV access maintained, fluid resuscitation in progress. 
+
+Patient's airway has been secured with advanced airway device. BP is non-assessable at this time. Ongoing transport to Level 1 trauma center, traffic permitting. 
+
+Will update if any change occurs or if we achieve ROSC. Preparing for rapid handoff and immediate surgical intervention upon arrival.
+
+er_tech:
+EMS, copy that. Keep up the high-quality CPR and monitor for any signs of ROSC during transport. Continue manual cervical stabilization and maintain IV fluids. If you notice any spontaneous movement, a pulse, or blood pressure, notify us immediately. Prepare for rapid transfer of care—trauma team is on standby. Maintain your airway management and please be ready to assist with needle decompression if clinical signs of tension pneumothorax develop before arrival. Keep me updated on any changes.
+
+er_nurse:
+EMS, understood. We’re maintaining continuous CPR, airway secured, cervical stabilization in place, and IV fluids running. No signs of ROSC at this time. I’ll alert the trauma team to be ready for immediate intervention upon arrival, and I’ll keep a close eye out for any changes like spontaneous pulse or respiratory effort. Will update immediately if anything occurs or if we achieve ROSC. Stay focused on high-quality compressions and keeping the airway patent.
+
+er_tech:
+EMS, receive and understood. Keep up the high-quality CPR, monitor closely for any signs of ROSC, and continue airway management as established. Maintain IV access, fluids, and cervical stabilization. Be prepared for rapid handoff; trauma team is on standby for immediate intervention. Keep me updated on any changes, especially if there’s a spontaneous pulse, breathing, or signs of tension pneumothorax during transport. Stay focused and alert.
+
+consult_surgeon:
+EMS, this is the surgeon. I appreciate everyone's coordinated effort. Continue with high-quality CPR and rapid transport, and stay alert for any signs of improvement, particularly spontaneous circulation or signs of tension pneumothorax—such as sudden respiratory difficulty, hypotension, or neck vein distention.
+
+Ensure the airway remains secure, and if in transit any clinical signs suggest tension pneumothorax, perform needle decompression immediately with a 14 or 16-gauge needle in the second intercostal space at the midclavicular line on the affected side.
+
+Prepare for immediate thoracotomy upon arrival if the patient remains in cardiac arrest. Keep communication open, and update me as soon as there are any changes. Our priority is rapid definitive care in the OR.
+
+consult_surgeon:
+EMS, this is the surgeon. Continue your aggressive resuscitative efforts and ensure rapid transport to the trauma center. If any signs develop suggestive of tension pneumothorax—unilateral chest rise, severe respiratory distress, hypotension—perform needle decompression without delay. 
+
+Keep vigilant for any signs of ROSC en route; if there is a sudden return of circulation, reassess airway and breathing immediately. Make sure trauma surgical team is prepped for immediate thoracotomy upon arrival, as ongoing hemorrhage or cardiac injury could be the cause of arrest.
+
+Stay focused, communicate any changes promptly, and prioritize rapid, coordinated handoff. We will do everything necessary on our end to expedite definitive care.
+
+consult_surgeon:
+EMS, this is the surgeon. Maintain your aggressive resuscitative efforts and prioritize rapid transport to the trauma center. Keep a close watch for any signs of spontaneous circulation and be prepared to perform needle decompression immediately if you observe signs of tension pneumothorax, such as a sudden worsening of respiratory status, hypotension, or neck vein distention.
+
+Once on scene, expedite handoff to the trauma team and ensure all your resuscitative measures are documented. Our team will be ready to initiate definitive surgical intervention as needed. Keep me updated on any changes during transport.
+
+er_tech:
+EMS, understood. Continuing with high-quality CPR and prepared for immediate intervention if tension pneumothorax develops. Will monitor closely for any signs of ROSC or deterioration, and perform needle decompression if indicated. Handing over to the trauma team as soon as we arrive. Will keep you updated on patient status throughout transport.
+
+er_tech:
+EMS, copy all. Maintain high-quality CPR and monitor for any signs of ROSC or deterioration. Keep us updated on airway, vitals, and any signs suggestive of tension pneumothorax. Prepare for immediate handoff to the trauma team upon arrival. Focus on rapid transport and communication. We'll be ready on our end for swift surgical intervention.
+
+summarizer:
+The EMS team reports ongoing, high-quality CPR with no return of spontaneous circulation (ROSC). The patient's airway has been secured with an advanced airway device, and cervical spine stabilization remains in place. IV access is maintained with fluids ongoing. The patient remains in cardiac arrest en route to a Level 1 trauma center, with continuous monitoring for signs of ROSC or tension pneumothorax. The EMS team is prepared to perform needle decompression if clinical signs of tension pneumothorax arise, such as unilateral chest expansion, hypotension, or neck vein distention. The trauma team is alerted and standing by for immediate intervention upon arrival. Throughout, communication and coordinated handoff are prioritized to facilitate rapid definitive care, including potential emergent thoracotomy and stabilization of hemorrhagic injuries. The treating team emphasizes vigilance for any changes in patient status, especially spontaneous circulation or signs of tension pneumothorax, and urges prompt action if clinical deterioration occurs en route.
+
+er_physician:
+This is a critical situation. We need to ensure that all efforts are geared toward rapid stabilization and definitive management upon arrival. Since the patient remains in cardiac arrest without ROSC and has signs of severe thoracic trauma, let's prepare for immediate thoracotomy and hemorrhage control. 
+
+Please continue high-quality CPR, monitor for any spontaneous signs of circulation, and be vigilant for tension pneumothorax. If any clinical indicators develop en route, initiate needle decompression without delay. Ensure trauma team is ready to proceed with emergent interventions as soon as we arrive. 
+
+Keep me updated on vital signs, compression quality, and any change in patient status.
+
+er_nurse:
+EMS, copy all. We're maintaining continuous, high-quality CPR and airway management. No ROSC yet, and we're alert for any sudden signs of tension pneumothorax—if any develop, we'll perform needle decompression immediately. The team on scene is preparing for rapid handoff and surgery once we arrive. I'll keep you updated on any changes or if we achieve ROSC during transport. Stay ready for the trauma team to take over as soon as we're there.
+
+emt:
+EMS, this is the emergency team. Continuing high-quality CPR with ongoing airway management. No signs of ROSC at this time. We'll monitor for clinical signs of tension pneumothorax, and if they occur, we'll perform needle decompression en route. The trauma team is fully prepared for immediate intervention upon arrival. Will update continuously if there's any change in patient status. Stay alert for any spontaneous circulation during transport.
+
+er_physician:
+Copy that, EMS. Your focus on continuous high-quality CPR and vigilance is essential. Keep monitoring closely for any signs of spontaneous circulation or deterioration, especially tension pneumothorax. If clinical signs develop, perform needle decompression immediately—second intercostal space at the midclavicular line on the affected side. Ensure the trauma team is prepared for rapid intervention upon arrival, including thoracotomy if necessary. Stay calm and maintain effective communication. We will coordinate seamlessly once you arrive.
+
+er_nurse:
+EMS, we copy all. We're maintaining continuous CPR, keeping airway patency secured, and watching for any signs of ROSC or tension pneumothorax. No changes so far, but we're ready to perform needle decompression if signs develop. The trauma team is briefed and waiting for your arrival. I'll keep updating you if there’s any change. Stay focused, and thank you for your continued efforts.
+

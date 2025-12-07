@@ -1,0 +1,70 @@
+er_tech:
+Understood. I'll wait for both the developer and tester to contribute before marking anything as final.
+
+emt:
+Got it. Please let me know when the developer and tester have each contributed, and I'll proceed accordingly.
+
+summarizer:
+er_tech: Noted. I'll monitor for their inputs. Once both have contributed, I’ll prepare the final summary.
+
+emt: Thanks. I’ll keep an eye out as well. Once we have their feedback, we can proceed with the next steps.
+
+er_nurse:
+Absolutely, I’ll stay vigilant. Once I see both the developer and tester have added their inputs, I’ll move forward with the finalization. Let me know if either of you need anything else in the meantime.
+
+emt:
+Thanks, everyone. I’ll wait for both the developer and tester to share their updates before proceeding.
+
+er_nurse:
+Sounds good. I’ll keep monitoring the entries and update everyone once I see both contributions. Meanwhile, if anyone needs clarification or assistance, just let me know.
+
+summarizer:
+er_tech: Acknowledged. I will continue to observe for their inputs and notify once both have contributed.
+
+emt: Perfect, I’ll do the same. Looking forward to receiving their feedback so we can conclude the review.
+
+er_nurse: Agreed. I’ll remain vigilant and update everyone as soon as both inputs are received. Let me know if any issues arise in the meantime.
+
+emt:
+Thanks again, everyone. I'll stay on standby until we get both contributions.
+
+emt:
+Appreciate the teamwork. We’ll wait until both the developer and tester have provided their inputs before moving forward.
+
+summarizer:
+er_tech: Same here. I'll continue to monitor for their contributions and will notify everyone once both inputs are received.
+
+er_nurse: I'll keep an eye out as well. As soon as I see both the developer and tester have entered their feedback, I'll update everyone and we can proceed accordingly.
+
+emt: Great. Thank you all for your collaborative efforts. Looking forward to finalizing once we have both pieces of input.
+
+er_physician:
+Understood. I'm still waiting for confirmation that both the developer and tester have submitted their feedback. Once confirmed, we can move forward.
+
+emt:
+Thanks, everyone. Let's hold tight until we have confirmation from both the developer and tester. I’ll update once the inputs are received.
+
+consult_surgeon:
+er_tech: Acknowledged. I'll keep monitoring for their contributions and will notify everyone once both inputs are received.
+
+summarizer:
+er_nurse: Agreed. I’ll continue vigilant monitoring and will notify all once both the developer and tester have provided their feedback. Please keep me informed if additional assistance is needed.
+
+consult_surgeon:
+er_tech: Noted. I will continue to keep an eye out for their inputs and inform everyone once both contributions are received.
+
+summarizer:
+er_tech: Acknowledged. I will maintain vigilance and notify everyone promptly once both the developer and tester have entered their responses. Please inform me if any urgent issues arise in the meantime.
+
+summarizer:
+er_nurse: Recognized. I will continue monitoring the entries closely and update everyone as soon as both contributions are available. If any critical issues come up, feel free to reach out.
+
+er_nurse:
+Thanks, everyone. Let’s stay on alert for those updates. Once we confirm both the developer and tester have contributed, we can proceed with the final steps. I’ll check in again shortly.
+
+er_physician:
+Understood. I'll remain attentive and will notify the team immediately once both the developer and tester have submitted their feedback. Meanwhile, let's stay prepared to move forward as soon as that confirmation arrives.
+
+er_physician:
+Acknowledged. I’ll be ready to proceed as soon as I receive confirmation that both contributions have been received. Everyone, please stay vigilant, and I’ll update immediately when we have the necessary inputs to move forward.
+

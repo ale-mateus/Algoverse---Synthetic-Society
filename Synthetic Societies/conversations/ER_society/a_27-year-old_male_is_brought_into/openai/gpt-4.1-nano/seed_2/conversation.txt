@@ -1,0 +1,126 @@
+consult_surgeon:
+This patient is showing signs of hypovolemic shock likely due to significant blood loss or fluid deficit. Immediate prioritization is airway management, hemodynamic stabilization, and rapid identification of the underlying cause.
+
+Start by ensuring airway patency; consider advanced airway if there's compromised consciousness. Initiate high-flow oxygen to optimize oxygenation.
+
+Next, establish large-bore IV access—preferably two 16-gauge needles—and begin volume resuscitation with isotonic crystalloid fluids to stabilize blood pressure.
+
+Simultaneously, order focused assessment—urgent FAST ultrasound—is essential to evaluate for free intra-abdominal fluid suggesting bleeding. Obtain bedside imaging rapidly.
+
+Given the presentation, I am highly concerned about internal bleeding, possibly from trauma or ruptured vascular structures. Prepare for possible emergent operative intervention if the patient remains unstable after initial resuscitation.
+
+Also notify surgical teams immediately, and prepare the operating room for potential emergent laparotomy. Continuous reassessment of vital signs and mental status is critical.
+
+summarizer:
+The patient presents with signs consistent with hypovolemic shock, including hypotension (BP 82/50), tachycardia (HR 142), tachypnea (RR 28), hypoxia (SpO2 91%), pallor, diaphoresis, and diminished responsiveness. Immediate priorities include airway management, oxygen therapy, and hemodynamic stabilization. An advanced airway should be considered if consciousness deteriorates. High-flow oxygen is initiated to maximize oxygenation.
+
+Large-bore IV access, preferably two 16-gauge lines, should be established promptly for aggressive volume resuscitation with isotonic crystalloid solutions. Continuous monitoring of vital signs and mental status is essential.
+
+A focused assessment with ultrasound (FAST) is urgently required to identify intra-abdominal free fluid suggestive of bleeding. The suspicion remains high for internal hemorrhage, possibly from trauma or ruptured vascular structures, necessitating preparedness for emergent surgical intervention if stabilization is not achieved through resuscitation.
+
+The surgical team has been notified, and preparations for an emergent laparotomy should be initiated. Ongoing reassessment and supportive care will guide further management.
+
+er_nurse:
+Alright, let's move quickly. Ensure the airway is patent—if his mental status worsens or airway reflexes become compromised, prepare for intubation. Start high-flow oxygen via non-rebreather mask at 15 L/min, and consider early intubation if he's barely responsive or if there's concern for airway compromise.
+
+Establish two large-bore IV lines with 16-gauge catheters and begin infusion of isotonic fluids—crystalloids like normal saline or lactated Ringer’s. We'll need to be aggressive but cautious; over-resuscitation can worsen bleeding, so monitor vitals closely.
+
+I’ll now perform a rapid bedside ultrasound (FAST) to check for free fluid—if I see significant intra-abdominal fluid, that confirms ongoing bleeding and will accelerate surgical intervention plans.
+
+Let me get the equipment ready and call for blood bank—type and screen now while we prepare for possible transfusion. I'm also preparing to monitor mental status closely; any deterioration will further support the need for intubation and aggressive resuscitation.
+
+Meanwhile, continue to watch vitals and note response to fluids. If blood pressure remains low or worsens, we may need to escalate to blood products sooner.
+
+consult_surgeon:
+All right, excellent. Keep a close eye on his mental status and vital signs. If he shows any signs of worsening hypoxia or airway compromise, don't hesitate to proceed with re-intubation despite current airway management efforts. Maintain aggressive fluid resuscitation, but remember that ongoing bleeding may necessitate early transfusion—prepare for that accordingly.
+
+Perform the FAST exam immediately and communicate findings to the surgical team as soon as possible. If free fluid is detected, especially with persistent instability, expedite transfer to the OR for definitive control of hemorrhage.
+
+Meanwhile, ensure that blood products are crossmatched and ready in case we need to transfuse massive blood. Continue frequent reassessment, and prepare for possible rapid sequence induction if airway deterioration occurs. The priority remains to stabilize him hemodynamically while diagnosing the source of bleeding.
+
+emt:
+EMT: Dispatcher, this is Unit 23. We have a 27-year-old male patient brought in from the gym after collapsing. He's pale, diaphoretic, minimally responsive—alert but with gurgling respirations. Vitals: BP 82/50, HR 142, RR 28, SpO2 91%. No visible trauma noted. Initiated high-flow oxygen, placed two large-bore IVs with isotonic fluids, and prepared for FAST exam. Patient's mental status is deteriorating slightly; airway patency remains questionable. Will reassess continuously and prepare for possible intubation. Requesting rapid transfer to ED and alert surgical team for potential emergent intervention.
+
+consult_surgeon:
+Copy that, unit 23. Proceed with caution—keep doing the ongoing assessment, and prioritize airway management. Given the signs of airway compromise and mental status decline, prepare for rapid sequence intubation immediately. Ensure anesthesia and airway teams are on standby.
+
+Continue fluid resuscitation, but be careful not to overhydrate, as ongoing bleeding could worsen with aggressive volume expansion. As soon as the airway is secured, reassess hemodynamics and prepare for blood transfusion if blood pressure remains unstable.
+
+Perform the FAST ultrasound right now and communicate findings immediately. If intra-abdominal free fluid is confirmed and the patient remains hemodynamically unstable, expedite transfer to the OR for emergent laparotomy.
+
+Keep me updated on vitals and airway status. The surgical team is on alert and ready for intervention at a moment’s notice. Your rapid actions are crucial here.
+
+er_physician:
+Understood. We are initiating preparation for rapid sequence intubation now. I'll ensure that all necessary equipment is ready—ET tube, medications, and suction. The patient’s airway assessment is worsening; I will position him to optimize intubation and monitor his oxygenation continuously.
+
+FAST exam underway; I will inform you as soon as we have findings. Our immediate priority is to secure the airway, administer controlled sedation and paralysis, and proceed swiftly with intubation to protect his airway given the mental status decline.
+
+Once airway is secured, I'll reassess his hemodynamics and review the ultrasound results to determine next steps. If intra-abdominal bleeding is confirmed and he remains unstable, I will prepare for urgent surgical transfer.
+
+emt:
+ER nurse: Copy that. We'll keep the airway ready and monitor closely. Once you’re prepared, proceed with RSI. Keep us updated on the FAST results and his response to the airway management. Rest assured, we’ll get ready for rapid transfer once he's stabilized. Let us know if his condition deteriorates further.
+
+consult_surgeon:
+Understood. Proceed with rapid sequence intubation now, making sure all airway equipment and medications are ready. Continue close monitoring of his oxygenation and hemodynamics during the process. Once secured, reassess vitals immediately and communicate findings from the FAST exam as soon as available.
+
+Keep me updated on his response—any worsening mental status or instability will require urgent action. Once his airway is secured and bleeding source identified, prepare for definitive surgical control. Stay alert and coordinated; we need swift, decisive action to stabilize this patient.
+
+emt:
+ER nurse: Copy that, we’re all set for RSI. Equipment is ready, and we're closely monitoring his oxygenation. Once you proceed, keep us updated on the airway and FAST findings. We’ll prepare for rapid transfer to the OR if bleeding is confirmed and he remains unstable. Let us know when you're ready to move.
+
+er_physician:
+Proceeding with rapid sequence intubation now. I'll administer pre-oxygenation with 100% oxygen, then give brief sedation followed by paralysis—using etomidate and succinylcholine for rapid induction. Applying cricoid pressure to minimize aspiration risk.
+
+Confirm placement with end-tidal CO2 and auscultation, then reassess vitals post-intubation. Once secured, I will review the FAST findings and communicate promptly.
+
+Thanks for the update, ER nurse. Keep the patient stable during transfer, and notify surgical team immediately once we have intra-abdominal fluid confirmed or if his condition deteriorates further.
+
+er_physician:
+The intubation has been completed successfully. The patient's airway is now secured with end-tidal CO2 confirmed and bilateral breath sounds equal. Oxygenation is stable for the time being.
+
+I'll get the FAST ultrasound results now and will inform you immediately. In the meantime, I’ll continue to monitor vitals and mental status closely, ensuring gentle ongoing fluid management—being cautious of ongoing bleeding. Blood products are on standby, ready for transfusion if needed.
+
+Once we receive the FAST findings, we'll determine whether the patient requires urgent surgical intervention or if further stabilization is possible before transfer. Maintaining readiness for rapid movement to the OR remains our top priority.
+
+emt:
+ER nurse: Copy that, doctor. Standing by for FAST results. We'll continue close monitoring of vital signs and mental status. Keep us posted on any updates, and we’re ready to act quickly once you have definitive findings. Let us know if you need assistance with preparations for transport.
+
+consult_surgeon:
+The FAST exam just came back showing a significant amount of free fluid in the pelvis and peritoneal cavity, consistent with ongoing intra-abdominal bleeding. The patient remains hypotensive despite initial fluids, and his mental status has not improved.
+
+We need to prepare for immediate surgical transfer. Continue to monitor vitals closely—any further deterioration requires urgent action. Secure all necessary blood products now—crossmatch is complete and ready.
+
+Ensure that anesthesia and surgical teams are ready for rapid movement to the OR. Lock in airway management, coordinate with transport team for swift transfer, and keep a close eye on him for any signs of worsening instability. The priority now is definitive hemorrhage control via laparotomy.
+
+er_physician:
+Understood. We’ll expedite preparations now. Blood products are ready for transfusion, and the surgical team has been alerted for immediate operative intervention. I will give the patient a final assessment and confirm his stability before coordinating with the transport team.
+
+Monitoring vitals continuously, he remains hypotensive and minimally responsive. Given the FAST results indicating ongoing intra-abdominal bleeding, I’ll ensure his airway remains secured and he is sedated and paralytic as needed during transfer.
+
+We will initiate rapid transfer to the OR, keeping all monitoring devices active. I’ll brief the surgical team to be prepared for immediate laparotomy upon arrival. All team members are on standby for swift action.
+
+I’ll stay with the patient during transfer, ensuring he remains stable, and will communicate any changes immediately. Our priority is definitive hemorrhage control to stabilize him permanently.
+
+emt:
+ER nurse: Copy that, doctor. We’re ready for immediate transfer. I’ll ensure all vital signs and monitors are maintained during transport. Keep us updated if there are any changes; we’ll stand by for your instructions once you’re en route. We’ll prepare the OR for a swift arrival.
+
+er_physician:
+The patient is now intubated and stabilized for transport. We’re moving him to the OR immediately, with ongoing monitoring. The surgical team is prepped and standing by for emergent laparotomy to control the bleeding. Blood products are ready for transfusion en route if needed, and I’ll continue to reassess vitals continuously during transfer.
+
+I’ll update as soon as we arrive or if there are any changes in his condition. Our immediate goal remains hemorrhage control and stabilization.
+
+er_physician:
+The patient is en route to the OR and remains under close monitoring. He’s stable for now, but his vitals should continue to be observed closely during transport. The surgical team is ready and awaiting his arrival for immediate laparotomy.
+
+I'll keep you all updated on any changes, and I’ll ensure that blood products stay accessible during the procedure. We’re doing everything we can to stabilize him definitively.
+
+emt:
+ER nurse: Copy that, doctor. We’re ready to receive him. We’ll keep vigilant monitoring throughout transport and ensure everything’s prepared for an immediate surgical response upon arrival. Keep us updated on any changes, and safe travels to the OR.
+
+consult_surgeon:
+The patient has now arrived in the OR, still intubated and with ongoing hemorrhage control preparations underway. The surgical team is ready to proceed with an urgent laparotomy. Blood products remain on standby, and he’s being closely monitored for any signs of deterioration. 
+
+We are ready to move immediately once the team gives the sign. Continue to keep him under continuous observation, monitor vitals closely, and ensure he remains hemodynamically stable during the initial steps of exploration. 
+
+Our goal now is rapid control of the bleeding source, likely a vascular rupture or significant intra-abdominal injury. I will remain with the patient to oversee resuscitation and coordinate with the surgical team as they begin the procedure.
+

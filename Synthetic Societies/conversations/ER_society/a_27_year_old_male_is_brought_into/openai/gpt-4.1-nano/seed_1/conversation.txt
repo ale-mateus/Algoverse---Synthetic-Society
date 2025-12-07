@@ -1,0 +1,127 @@
+er_physician:
+First, I'll initiate immediate stabilization. Ensure airway patency—assess responsiveness and provide airway support if necessary. Given his altered mental status and tachycardia, securing the airway is critical. 
+
+Next, assess circulation: establish IV access with at least two large bore lines for rapid fluid resuscitation. Start with aggressive IV fluid boluses—preferably isotonic saline—aiming to restore blood pressure and perfusion.
+
+Simultaneously, perform a rapid physical exam focusing on signs of trauma, bleeding, or cardiac events. Obtain a quick bedside glucose to rule out hypoglycemia as a cause of altered mental status.
+
+Order immediate labs: complete blood count, basic metabolic panel, blood glucose, coagulation profile, lactate, and type and cross for potential transfusion. Also, draw an ECG to evaluate for arrhythmias or ischemia.
+
+Given his presentation, consider differential diagnoses: hypovolemic shock (likely from internal bleeding or dehydration), cardiogenic causes, or metabolic disturbances like hypoglycemia or acidosis.
+
+Administer oxygen at 15 L/min via non-rebreather mask to address hypoxia. Monitor vital signs closely with continuous pulse oximetry and cardiac monitoring.
+
+Prepare for possible advanced airway management if his mental status worsens. Notify the rapid response team and prepare for possible ICU transfer once stabilized.
+
+er_physician:
+The patient remains hypotensive despite initial fluid resuscitation, and his mental status is deteriorating further. His ECG shows tachyarrhythmia but no obvious ST-elevation. His bedside exam reveals no external signs of trauma or bleeding. Given his rapid deterioration, I will prepare for definitive airway management to secure the airway. 
+
+Simultaneously, I’ll consider adding vasopressors like norepinephrine to maintain perfusion if he's unresponsive to fluids. I will also send for rapid bedside tests including point-of-care ultrasound to evaluate cardiac function and possible internal bleeding—focusing on cardiac chambers, the inferior vena cava for volume status, and free fluid in the abdomen or pelvis.
+
+Considering the presentation and his sudden collapse, I am highly suspicious of a cardiac etiology such as myocarditis, arrhythmic disorder, or an underlying structural abnormality. The lab results, especially the troponin and blood gas, will help further.
+
+I'll order emergent bedside ultrasound now and prepare for intubation. Based on findings, I’ll involve cardiology and possibly surgical teams if intra-abdominal bleeding is suspected. Time is critical.
+
+er_physician:
+The bedside ultrasound reveals a severely dilated right ventricle with poor systolic function, and the IVC is collapsible but small, consistent with hypovolemia. No free fluid in the abdomen or pelvis is visible at this time. The ECG continues to show a tachyarrhythmia, likely supraventricular in origin, but no ST changes.
+
+Given the ultrasound findings and clinical picture, I’m concerned about a primary cardiac event, possibly myocarditis or arrhythmic cardiomyopathy leading to sudden hemodynamic collapse. The elevated troponin supports myocardial injury.
+
+I will proceed with rapid-sequence intubation to secure the airway, ensuring we can ventilate and stabilize his oxygenation. Once intubated, I will start vasopressors to maintain blood pressure. Meanwhile, continue close monitoring—consider obtaining a portable chest X-ray to rule out other issues such as pneumothorax, but prioritize hemodynamic stabilization and cardiac management. 
+
+I’m also alert for signs of worsening arrhythmias or signs of ongoing cardiac deterioration. considering the severity, cardiology consultation should be activated immediately for possible emergent intervention or advanced imaging.
+
+er_tech:
+Understood. Prepare for immediate intubation—assemble RSI kit, ensure suction is ready, and pre-oxygenate with 100% FiO2. Establish vasopressor infusion lines now; I'll start norepinephrine titrated to maintain MAP above 65 mmHg. Continue close cardiac and hemodynamic monitoring. Keep me updated on hemodynamic response and prepare for bedside ultrasound reassessment post-intubation to evaluate cardiac function under sedation. Also, alert the transport team for possible transfer once stabilized for advanced cardiac imaging.
+
+er_tech:
+RSI setup complete, airway secured with quick intubation. Ventilation initiated with 100% FiO2. Norepinephrine infusion started at 10 mcg/min, titrating up as needed to maintain MAP >65. Hemodynamically stable but still tenuous. Continue monitor vitals closely—ECG shows persistent tachyarrhythmia. Heart rate remains around 140-150. I’ll review bedside ultrasound images again post-intubation to reassess cardiac function now that sedation is in place. Prepare for possible additional diagnostics like portable CXR once stable. Transport team on standby for transfer to cardiac ICU for advanced interventions and imaging. Keep me updated on any changes.
+
+summarizer:
+The patient is a 27-year-old male presenting with acute collapse at the gym, characterized by hypovolemia, altered mental status, tachyarrhythmia, hypoxia, and signs of hemodynamically unstable shock. Initial management prioritized airway stabilization, volume resuscitation, oxygenation, and continuous monitoring. Bedside ultrasound revealed a severely dilated right ventricle with poor systolic function, suggestive of an acute cardiac event, possibly myocarditis or an arrhythmogenic cardiomyopathy, with no identifiable external bleeding or traumatic injury. 
+
+The patient was intubated using rapid sequence intubation, and vasopressor support with norepinephrine was initiated to maintain mean arterial pressure above 65 mmHg. Despite fluid resuscitation, his condition remained tenuous, with persistent tachyarrhythmia (heart rate 140-150 bpm). The medical team prepared for further diagnostics, including repeat bedside ultrasound, a portable chest X-ray, and cardiology consultation. 
+
+The overall clinical picture suggests a primary cardiac pathology causing sudden deterioration, with current management focusing on stabilization, advanced airway control, pharmacological support, and planning for transfer to ICU for definitive cardiac evaluation and intervention. Immediate considerations include ongoing cardiac monitoring, addressing arrhythmia management, and ruling out other potential causes such as myocarditis, arrhythmic disorders, or structural abnormalities.
+
+emt:
+Received. Patient is stabilized with airway secured, vasopressors initiated. Continuing monitor vitals and cardiac rhythm. Preparing for transfer to ICU for further management and definitive diagnostics. Update once in ICU or if he shows signs of clinical improvement or deterioration.
+
+consult_surgeon:
+Given the clinical picture—acute collapse, right ventricular dilation on bedside ultrasound, persistent tachyarrhythmia, and rapid deterioration—this is most consistent with an acute cardiac event, potentially myocarditis with arrhythmic presentation or an underlying structural abnormality precipitating cardiogenic shock. The initial stabilization is ongoing, but definitive diagnosis and management now depend heavily on advanced cardiac evaluation. 
+
+I would prioritize transfer to the cardiac ICU immediately for continuous hemodynamic monitoring, serial echocardiography, and possibly emergent cardiac catheterization if indicated by evolving findings. In the meantime, ensure the patient remains hemodynamically supported, continue vasopressors, and keep cardiac medications ready if arrhythmias worsen. 
+
+Additionally, considering his age and presentation, myocarditis is high on the differential, so empiric anti-inflammatory or immunomodulatory therapy could be considered once advanced diagnostics confirm the etiology. But first, confirm stability for transfer and gather detailed imaging and labs.
+
+er_tech:
+Acknowledged. Transfer team is briefed and on standby. Continue to monitor vitals, cardiac rhythm, and hemodynamics closely. Keep IV access open and ensure all necessary medications and equipment are ready for transport. I’ll stay at bedside for ongoing assessment and to coordinate with cardiology during the transfer. Let's also ensure labs, including cardiac enzymes, are drawn promptly for further evaluation. I will update once he is en route or if there is any change in his condition.
+
+er_nurse:
+Thanks for the update. Keep a close eye on his vitals, especially his blood pressure, heart rate, and oxygenation. Continue continuous cardiac monitoring—watch for any arrhythmias or ischemic changes. Make sure his IV lines are patent and running; consider adding a second vasopressor if his MAP remains below 65 despite norepinephrine. 
+
+Given his persistent tachyarrhythmia, I’d want to see if we can get an ECG strip immediately post-intubation to analyze rhythm more precisely. Also, ensure his sedation is adequate to prevent stress on the heart but avoid oversedation, which could cause hypotension. 
+
+Let's prepare for possible escalation of his care—interventions like anti-arrhythmic medications if the tachyarrhythmia worsens, or additional support with inotropes if his cardiac output declines further. Keep me posted on his labs, especially troponin levels, and the results of the bedside ultrasound follow-up. Once he stabilizes, a formal echocardiogram and further cardiology assessment are critical.
+
+consult_surgeon:
+Understood. I’ll ensure continuous hemodynamic monitoring, keep his sedation adequate but balanced, and get a 12-lead ECG immediately after stabilization. Let's also prepare anti-arrhythmic agents in case the tachyarrhythmia worsens. The goal remains to stabilize him enough for transfer to the cardiac ICU where further diagnostics like formal echocardiography and possibly invasive studies can be performed. Keep me updated on any changes in his rhythm, vital signs, or labs — especially troponin and arterial blood gases. We may also consider adding an inotropic agent if his cardiac output continues to decline despite vasopressors.
+
+emt:
+Understood. We're closely monitoring his vitals, rhythm, and labs. Will obtain a 12-lead ECG now post-intubation and prepare anti-arrhythmic medications if indicated. Continue to keep his hemodynamics stable and prepare for transfer once he's maximally stabilized. I'll update as soon as there's any change or once he's en route.  
+Please keep a close eye on his cardiac output and blood pressure—adjust support as needed. We'll also ensure labs like troponin come back promptly to guide further management.
+
+er_physician:
+The transfer team has now safely moved the patient to the ICU. In the ICU, we’ll continue aggressive hemodynamic support, monitor for arrhythmia recurrence, and repeat bedside echocardiography to assess cardiac function. Given the clinical picture, we need to consider initiating high-dose corticosteroids or immunomodulatory therapy if myocarditis is suspected and confirmed through further tests. 
+
+Serial troponins are trending upward, confirming ongoing myocardial injury. We’ll also order cardiac MRI once stable to better characterize myocarditis versus other structural pathology. 
+
+Meanwhile, we must be prepared for potential escalation—such as temporary pacing if bradyarrhythmias develop, or advanced support like ECMO if hemodynamics continue to decline despite maximal medical therapy. Continuous cardiology input is essential, and any new arrhythmias or worsening hemodynamics will necessitate rapid intervention.
+
+summarizer:
+The patient's condition remains critically unstable following transfer to the ICU. He has been stabilized initially with airway management, vasopressor support, and close cardiac monitoring. Serial assessments show ongoing myocardial injury as evidenced by rising troponin levels and persistent tachyarrhythmia. Echocardiography in the ICU confirms severe right ventricular dilation with poor systolic function, consistent with a suspected myocarditic or inflammatory process. No evidence of intra-abdominal bleeding was noted on ultrasound, supporting a primary cardiac etiology rather than trauma.
+
+The management plan now includes ongoing hemodynamic optimization, with continued vasopressor support. Consideration is being given to initiating high-dose corticosteroids or immunomodulatory therapy should myocarditis be confirmed via further diagnostics such as cardiac MRI. Arrhythmia management protocols are in place, including readiness for anti-arrhythmic medications or temporary pacing if bradyarrhythmias develop.
+
+Additional supportive measures under consideration include escalation to advanced mechanical circulatory support (e.g., ECMO) if hemodynamics do not improve despite maximal pharmacologic therapy. Continuous cardiology consultation is ongoing, and plans for serial echocardiogram and cardiac MRI are underway. Close monitoring for any new arrhythmias, worsening cardiogenic shock, or signs of multi-organ dysfunction is maintained to guide further interventions.
+
+er_nurse:
+Thanks, everyone. Keep me updated on his vitals, labs, and any changes in rhythm or cardiac function. Make sure his sedation remains adequate but not excessive—probably midazolam and fentanyl to keep him comfortable but responsive enough for neurological assessment if needed. Continue the vasopressors and consider adding inotropes like milrinone or dobutamine if his cardiac output remains low, especially with such poor RV function.
+
+Be prepared to escalate support quickly—if his blood pressure drops further or he shows signs of worsening perfusion, we may need to initiate temporary pacing or prepare for emergent ECMO if medical management fails. Remember, we’re dealing with myocarditis likely, but keep an eye out for evolving cardiomyopathies or arrhythmic complications.
+
+Get serial labs—troponins, ABGs, electrolytes—and please ensure the cardiac MRI is scheduled as soon as his condition permits. Also, let's keep a close watch for any arrhythmias, and have anti-arrhythmic meds ready for infusion if needed. Good work so far—let’s stay vigilant.
+
+er_physician:
+The patient remains critically managed in the ICU. His vital signs are stable with continued vasopressor support and inotropes. Serial labs indicate persistently elevated troponins, and his ECG shows occasional runs of nonsustained ventricular arrhythmias, which are being closely monitored. The bedside echocardiogram confirms severely impaired right ventricular systolic function, raising suspicion for fulminant myocarditis.
+
+We have arranged for emergent cardiac MRI once he's hemodynamically stable enough to undergo imaging. Empiric high-dose corticosteroids have been initiated as part of the myocarditis protocol, pending further diagnostic confirmation. No signs of intra-abdominal bleeding or other extracardiac causes have been noted.
+
+The team remains prepared for rapid escalation: temporary pacing if bradyarrhythmias occur, or initiation of ECMO for cardiogenic shock refractory to medical therapy. Continuous cardiac monitoring is ongoing, with anti-arrhythmic medications on standby. We’re also maintaining neurological assessment and ensuring sedation levels balance comfort and responsiveness.
+
+The plan includes frequent reassessment of hemodynamics, electrolytes, and cardiac function, with particular focus on signs of recovery or deterioration. We’ll keep the cardiology and critical care teams informed of any changes, ensuring readiness for any emergent interventions.
+
+consult_surgeon:
+The patient’s course appears consistent with fulminant myocarditis, given the rapid onset of cardiac failure, severe RV dysfunction, and elevated cardiac enzymes. Our immediate priorities remain stabilization with inotropes and vasopressors, close rhythm monitoring, and preparing for advanced support like ECMO if he destabilizes further. The early initiation of corticosteroids aligns with current management protocols for suspected myocarditis, especially in fulminant cases.
+
+The upcoming cardiac MRI will be instrumental in confirming the diagnosis, and while aggressive medical therapy is ongoing, we should remain vigilant for arrhythmia escalation. We must also plan for potential pacing support if conduction abnormalities develop, and ensure all team members are ready for rapid escalation, including ECMO cannulation if necessary.
+
+Continuous reassessment of his hemodynamics and cardiac function will guide us in optimizing medical therapy and timing of definitive diagnostics. Neurologically, we should keep monitoring for any changes, especially if sedation is adjusted or if cerebral perfusion fluctuates.
+
+consult_surgeon:
+His clinical presentation and course are consistent with fulminant myocarditis, which explains the rapid decline and severe right ventricular failure. Given the persistent hemodynamic instability, ongoing arrhythmias, and elevated troponins, we need to stay prepared for escalation to mechanical circulatory support if the medical therapy isn’t enough. The initiation of corticosteroids appears appropriate—waiting for the MRI to help confirm, but empiric anti-inflammatory treatment is justified in such fulminant cases.
+
+We should also maintain vigilant rhythm monitoring, and if conduction disturbances or bradyarrhythmias develop, pacing must be readily available. The potential need for ECMO should be continuously reassessed, especially if despite maximal medical management his blood pressure or cardiac output worsens.
+
+The focus now is on ongoing stabilization, serial hemodynamic assessments, and prompt response to any deterioration. The coordination among cardiology, critical care, and surgical teams will be vital for rapid intervention if needed.
+
+er_nurse:
+Thanks, everyone, for the collaborative effort. We’ll keep a close eye on his hemodynamics, cardiac rhythm, and oxygenation status. Continue pacing readiness, especially if we notice any worsening conduction issues or bradyarrhythmias. Maintain the corticosteroids and monitor for any signs of improvement in RV function. 
+
+Remember, if his blood pressure drops further or signs of cardiogenic shock worsen despite inotropes and vasopressors, we need to escalate quickly to ECMO—stay prepared for emergent cannulation. Keep me updated on his labs, including troponin trends, arterial blood gases, and electrolytes, and reassess the need for additional therapies like immunoglobulins or other immunomodulatory agents per cardiology’s input.
+
+Make sure all team members are synchronized, and keep a plan ready for rapid intervention at any sign of deterioration. We’re in this for the long haul—his prognosis hinges on our vigilance and swift action.
+
+er_tech:
+Understood. Continue close monitoring of vitals, cardiac rhythm, and neurological status. Maintain readiness for ECMO initiation—ensure all equipment is prepped and team members are assigned for urgent cannulation if he deteriorates further. Keep me updated on labs, especially troponins, and watch for trends indicating improvement or worsening. Continue corticosteroids as planned, and consult cardiology about adding any adjunctive immunotherapies if appropriate. We'll reassess frequently and escalate quickly if needed. Keep him stable and alert for any changes.
+

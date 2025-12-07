@@ -1,0 +1,64 @@
+er_physician:
+Thank you. Please, provide the patient’s presenting complaints and any relevant history or vital signs. Let's quickly establish the priority areas.
+
+er_tech:
+Patient arrived alert but tachypneic, breathing around 28-30 per minute. Complains of sudden chest pain, sharp, radiating to the back. No recent trauma. BP is 150/90, HR 110, SpO2 92% on room air. No known allergies. History includes hypertension and hyperlipidemia. Vital signs stable but appears distressed. 
+I'll get an EKG and draw labs immediately, and prepare for transport to imaging if needed.
+
+er_nurse:
+Understood. Let's keep close eye on his vitals, especially noting any worsening hypoxia or hypotension. While we wait for labs and imaging, I'll ensure he's comfortable, perhaps administer supplemental oxygen to maintain saturation >94%, given his SpO2 is currently 92%. Also, let's assess for other signs of distress or neurological changes. Keep me posted on the EKG findings and labs as they come in.
+
+er_tech:
+EKG is completing now, should have results shortly. In the meantime, I’m preparing for possible imaging—CXR and bedside ultrasound if indicated, especially to look for aortic dissection or pneumothorax. Labs including troponins, D-dimer, and CBC are drawn and pending. Patient’s vitals remain stable but monitor closely for any deterioration. I'll also set up for IV access and prepare for possible fluid resuscitation if needed.
+
+summarizer:
+er_physician: Thank you for the update. Once the EKG results are available, please review for any ischemic changes or signs suggestive of other cardiac pathology. Given the chest pain radiating to the back and the concern for aortic dissection, we should prioritize the imaging findings, particularly the bedside ultrasound and chest X-ray, to guide further management. Continue close monitoring and be prepared to initiate IV fluids if signs of hemodynamic instability develop. Keep me updated on the lab results as well.
+
+consult_surgeon:
+Understood. I'll review the EKG immediately once it’s available and coordinate with imaging to get a FAST or bedside ultrasound to evaluate for pericardial effusion, aortic dissection, or any other thoracic pathology. Given the symptoms and risk factors, I’m highly suspicious of a thoracic aortic dissection. If the ultrasound suggests that or if the chest X-ray shows mediastinal widening, I will expedite the decision to activate the OR for definitive management, likely surgical repair. I’ll also keep a close eye on the pulse deficits and blood pressure in both arms, and prepare for rapid control of blood pressure with IV antihypertensives if dissection is suspected.  
+Please inform me immediately when labs and imaging are ready.
+
+consult_surgeon:
+The EKG just came back, revealing sinus tachycardia with no obvious ischemic changes. The bedside ultrasound shows a bifid aortic arch with some evidence of intimal flap suggestive of dissection. The chest X-ray is widened mediastinum, consistent with possible aortic dissection. I recommend we proceed with urgent blood pressure control—target systolic BP around 120 mmHg—using IV antihypertensives immediately. Also, prepare for a CTA of the chest, abdomen, and pelvis to confirm the extent of dissection.  
+Given these findings, I believe we must move swiftly to the operating room. Please get the OR team ready for emergent surgical repair. Do you want me to assist with anesthesia prep or any other pre-op protocols?
+
+summarizer:
+er_physician: Yes, please proceed with the anesthesia preparation and coordinate with the surgical team to expedite the transfer to the OR. Ensure that invasive blood pressure monitoring is established, and prepare IV antihypertensives such as labetalol or nicardipine to rapidly achieve the target systolic BP. Keep the patient under close hemodynamic monitoring during transfer. Let’s also ensure that preoperative labs are expedited and that consent is obtained, if possible under current circumstances. Stay alert for any changes in vitals or neurological status as we move forward.
+
+er_nurse:
+Understood. I'll notify anesthesia immediately to prepare for invasive BP monitoring and start on IV antihypertensives like labetalol. I'll also coordinate with the OR team to get the patient prepped and transferred swiftly, while keeping him as comfortable as possible and monitoring closely for any signs of deterioration. I'll expedite labs and make sure consent is obtained if feasible; otherwise, we'll proceed under emergency protocols. Keeping a close eye—any changes in conscious status or vitals, let me know right away.
+
+consult_surgeon:
+The patient has been quickly stabilized with IV labetalol, achieving a systolic BP of around 115 mmHg. Invasive monitoring is set up, and he's being prepared for rapid transport to the OR. The surgical team is on standby, fully briefed on the findings. I will go over the surgical plan once the CTA is completed, but at this point, urgent repair remains the priority.  
+Ensure the anesthesia induction proceeds smoothly, with continued monitoring of BP and neurological status. Keep me updated if there are any further changes.
+
+er_tech:
+Transport to CT suite is imminent; we’re securing the patient now. IV antihypertensives are holding, and invasive lines are in place for ongoing BP management. I’ll be escorting the patient and will update the team once the CTA is completed and we're ready for surgical transfer. Continued close monitoring in the meantime.
+
+er_tech:
+Patient on the move to imaging; invasive BP line is functioning, and continuous monitoring will be maintained during transit. Labs are expedited and on their way to the lab. CTA awaiting the image acquisition with surgical team prepped for immediate intervention post-confirmation. Keep monitoring vitals closely and prepare for rapid movement to OR once imaging confirms extent.
+
+er_nurse:
+Noted. I'll continue close monitoring here and prepare to assist with the handoff to the surgical team once we have the CTA results. Keep me updated if there are any changes in vitals or neurological status during transport. The priority is to maintain stability and ensure smooth transfer for definitive repair.
+
+er_physician:
+The CTA confirms an extensive type I aortic dissection extending from the ascending aorta into the arch and descending thoracic aorta. The surgical team is ready for emergent repair. Keep the patient sedated and maintain meticulous blood pressure control. Continue invasive monitoring and prepare for rapid anesthesia induction once the OR team is ready. Good work, everyone.
+
+er_physician:
+Let's proceed with anesthesia induction now. Ensure all monitors are functioning, invasive lines are secured, and vasodilators and antihypertensives are ready for titration during induction. Maintain strict hemodynamic control throughout the process. Prepare for rapid transfer to the operating room once induction is complete. Keep a close eye on neurological status and vitals, and inform me immediately of any instability.
+
+er_physician:
+The anesthesia team is now preparing for induction. Ensure that all invasive lines are functioning properly and that vasoactive medications are ready for titration to keep blood pressure within target range. Let's also confirm that temperature regulation and oxygen delivery are optimal during this phase. Once induction begins, continuous close monitoring is essential. Keep me updated on any changes in vitals or neurological status as we proceed.
+
+er_tech:
+Patient is now in the induction phase, with anesthesiology managing airway and invasives. BP is being closely titrated to maintain target systolic of around 120. Continuous monitoring ongoing—heart rate, invasive pressures, neurological status. Vasoactive agents are ready for rapid adjustment if needed. Everything proceeding smoothly; will update once induction is complete and transfer to OR ongoing.
+
+er_tech:
+Induction complete, vitals stable. Patient transferred to OR with ongoing invasive monitoring. Anesthesia maintaining hemodynamic stability, with blood pressure tightly controlled. Surgical team preparing for definitive repair of the dissection. Continual updates as the operation progresses.
+
+er_nurse:
+Good work. Please keep me informed of any intraoperative changes, especially blood pressure fluctuations or neurological status. Continue vigilant monitoring, and let me know when there are significant updates or if any complications arise during the repair. Our goal is to ensure a smooth surgical course and optimal outcome for the patient.
+
+er_nurse:
+Will do. Maintaining close surveillance on his vitals and neurological signs. I’ll notify immediately if there’s any significant fluctuation or concern. The surgical team is closely monitoring the procedure, and I’ll keep you updated as we receive new information. Thanks for your readiness to assist during the next phases.
+
