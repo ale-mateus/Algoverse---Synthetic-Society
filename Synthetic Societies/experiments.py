@@ -3,6 +3,9 @@ import re
 import numpy as np
 from collections import Counter
 import matplotlib.pyplot as plt
+from transformers import GPT2TokenizerFast
+
+tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
 
 def parse_convo(filepath):
     data = []
@@ -25,14 +28,24 @@ def parse_convo(filepath):
 def compute_metrics(convo):
     agent_counts = Counter([speaker for speaker, _ in convo])
     total_turns = len(convo)
-    dominance = {a: agent_counts[a] / total_turns for a in agent_counts}
-    messages = [msg for _, msg in convo]
-    repetition_ratio = len(messages) / len(set(messages))
-    final_present = any(re.search(r"^\s*FINAL\b", msg, re.I) for _, msg in convo)
+    turn_dominance = {a: agent_counts[a] / total_turns for a in agent_counts}
+
+    agent_token_counts = {}
+    total_tokens = 0
+    for speaker, message in convo:
+        num_tokens = len(tokenizer.encode(message))
+        total_tokens += num_tokens
+        agent_token_counts[speaker] = agent_token_counts.get(speaker, 0) + num_tokens
+
+    token_dominance = {a: agent_token_counts[a] / total_tokens for a in agent_token_counts}
+
+    conversation_length = total_tokens
+
     return {
-        "dominance": dominance,
-        "repetition_ratio": repetition_ratio,
-        "final_present": final_present
+        "turn_dominance": turn_dominance,
+        "token_dominance": token_dominance,
+        "conversation_length": conversation_length,
+        "token_counts": agent_token_counts
     }
 
 def plot_metric(metric_dict, title, ylabel, savepath):
@@ -47,14 +60,15 @@ def plot_metric(metric_dict, title, ylabel, savepath):
     plt.close()
 
 def save_metrics_txt(metrics, save_folder):
-    os.makedirs(save_folder, exist_ok=True)
     filepath = os.path.join(save_folder, "metrics.txt")
     with open(filepath, "w") as f:
-        f.write("Dominance:\n")
-        for agent, val in metrics["dominance"].items():
-            f.write(f"  {agent}: {val}\n")
-        f.write(f"Repetition ratio: {metrics['repetition_ratio']}\n")
-        f.write(f"Final present: {metrics['final_present']}\n")
+        f.write("Turn Dominance:\n")
+        for agent, val in metrics["turn_dominance"].items():
+            f.write(f"  {agent}: {val:.4f}\n")
+        f.write("\nToken Dominance:\n")
+        for agent, val in metrics["token_dominance"].items():
+            f.write(f"  {agent}: {val:.4f}\n")
+        f.write(f"\nConversation Length (tokens): {metrics['conversation_length']}\n")
 
 def analyze_convo(filepath):
     convo = parse_convo(filepath)
@@ -65,20 +79,25 @@ def analyze_convo(filepath):
     save_folder = os.path.join("metrics", convo_name)
     os.makedirs(save_folder, exist_ok=True)
 
-    print("Dominance:", metrics["dominance"])
-    print("Repetition ratio:", metrics["repetition_ratio"])
-    print("Final present:", metrics["final_present"])
+    print("Turn Dominance:", metrics["turn_dominance"])
+    print("Token Dominance:", metrics["token_dominance"])
+    print("Conversation Length:", metrics["conversation_length"])
 
-    if metrics["dominance"]:
-        plot_metric(
-            metrics["dominance"],
-            "Agent Dominance",
-            "Proportion",
-            os.path.join(save_folder, "dominance_plot.png")
-        )
+    plot_metric(
+        metrics["turn_dominance"],
+        "Turn Dominance",
+        "Proportion",
+        os.path.join(save_folder, "turn_dominance.png")
+    )
+
+    plot_metric(
+        metrics["token_dominance"],
+        "Token Dominance",
+        "Proportion",
+        os.path.join(save_folder, "token_dominance.png")
+    )
 
     save_metrics_txt(metrics, save_folder)
-
     return metrics
 
 if __name__ == "__main__":
