@@ -1,0 +1,35 @@
+Turn Dominance:
+  agent1: 0.0968
+  agent_final: 0.1935
+  agent2: 0.1613
+  agent3: 0.1935
+  def verify_password(username, password): 0.0323
+  def authenticate(username, password): 0.0323
+  def check_permission(user, action): 0.0323
+  class Task: 0.0323
+  def add_history(self, action, user): 0.0323
+  def create_task(task_id, description, created_by): 0.0323
+  def assign_task(task_id, developer_username, assigned_by): 0.0323
+  def update_task_status(task_id, status, user): 0.0323
+  def view_task(task_id): 0.0323
+  def test_authenticate(): 0.0323
+  def test_create_and_assign(): 0.0323
+
+Token Dominance:
+  agent1: 0.0810
+  agent_final: 0.1524
+  agent2: 0.1156
+  agent3: 0.2152
+  def verify_password(username, password): 0.0202
+  def authenticate(username, password): 0.0218
+  def check_permission(user, action): 0.0645
+  class Task: 0.0799
+  def add_history(self, action, user): 0.0298
+  def create_task(task_id, description, created_by): 0.0170
+  def assign_task(task_id, developer_username, assigned_by): 0.0432
+  def update_task_status(task_id, status, user): 0.0591
+  def view_task(task_id): 0.0064
+  def test_authenticate(): 0.0346
+  def test_create_and_assign(): 0.0591
+
+Conversation Length (tokens): 1877

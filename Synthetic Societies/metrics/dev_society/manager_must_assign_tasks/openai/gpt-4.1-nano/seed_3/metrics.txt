@@ -1,0 +1,17 @@
+Turn Dominance:
+  architect: 0.1364
+  engineer: 0.2273
+  analyst: 0.3182
+  summarizer: 0.2273
+  function isValidTransition(currentState, targetState): 0.0455
+  function getRoleAllowedForTransition(currentState, targetState): 0.0455
+
+Token Dominance:
+  architect: 0.1120
+  engineer: 0.2464
+  analyst: 0.3472
+  summarizer: 0.2495
+  function isValidTransition(currentState, targetState): 0.0205
+  function getRoleAllowedForTransition(currentState, targetState): 0.0243
+
+Conversation Length (tokens): 1607

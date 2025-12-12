@@ -1,0 +1,21 @@
+Turn Dominance:
+  engineer: 0.2917
+  summarizer: 0.3333
+  architect: 0.0833
+  def contribute(self, role): 0.0417
+  def is_final(self): 0.0417
+  def status(self): 0.0417
+  # Example usage: 0.0417
+  analyst: 0.1250
+
+Token Dominance:
+  engineer: 0.2221
+  summarizer: 0.3518
+  architect: 0.1027
+  def contribute(self, role): 0.0655
+  def is_final(self): 0.0073
+  def status(self): 0.0787
+  # Example usage: 0.0335
+  analyst: 0.1384
+
+Conversation Length (tokens): 1373

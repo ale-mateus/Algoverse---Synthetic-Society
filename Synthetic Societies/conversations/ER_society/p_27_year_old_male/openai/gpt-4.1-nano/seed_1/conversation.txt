@@ -1,0 +1,102 @@
+consult_surgeon:
+Given this presentation, the patient is in hypovolemic shock likely due to massive bleeding or a significant internal issue. Immediate priorities are airway management, rapid volume resuscitation, and urgent imaging. I'll start by ensuring airway patency—considering possible airway compromise due to his altered mental status. Establish at least two large-bore IVs and begin aggressive fluid resuscitation with isotonic crystalloids. Simultaneously, I’ll prepare for rapid transport to the OR if surgical hemorrhage is suspected, and order focused assessment—likely a FAST ultrasound to evaluate for free intraperitoneal fluid—and arrange for blood transfusion as needed. We must act swiftly to identify and control ongoing bleeding and prevent continued deterioration.
+
+er_physician:
+Understood. I'll proceed with securing the airway—here's the plan: given his altered mental status and hemodynamic instability, I will perform airway management immediately, possibly including endotracheal intubation to protect the airway and ensure adequate ventilation. I'll also start with two large-bore IVs, preferably 16-gauge, and administer initial isotonic IV fluids—starting with 1-2 liters of normal saline or lactated Ringer’s solution while monitoring his response. 
+
+Next, I will order a bedside FAST ultrasonography to look for free fluid in the abdomen, pericardial effusion, or other clues. Simultaneously, I will contact surgical team to prepare for urgent operative intervention if needed and order type-specific blood work, cross-matching for transfusion. Continuous monitoring of vital signs is critical—consider placing arterial and central lines for continuous blood pressure and central venous pressure assessment. 
+
+I'll also check for potential sources of bleeding—looking at recent history of injuries, any signs of trauma, or possible internal causes like ruptured ectopic pregnancy in women, but in this case, since he's male—trauma is a likely culprit. 
+
+Once stabilized, I will reevaluate and coordinate further imaging or labs as indicated.
+
+emt:
+Roger, copy all. EMT is en route to scene. Patient is a 27-year-old male collapsing at gym, pale, diaphoretic, minimally responsive. Vitals: BP 82/50, HR 142, RR 28, SpO2 91%. Initiating rapid assessment: airway compromised—will perform intubation on scene if necessary. Large-bore IVs being established—aiming for 16-gauge. Fluids—initial bolus of 2 liters isotonic crystalloid in progress. Applying O2 via non-rebreather at 15 L/min. Scene indicates potential hypovolemic shock, suspect bleeding or internal injury. Will perform bedside FAST ultrasound during transport and prepare for quick transport to OR. Will update as scene progresses. Over.
+
+er_nurse:
+Understood. The patient already has significant signs of hypoperfusion and shock. I'll monitor vitals closely, prepare for quick transition to definitive care. Once in the ED, I'll reassess his airway—if not already secured—and verify that the airway remains patent. I'll ensure the IV access is adequate, and if he needs further volume, I'll prepare for additional fluids or transfusion based on his response and bloodwork. 
+
+I'll request immediate labs—CBC, type and cross for blood, serum lactate, and coagulation profile. Let's also get a bedside EKG to evaluate for any underlying arrhythmias secondary to shock or electrolyte imbalance. I'll ensure continuous cardiac and pulse oximetry monitoring.  
+
+Given his ongoing instability, I will advocate strongly for a quick bedside ultrasound to assess for free fluid, especially in the abdomen—if positive, prepare for emergent surgical consultation. I'll also consider whether additional vasoactive support like norepinephrine might be necessary if he remains hypotensive despite fluid resuscitation, but only after initial volume bolus. 
+
+Let's keep vacillating his recent activity—possible causes include trauma, internal bleeding, or other internal injuries. He needs rapid stabilization; I will stay with him to monitor his response and coordinate further urgent interventions.
+
+consult_surgeon:
+The patient remains hypotensive despite initial fluid resuscitation. Once he’s intubated and ventilated, I’ll reassess with repeat focused assessment—likely a second FAST if feasible—to evaluate for ongoing bleeding. Given his unresponsiveness, low blood pressure, and tachycardia, I am strongly considering emergent preparation for operative intervention. We need to prepare for an immediate OR—blood products should be on standby, ideally type-specific crossmatched blood, given the potential for ongoing hemorrhage. Continuous monitoring is critical; I will also place a central line to guide vasopressor therapy if needed after volume resuscitation, butI'd prioritize stabilizing with fluids and blood first. 
+
+The rapid response now should focus on controlling the bleeding source—if there's abdominal free fluid, this is likely intra-abdominal bleeding requiring emergent laparotomy. The team needs to be ready to activate surgical services immediately. I am also considering a possible chest tube if there are signs of thoracic bleeding or hemothorax, but abdominal bleeding is more probable.  
+
+We need to keep him as hemodynamically stable as possible while preparing for intervention.
+
+er_tech:
+ER Tech: Copy all. Initiating rapid sequence intubation now—giving sedative and paralytic agents to secure airway. Starting second large-bore IV with 16-gauge. Administering additional 500 mL bolus as recommended, pushing towards 2 liters total IV fluids. Ready to transport to CT suite if stable after stabilization, but priority remains to get him to the OR immediately if signs of ongoing bleeding persist. Will obtain bedside EKG now and prepare for FAST re-evaluation during transport. Blood products on standby. Will update once he's intubated and stabilized.
+
+er_nurse:
+Good, keep monitoring his airway closely during and after intubation. Once secured, verify placement with bedside auscultation and capnography. Continue with frequent reassessment of vitals—keep a close eye on blood pressure, HR, SpO2, and maintain adequate sedation for comfort and stability.  
+
+Let's confirm repeat FAST now—if there's ongoing free fluid, we need to go to the OR immediately. Meanwhile, keep preparing for transfusion; crossmatched blood should arrive shortly. Make sure to set up arterial line to monitor challenges in real time, especially if we need vasopressors later.  
+
+I'll also verbally update the surgical team to be on standby; he needs urgent surgical intervention if active intra-abdominal bleeding is confirmed. Continue fluid resuscitation and consider vasopressors if BP doesn't improve after volume expansion.  
+
+Keep him warm and avoid interruptions in monitoring. We need him stable before transport—if no significant change, we'll prepare for emergent surgery now.
+
+er_physician:
+Understood. The patient is intubated and sedated, with airway secured. Vessel access is established with a 16-gauge IV and arterial line in place. Initial fluid resuscitation has been administered, and transfusion of crossmatched blood is prepared and ready to proceed as needed. I'll reassess vitals now—BP remains low, about 85/55, HR is still elevated at 140, SpO2 is stable at 95% with supplemental oxygen. I will perform a repeat FAST now to determine if there’s ongoing free fluid.
+
+In the meantime, I’ll check the placement of the endotracheal tube—auscultation confirms bilateral breath sounds, and capnography shows appropriate end-tidal CO2. I will also obtain a bedside EKG to evaluate for any cardiac arrhythmias or signs of ischemia, considering the tachycardia and shock.
+
+Once the FAST results are in, I will discuss the next steps with the surgical team. If free fluid is present, indicating intra-abdominal hemorrhage, we will need to expedite him to the operating room for definitive control of bleeding. If the FAST is negative but suspicion remains high, further imaging or surgical consultation may still be warranted.
+
+I will continue vigilant hemodynamic management, including vasopressor support if blood pressure remains refractory after volume resuscitation. Throughout this, maintaining normothermia and preventing hypoglycemia are also priorities. I'll also prepare for any additional labs or imaging based on his evolving clinical picture.
+
+emt:
+Copy all. Patient still hemodynamically unstable—BP at 85/55, HR 140, SpO2 95% on supplemental O2. FAST exam completed; probe shows free fluid in the abdomen consistent with intra-abdominal bleeding. No signs of pericardial effusion or thoracic pathology noted thus far. Plan remains to expedite to operating room for emergent laparotomy. Blood products continue to be crossmatched and ready for transfusion. Vasopressors considered if hypotension persists despite ongoing volume resuscitation. Continuous monitor for stabilization. Will notify OR team now to prepare for urgent surgical intervention. Over.
+
+emt:
+Roger, acknowledging all. Patient remains hypotensive at 85/55 despite initial fluids; HR stable at 140, SpO2 at 95% on supplemental oxygen. FAST confirms free intra-abdominal fluid suggestive of ongoing hemorrhage. Blood products are prepared and on standby. The surgical team has been alerted for immediate operative intervention. Continue close monitoring of vitals, maintain IV access, and prepare for rapid transport. Will keep you updated if condition changes. Over.
+
+consult_surgeon:
+The patient remains hypotensive, but his condition is somewhat stabilized after resuscitation. Given the FAST indicating ongoing intra-abdominal bleeding, we need to expedite him to the OR immediately. I will coordinate with anesthesia for rapid induction and with surgical teams to ensure the OR is prepared for emergent laparotomy. Blood products should be transfused promptly to replace ongoing losses and improve perfusion. Our focus now is definitive hemorrhage control—surgical exploration is the next step. I'll also keep a close eye on his hemodynamics and prepare for any intraoperative needs. Resuscitation should continue en route, and I will ensure all equipment and personnel are ready for immediate surgical intervention upon arrival.
+
+er_physician:
+Understood. The patient is being rapidly prepared for transport to the operating room. We'll ensure all blood products, IV access, and monitoring are secured during transit. I'll continue to administer transfusions en route as needed, guided by his vitals and ongoing losses. The anesthesia team is ready to take over the airway upon arrival, and surgical staff are standing by for immediate exploration. 
+
+I'll keep a close watch on his vital signs, ensuring adequate perfusion during the move. Once in the OR, definitive control of the bleeding source will be our priority. I'll stay in close communication with the team and be prepared to assist with resuscitation and stabilization in the operative setting. Our immediate goal remains rapid hemorrhage control to prevent further deterioration.
+
+er_tech:
+ER Tech: Patient secured on gurney, all monitors attached, IV fluids and blood products transfusing en route. Rapid transport underway, patient remains hypotensive but slightly improving with fluids and transfusions. Will maintain vigilance for any sudden deterioration. Have the OR prepped and surgical team ready for immediate intervention upon arrival. Continuing to monitor vitals continuously. Will update once we arrive in the OR.
+
+summarizer:
+The clinical course involves a 27-year-old male presenting with hypovolemic shock following collapse during exertion. Initial assessment revealed hypotension (BP 82/50), tachycardia (HR 142), tachypnea (RR 28), SpO₂ 91%, pale, diaphoretic, minimally responsive status. Immediate management prioritized airway securing via intubation, large-bore IV access (16-gauge), aggressive isotonic fluid resuscitation, and bedside FAST ultrasound, which demonstrated free intra-abdominal fluid indicative of ongoing hemorrhage. Blood product availability was confirmed, and transfusions initiated.
+
+Throughout transport and stabilization, continuous vital monitoring was maintained, with emphasis on revising fluid status and preparing for thoracic or abdominal operative intervention as indicated. Notably, repeat FAST confirmed persistent intra-abdominal bleeding without evidence of pericardial effusion or thoracic pathology. Despite volume resuscitation and blood transfusions, hypotension persisted (BP ~85/55), requiring vasopressor consideration.
+
+The surgical team devised a plan for emergent laparotomy to achieve definitive hemorrhage control, given the ongoing bleeding source. The patient was rapidly prepared and transported to the operating room with continuous monitoring, securing hemodynamic stability en route via transfusions and vasopressor support as needed.
+
+Final plan involves urgent surgical exploration for hemorrhage control, continued transfusion support, and vigilant intraoperative monitoring. Postoperative stabilization will depend on surgical findings and resuscitative response.
+
+er_physician:
+The patient is now in the operating room, anesthesia has secured his airway, and preparations are complete for emergent laparotomy. I'll remain available for any further updates on intraoperative findings or needs. Our immediate focus is to identify and control the source of hemorrhage, replace ongoing losses with blood products, and stabilize his hemodynamics for optimal surgical outcomes. Continuous communication with the surgical and anesthesia teams is critical at this stage. I'll stay vigilant for any signs of deterioration and be ready to assist as needed.
+
+er_tech:
+ER Tech: Patient is now prepped and being transferred to the OR. Blood products are en route with him; labs are ready for intraoperative crossmatching updates. Monitor vitals continuously; I’ll keep track of expected blood loss and prepare for rapid transfusion if needed. Keep me updated on surgical findings and any hemodynamic changes. Will stand by for further orders from surgical team.
+
+er_physician:
+The patient is now in the OR, where anesthesia is carefully managing his airway and hemodynamics. The surgical team has initiated exploration for intra-abdominal bleeding. We are prepared for rapid transfusion of blood products as needed, guided by intraoperative findings. Continuous monitoring remains crucial, and I will stay in close contact with the surgical team, ready to assist with any stabilization or emergent interventions required. Our immediate goal is to identify and control the bleeding source efficiently to improve his chances of recovery.
+
+er_nurse:
+Understood. Keep a close eye on his intraoperative vitals—continuous arterial line monitoring is essential to guide transfusions and vasopressor use. Make sure blood products are being administered rapidly, and coordinate with anesthesia for any emergent adjustments. Once the surgical team identifies and controls the bleed, we’ll need to reassess his resuscitation status carefully—continue fluids, monitor urine output, and consider adjuncts like vasopressors if hypotension persists. 
+
+Post-op, he will require close ICU monitoring for ongoing stability and correction of coagulopathy, acidosis, and hypothermia. Keep me updated on intraoperative findings and any urgent needs. We need to ensure he remains as stable as possible during this critical phase.
+
+er_tech:
+ER Tech: Patient is now in the OR, surgeon has started exploration. Vitals are being closely monitored via arterial line; blood products are being transfused rapidly. Blood loss appears significant, but definitive bleeding source is still being identified. Transfusion line is active, and anesthesia is adjusting vasopressors as needed to maintain perfusion. Room is ready to receive intraoperative updates and assist with any emergent interventions. Continue vigilant monitoring and keep me posted on any changes or needs.
+
+consult_surgeon:
+The surgical team reports ongoing intra-abdominal bleeding, but they've localized the bleeding site and are working to control it. Given the volume loss, we are continuing massive transfusion protocol—balanced transfusion with packed RBCs, plasma, and platelets. Hemodynamics are being maintained with vasopressors, but we need to watch for potential coagulopathy or ongoing bleeding despite surgical control efforts.  
+
+I'll coordinate with anesthesia to ensure stable perfusion, and we will monitor labs closely—coagulation profile, serum lactate, pH, and potassium—after the hemorrhage is controlled. Once the bleeding is secured and hemodynamics stabilize, we'll shift focus to post-op care, including ICU transfer, continued resuscitation, and monitoring for organ dysfunction.  
+
+Keep me updated on any intraoperative surprises or if additional support is needed.
+

@@ -1,0 +1,60 @@
+summarizer:
+Understood. I'll wait for both the developer and tester to contribute before indicating that the discussion is complete. Let me know when they're ready to share their input.
+
+architect:
+Got it. I'll keep an eye out for their contributions. Just let me know when both have shared their input so we can move forward.
+
+analyst:
+Understood. Once both the developer and tester have provided their input, I'll confirm that we're ready to proceed.
+
+architect:
+Sounds good. I'll stay on standby until we've heard from both the developer and tester. Just give me a signal when they're ready.
+
+architect:
+Whenever the developer and tester are prepared, I'm here to listen. Just let me know when they're ready to contribute.
+
+engineer:
+I'm almost ready to share my updates once I've finished testing, but I want to ensure everything is aligned with the design specs first. Hopefully, the developer's code is ready for review soon.
+
+summarizer:
+Thanks for the update, engineer. Hopefully, the developer's work is ready soon so we can coordinate the next steps. Keep me posted once you've completed testing and you're ready to share your findings.
+
+analyst:
+Absolutely. Once the developer signals they're ready, and the tester confirms their input, we can move forward. Just let me know when both are prepared.
+
+summarizer:
+Will do. I'll keep an ear out for their readiness. Once both the developer and tester are prepared, we can proceed with the next steps.
+
+engineer:
+I've finalized my tests and am ready to discuss the results. Just waiting on the developer to do the same so we can synchronize our review.
+
+engineer:
+Great, it sounds like the testing phase is nearly complete on both ends. Once the developer confirms their readiness, we can move forward with the review and next steps.
+
+architect:
+Thanks for the update. Developer, let us know when your code is ready so we can synchronize and proceed. Tester, I believe you're also prepared on your side?
+
+analyst:
+Yes, I am ready to contribute. Please let me know when the developer has signaled they're ready, so we can proceed.
+
+architect:
+Developer, when your code is ready, please confirm so we can move forward. Tester, I believe you're also set on your end?
+
+engineer:
+I'll wait for the developer to give the green light. Once they do, we can coordinate with the tester and move on to the next phase smoothly.
+
+summarizer:
+Developer, please confirm when your code is ready so we can coordinate with the tester and proceed to the next phase. Tester, once the developer signals readiness, you'll be able to provide your input, and we can move forward smoothly.
+
+analyst:
+I'm ready to contribute as soon as the developer confirms they're prepared. Just let me know when that happens, so we can proceed.
+
+engineer:
+I'll wait for the developer to signal their readiness. Once that happens, we can bring in the tester and start moving forward with the review and next steps.
+
+engineer:
+Understood. I'll stay attentive for the developer's confirmation. Once they give the signal, I'll coordinate with the tester and we can proceed.
+
+engineer:
+I'll monitor for the developer's confirmation. Once they signal that they're ready, I'll facilitate the next steps and coordinate with the tester accordingly.
+

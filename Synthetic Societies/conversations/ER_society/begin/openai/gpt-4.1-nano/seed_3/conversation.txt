@@ -1,64 +1,74 @@
-er_physician:
-Thank you. Please, provide the patient’s presenting complaints and any relevant history or vital signs. Let's quickly establish the priority areas.
+summarizer:
+The patient is a 68-year-old male presenting with a 3-day history of chest pain described as pressure radiating to the left arm, associated with mild shortness of breath and diaphoresis. Past medical history includes hypertension and hyperlipidemia. No recent trauma or similar previous episodes reported.
 
-er_tech:
-Patient arrived alert but tachypneic, breathing around 28-30 per minute. Complains of sudden chest pain, sharp, radiating to the back. No recent trauma. BP is 150/90, HR 110, SpO2 92% on room air. No known allergies. History includes hypertension and hyperlipidemia. Vital signs stable but appears distressed. 
-I'll get an EKG and draw labs immediately, and prepare for transport to imaging if needed.
+Vital signs on arrival: BP 150/90 mmHg, HR 95 bpm, RR 20/min, Temp 98.6°F, SpO₂ 96% on room air.
+
+Physical examination reveals and findings are unremarkable except for mild diaphoresis; cardiovascular exam shows normal heart sounds without murmurs.
+
+Initial workup includes an ECG showing ST-segment elevations in leads II, III, and aVF, suggestive of an inferior STEMI. Cardiac enzymes are pending but likely elevated, given the presentation and ECG findings.
+
+Given the presentation, immediate management includes oxygen therapy, aspirin 325 mg oral, nitroglycerin as needed for pain, and a nigro-resistance to morphine. Preparations for urgent reperfusion therapy are underway: the patient is being prepared for emergent percutaneous coronary intervention (PCI).
+
+Discussion points included the time-sensitivity of revascularization, the decision to initiate thrombolytic therapy if PCI is unavailable within the recommended window, and monitoring for complications such as arrhythmias or hypotension.
+
+The team agreed that transfer for PCI is preferred, given the patient's stability and the available resources. Monitoring protocols and post-reperfusion care plans were also outlined, including continuous cardiac monitoring and assessment for signs of reinfarction or heart failure.
+
+The case emphasizes prompt recognition and treatment of acute myocardial infarction to reduce morbidity and mortality.
 
 er_nurse:
-Understood. Let's keep close eye on his vitals, especially noting any worsening hypoxia or hypotension. While we wait for labs and imaging, I'll ensure he's comfortable, perhaps administer supplemental oxygen to maintain saturation >94%, given his SpO2 is currently 92%. Also, let's assess for other signs of distress or neurological changes. Keep me posted on the EKG findings and labs as they come in.
-
-er_tech:
-EKG is completing now, should have results shortly. In the meantime, I’m preparing for possible imaging—CXR and bedside ultrasound if indicated, especially to look for aortic dissection or pneumothorax. Labs including troponins, D-dimer, and CBC are drawn and pending. Patient’s vitals remain stable but monitor closely for any deterioration. I'll also set up for IV access and prepare for possible fluid resuscitation if needed.
+Given the ECG findings and clinical presentation, we're on the right track with urgent PCI transfer. While preparing for that, let’s ensure the patient remains comfortable and hemodynamically stable. Are his vitals still stable? Any signs of hypotension, arrhythmias, or worsening chest pain?
 
 summarizer:
-er_physician: Thank you for the update. Once the EKG results are available, please review for any ischemic changes or signs suggestive of other cardiac pathology. Given the chest pain radiating to the back and the concern for aortic dissection, we should prioritize the imaging findings, particularly the bedside ultrasound and chest X-ray, to guide further management. Continue close monitoring and be prepared to initiate IV fluids if signs of hemodynamic instability develop. Keep me updated on the lab results as well.
+The patient's vital signs remain within acceptable ranges, with BP at 150/90 mmHg, HR at 95 bpm, and SpO₂ at 96%. He reports mild chest discomfort that is manageable with current analgesics. Continuous cardiac monitoring shows no arrhythmias at this time. No additional signs of hypotension or clinical deterioration are observed. The team will continue to monitor closely during preparation for urgent PCI, ensuring optimal comfort and stability.
 
 consult_surgeon:
-Understood. I'll review the EKG immediately once it’s available and coordinate with imaging to get a FAST or bedside ultrasound to evaluate for pericardial effusion, aortic dissection, or any other thoracic pathology. Given the symptoms and risk factors, I’m highly suspicious of a thoracic aortic dissection. If the ultrasound suggests that or if the chest X-ray shows mediastinal widening, I will expedite the decision to activate the OR for definitive management, likely surgical repair. I’ll also keep a close eye on the pulse deficits and blood pressure in both arms, and prepare for rapid control of blood pressure with IV antihypertensives if dissection is suspected.  
-Please inform me immediately when labs and imaging are ready.
+Given his current stability, our priority remains rapid transfer to the cath lab for PCI. Let's ensure continuous hemodynamic monitoring and keep him comfortable. We should also verify that large bore IV access is in place and review any allergies or contraindications for antithrombotic therapy. Once in the cath lab, the interventional team will assess coronary anatomy urgently. Keep me updated on any changes in his condition.
+
+er_nurse:
+Absolutely. The patient has two large bore IV lines established, and I’ve confirmed no known allergies, especially to aspirin or contrast agents. His vitals remain stable, but I’ll be vigilant for any signs of deterioration during transport. We’ll also keep him comfortable with analgesics as needed, and ensure continuous cardiac and vital sign monitoring en route. Do you want me to prepare any specific medications or additional equipment for the transfer?
 
 consult_surgeon:
-The EKG just came back, revealing sinus tachycardia with no obvious ischemic changes. The bedside ultrasound shows a bifid aortic arch with some evidence of intimal flap suggestive of dissection. The chest X-ray is widened mediastinum, consistent with possible aortic dissection. I recommend we proceed with urgent blood pressure control—target systolic BP around 120 mmHg—using IV antihypertensives immediately. Also, prepare for a CTA of the chest, abdomen, and pelvis to confirm the extent of dissection.  
-Given these findings, I believe we must move swiftly to the operating room. Please get the OR team ready for emergent surgical repair. Do you want me to assist with anesthesia prep or any other pre-op protocols?
+Make sure the transport monitor is ready with continuous ECG, pulse oximetry, and blood pressure monitoring. Have supplemental oxygen available in case his saturation drops, and ensure rescue medications like atropine and vasopressors are accessible in the cath lab setting if needed. Double-check the readiness of the IV lines for any urgent medication administration during transfer. Keep him under close observation, and update me immediately if there are any changes.
+
+emt:
+EMT: Copy that, we’ll ensure all monitoring and emergency medications are set up and ready for transfer. Patient remains stable with no signs of deterioration at this time. Continuous ECG and vitals are being maintained, and supplemental oxygen is in place. We’ll keep a close eye and notify you immediately if any changes occur. Preparing for transport to the cath lab now.
 
 summarizer:
-er_physician: Yes, please proceed with the anesthesia preparation and coordinate with the surgical team to expedite the transfer to the OR. Ensure that invasive blood pressure monitoring is established, and prepare IV antihypertensives such as labetalol or nicardipine to rapidly achieve the target systolic BP. Keep the patient under close hemodynamic monitoring during transfer. Let’s also ensure that preoperative labs are expedited and that consent is obtained, if possible under current circumstances. Stay alert for any changes in vitals or neurological status as we move forward.
+Once in the cath lab, the interventional team can proceed with coronary angiography to determine the extent of blockage. The patient should be closely monitored for any arrhythmias or hemodynamic instability during the procedure. It is essential to have access to resuscitation equipment and medications on hand in case of an emergency. The team will review the angiography results promptly to determine the appropriate intervention, whether it be PCI or additional therapies. The patient’s response and stability will guide further management, and post-procedure monitoring will focus on detecting potential complications such as reinfarction, heart failure, or bleeding.
 
 er_nurse:
-Understood. I'll notify anesthesia immediately to prepare for invasive BP monitoring and start on IV antihypertensives like labetalol. I'll also coordinate with the OR team to get the patient prepped and transferred swiftly, while keeping him as comfortable as possible and monitoring closely for any signs of deterioration. I'll expedite labs and make sure consent is obtained if feasible; otherwise, we'll proceed under emergency protocols. Keeping a close eye—any changes in conscious status or vitals, let me know right away.
+The transfer appears smooth, and the patient remains stable throughout. Once in the cath lab, I’ll ensure continuous ECG and vitals monitoring. I’ll also confirm that rescue medications and resuscitation equipment are ready, just in case. During the angiography, I’ll keep an eye out for any signs of arrhythmias or hemodynamic changes. Post-procedure, I’ll monitor for potential complications like reinfarction, bleeding, or heart failure. Please keep me updated if there are any urgent developments or changes in his condition.
+
+emt:
+EMT: Understood, we'll maintain close communication. The patient is en route and stable at this time. We’ll continue monitoring vital signs and ECG during transit, and ensure all necessary equipment and medications are prepared at the destination. Please inform us immediately if his condition changes.
+
+er_tech:
+er_nurse: Copy that. We'll keep a close eye on him during transit. I'll double-check that all IV lines are secure and monitor for any changes. Once patient arrives at the cath lab, I'll update you immediately. Keep us posted if there are any fluctuations or new symptoms.
+
+er_tech:
+embt: Understood, we’ll monitor vitals and ECG continuously. The patient remains stable now, no signs of distress. We'll notify you immediately if anything changes during transit. Make sure the IV lines are secure and ready for any urgent medication needs upon arrival.
+
+er_tech:
+EMT: Copy that, we’ll keep monitoring vital signs en route. IV lines are secure, and all medications are ready if needed. We'll notify you immediately if his condition anything changes. The patient looks good for now, stable during transit.
+
+er_physician:
+ER Physician: Thank you for the updates. Let's ensure continuous monitoring throughout transport, and prepare for immediate intervention upon arrival if needed. Keep assessing for any signs of instability—hypotension, arrhythmias, or worsening chest pain—and communicate any concerns promptly. Once in the cath lab, the team will take over. Stay vigilant.
+
+er_physician:
+ER Nurse: Understood, Doctor. We'll maintain meticulous observation during transport and alert you immediately if anything shifts. The patient remains stable, and all preparations are in place for a smooth transfer to the cath lab. We’ll keep the team updated with any changes en route.
+
+er_tech:
+em_t: Copy that. Monitoring continues with no issues during transit. The patient remains stable, and all equipment is ready for immediate action if needed. We'll keep a close watch and notify you right away of any changes. The patient looks good for now.
+
+er_nurse:
+Thank you all for the thorough coordination. Once in the cath lab, I’ll ensure continuous monitoring and prepare for any emergent interventions if needed. Please keep me updated with any changes during the procedure or once the intervention is complete. The patient is stable at this point, but vigilance remains key until he’s confirmed stable post-reperfusion.
+
+er_nurse:
+Copy that, nurse. Your vigilance is appreciated. Keep us updated on his status once the procedure starts and once it's completed. We'll be ready to assist with post-op care and monitoring for any complications. Stay alert for any changes, and don’t hesitate to escalate if needed.
+
+er_physician:
+ER Nurse: Will do, thank you. We'll keep a close eye on him during and after the procedure. Please keep us posted on any developments from the cath lab. We'll be ready for the next steps in his care as soon as we receive updates.
 
 consult_surgeon:
-The patient has been quickly stabilized with IV labetalol, achieving a systolic BP of around 115 mmHg. Invasive monitoring is set up, and he's being prepared for rapid transport to the OR. The surgical team is on standby, fully briefed on the findings. I will go over the surgical plan once the CTA is completed, but at this point, urgent repair remains the priority.  
-Ensure the anesthesia induction proceeds smoothly, with continued monitoring of BP and neurological status. Keep me updated if there are any further changes.
-
-er_tech:
-Transport to CT suite is imminent; we’re securing the patient now. IV antihypertensives are holding, and invasive lines are in place for ongoing BP management. I’ll be escorting the patient and will update the team once the CTA is completed and we're ready for surgical transfer. Continued close monitoring in the meantime.
-
-er_tech:
-Patient on the move to imaging; invasive BP line is functioning, and continuous monitoring will be maintained during transit. Labs are expedited and on their way to the lab. CTA awaiting the image acquisition with surgical team prepped for immediate intervention post-confirmation. Keep monitoring vitals closely and prepare for rapid movement to OR once imaging confirms extent.
-
-er_nurse:
-Noted. I'll continue close monitoring here and prepare to assist with the handoff to the surgical team once we have the CTA results. Keep me updated if there are any changes in vitals or neurological status during transport. The priority is to maintain stability and ensure smooth transfer for definitive repair.
-
-er_physician:
-The CTA confirms an extensive type I aortic dissection extending from the ascending aorta into the arch and descending thoracic aorta. The surgical team is ready for emergent repair. Keep the patient sedated and maintain meticulous blood pressure control. Continue invasive monitoring and prepare for rapid anesthesia induction once the OR team is ready. Good work, everyone.
-
-er_physician:
-Let's proceed with anesthesia induction now. Ensure all monitors are functioning, invasive lines are secured, and vasodilators and antihypertensives are ready for titration during induction. Maintain strict hemodynamic control throughout the process. Prepare for rapid transfer to the operating room once induction is complete. Keep a close eye on neurological status and vitals, and inform me immediately of any instability.
-
-er_physician:
-The anesthesia team is now preparing for induction. Ensure that all invasive lines are functioning properly and that vasoactive medications are ready for titration to keep blood pressure within target range. Let's also confirm that temperature regulation and oxygen delivery are optimal during this phase. Once induction begins, continuous close monitoring is essential. Keep me updated on any changes in vitals or neurological status as we proceed.
-
-er_tech:
-Patient is now in the induction phase, with anesthesiology managing airway and invasives. BP is being closely titrated to maintain target systolic of around 120. Continuous monitoring ongoing—heart rate, invasive pressures, neurological status. Vasoactive agents are ready for rapid adjustment if needed. Everything proceeding smoothly; will update once induction is complete and transfer to OR ongoing.
-
-er_tech:
-Induction complete, vitals stable. Patient transferred to OR with ongoing invasive monitoring. Anesthesia maintaining hemodynamic stability, with blood pressure tightly controlled. Surgical team preparing for definitive repair of the dissection. Continual updates as the operation progresses.
-
-er_nurse:
-Good work. Please keep me informed of any intraoperative changes, especially blood pressure fluctuations or neurological status. Continue vigilant monitoring, and let me know when there are significant updates or if any complications arise during the repair. Our goal is to ensure a smooth surgical course and optimal outcome for the patient.
-
-er_nurse:
-Will do. Maintaining close surveillance on his vitals and neurological signs. I’ll notify immediately if there’s any significant fluctuation or concern. The surgical team is closely monitoring the procedure, and I’ll keep you updated as we receive new information. Thanks for your readiness to assist during the next phases.
+The patient has now arrived in the cath lab and is being prepared for angiography. Ensure the area is sterile, and all team members are ready with appropriate equipment. Let’s focus on maintaining his hemodynamic stability and continuous monitoring. Once the angiogram is complete, we’ll need to act quickly based on the findings—whether that’s PCI, stenting, or other measures. Keep me updated on any changes or concerns during the procedure.
 

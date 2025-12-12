@@ -10,12 +10,19 @@ def load_prompts(path="prompts.txt"):
 def make_prompt_label(prompt):
     first_line = prompt.strip().split("\n")[0]
     words = re.findall(r"[A-Za-z0-9]+", first_line.lower())
+    stopwords = {
+        "the", "a", "an", "and", "or", "in", "on", "of", "for",
+        "to", "is", "are", "what", "why", "how", "which", "with"
+    }
+    words = [w for w in words if w not in stopwords]
     if not words:
-        return "prompt"
-    label = "_".join(words[:8])
-    if not label[0].isalpha():
-        label = "p_" + label
-    return label[:60]
+        base = "prompt"
+    else:
+        base = "_".join(words[:4])
+    if not base[0].isalpha():
+        base = "p_" + base
+    return base[:50]
+
 
 json_dir = "/Users/prishapriyadashini/Downloads/Algoverse---Synthetic-Society/Synthetic Societies/jsonFiles"
 

@@ -1,0 +1,19 @@
+Turn Dominance:
+  agent_final: 0.2174
+  agent1: 0.2609
+  agent2: 0.2174
+  For the manager: 0.0435
+  For the developer: 0.0435
+  For the tester: 0.0435
+  agent3: 0.1739
+
+Token Dominance:
+  agent_final: 0.2114
+  agent1: 0.3042
+  agent2: 0.1931
+  For the manager: 0.0312
+  For the developer: 0.0379
+  For the tester: 0.0339
+  agent3: 0.1883
+
+Conversation Length (tokens): 1476
