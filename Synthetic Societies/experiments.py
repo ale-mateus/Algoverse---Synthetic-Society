@@ -3,17 +3,6 @@ import re
 import numpy as np
 from collections import Counter
 import matplotlib.pyplot as plt
-from openai import OpenAI
-
-client = OpenAI()
-
-def get_embedding(text):
-    text = text.replace("\n", " ")
-    emb = client.embeddings.create(
-        model="text-embedding-3-small",
-        input=text
-    )
-    return np.array(emb.data[0].embedding)
 
 def parse_convo(filepath):
     data = []
@@ -33,32 +22,15 @@ def parse_convo(filepath):
             data.append((speaker, message))
     return data
 
-def compute_semantic_drift(messages):
-    if len(messages) < 2:
-        return 0.0
-    embeddings = [get_embedding(m) for m in messages]
-    drifts = []
-    for i in range(1, len(embeddings)):
-        v1 = embeddings[i - 1]
-        v2 = embeddings[i]
-        cos_sim = np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2) + 1e-10)
-        drifts.append(1 - cos_sim)
-    return float(np.mean(drifts))
-
 def compute_metrics(convo):
     agent_counts = Counter([speaker for speaker, _ in convo])
     total_turns = len(convo)
     dominance = {a: agent_counts[a] / total_turns for a in agent_counts}
-    probs = np.array(list(dominance.values()))
-    entropy = -(probs * np.log2(probs + 1e-10)).sum()
     messages = [msg for _, msg in convo]
     repetition_ratio = len(messages) / len(set(messages))
     final_present = any(re.search(r"^\s*FINAL\b", msg, re.I) for _, msg in convo)
-    semantic_drift = compute_semantic_drift(messages)
     return {
         "dominance": dominance,
-        "entropy": float(entropy),
-        "semantic_drift": float(semantic_drift),
         "repetition_ratio": repetition_ratio,
         "final_present": final_present
     }
@@ -81,8 +53,6 @@ def save_metrics_txt(metrics, save_folder):
         f.write("Dominance:\n")
         for agent, val in metrics["dominance"].items():
             f.write(f"  {agent}: {val}\n")
-        f.write(f"\nEntropy: {metrics['entropy']}\n")
-        f.write(f"Semantic drift: {metrics['semantic_drift']}\n")
         f.write(f"Repetition ratio: {metrics['repetition_ratio']}\n")
         f.write(f"Final present: {metrics['final_present']}\n")
 
@@ -96,8 +66,6 @@ def analyze_convo(filepath):
     os.makedirs(save_folder, exist_ok=True)
 
     print("Dominance:", metrics["dominance"])
-    print("Entropy:", metrics["entropy"])
-    print("Semantic drift:", metrics["semantic_drift"])
     print("Repetition ratio:", metrics["repetition_ratio"])
     print("Final present:", metrics["final_present"])
 
