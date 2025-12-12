@@ -11,7 +11,7 @@ def get_model_client(model_name: str, provider: str):
             model_info=None
         )
 
-    elif provider == "openrouter":
+   # elif provider == "openrouter":
         dummy_model_info = {
             "vision": False,
             "function_calling": False,

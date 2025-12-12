@@ -23,7 +23,7 @@ societies = ["dev_society.json", "ER_society.json", "noRoles.json"]
 
 jobs = [
     ("openai", "gpt-4.1-nano"),
-    ("openrouter", "qwen/qwen-2.5-72b-instruct")
+    #("openrouter", "qwen/qwen-2.5-72b-instruct")
 ]
 
 seeds = [1, 2, 3]
