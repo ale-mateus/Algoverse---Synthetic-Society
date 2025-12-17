@@ -1,0 +1,19 @@
+{
+  "id": "86cbb5dd-0c58-451f-9793-368eb1d22858",
+  "question": "Objective assessment of the refractive state of the eye is termed -",
+  "options": {
+    "A": "Retinoscopy",
+    "B": "Gonioscopy",
+    "C": "Ophthalmoscopy",
+    "D": "Keratoscopy"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nObjective assessment of the refractive state of the eye is termed -\n\nOptions:\nA: Retinoscopy\nB: Gonioscopy\nC: Ophthalmoscopy\nD: Keratoscopy\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

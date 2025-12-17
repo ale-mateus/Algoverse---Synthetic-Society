@@ -1,0 +1,21 @@
+{
+  "id": "cf2685d9-87f2-472a-9646-ffc04281bb6b",
+  "question": "All of the following increases the risk of Digoxin toxicity except",
+  "options": {
+    "A": "Hypercalcemia",
+    "B": "Renal failure",
+    "C": "Hypomagnesimia",
+    "D": "Hyperkalemia"
+  },
+  "gold": 4,
+  "choice_type": "multi",
+  "pred_raw": "D",
+  "pred_parsed": [
+    "D"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nAll of the following increases the risk of Digoxin toxicity except\n\nOptions:\nA: Hypercalcemia\nB: Renal failure\nC: Hypomagnesimia\nD: Hyperkalemia\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

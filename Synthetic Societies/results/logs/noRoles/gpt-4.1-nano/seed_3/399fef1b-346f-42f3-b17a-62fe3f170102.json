@@ -1,0 +1,19 @@
+{
+  "id": "399fef1b-346f-42f3-b17a-62fe3f170102",
+  "question": "This is an interventricular foramen through which lateral ventricles open into 3rd ventricle:",
+  "options": {
+    "A": "Foramen monro.",
+    "B": "Foramen of magendi.",
+    "C": "Foramen of luschka.",
+    "D": "Foramen caecum."
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nThis is an interventricular foramen through which lateral ventricles open into 3rd ventricle:\n\nOptions:\nA: Foramen monro.\nB: Foramen of magendi.\nC: Foramen of luschka.\nD: Foramen caecum.\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

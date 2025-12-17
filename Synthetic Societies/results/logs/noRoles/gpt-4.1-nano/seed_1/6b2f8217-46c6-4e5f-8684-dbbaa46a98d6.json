@@ -1,0 +1,19 @@
+{
+  "id": "6b2f8217-46c6-4e5f-8684-dbbaa46a98d6",
+  "question": "Acquire IgA deficiency may occur in ?",
+  "options": {
+    "A": "Severe Congenital toxoplasmosis",
+    "B": "Severe Measles infection",
+    "C": "Severe Brucellosis",
+    "D": "Severe Leptospirosis"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nAcquire IgA deficiency may occur in ?\n\nOptions:\nA: Severe Congenital toxoplasmosis\nB: Severe Measles infection\nC: Severe Brucellosis\nD: Severe Leptospirosis\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "4dc169df-940d-4d51-b1fe-81a4182b02af",
+  "question": "Minimum score in Glassgow Coma Scale: March 2007",
+  "options": {
+    "A": "0",
+    "B": "1",
+    "C": "2",
+    "D": "3"
+  },
+  "gold": 4,
+  "choice_type": "single",
+  "pred_raw": "D",
+  "pred_parsed": "D",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nMinimum score in Glassgow Coma Scale: March 2007\n\nOptions:\nA: 0\nB: 1\nC: 2\nD: 3\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

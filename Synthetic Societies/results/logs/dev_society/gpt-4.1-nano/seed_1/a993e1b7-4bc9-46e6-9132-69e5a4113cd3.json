@@ -1,0 +1,21 @@
+{
+  "id": "a993e1b7-4bc9-46e6-9132-69e5a4113cd3",
+  "question": "True about vaccum extraction of fetus :\n(A)Can be used in non dilated cervix\n(B)Can be used in incompletely dilated cervix\n(C)Used in Face presentation\n(D)Applied 3cm post, to Anterior fontanel\n(E)Applied 3cm ant. to posterior fontanel",
+  "options": {
+    "A": "AB",
+    "B": "BE",
+    "C": "CA",
+    "D": "DB"
+  },
+  "gold": 2,
+  "choice_type": "multi",
+  "pred_raw": "C",
+  "pred_parsed": [
+    "C"
+  ],
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nTrue about vaccum extraction of fetus :\n(A)Can be used in non dilated cervix\n(B)Can be used in incompletely dilated cervix\n(C)Used in Face presentation\n(D)Applied 3cm post, to Anterior fontanel\n(E)Applied 3cm ant. to posterior fontanel\n\nOptions:\nA: AB\nB: BE\nC: CA\nD: DB\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "C"
+  ]
+}

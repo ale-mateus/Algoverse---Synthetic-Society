@@ -1,0 +1,19 @@
+{
+  "id": "fe2903f5-7f35-48e5-8d8a-210380d3a1ac",
+  "question": "The double decidual sac sign (DDSS) is the best method for ultrasound diagnosis of",
+  "options": {
+    "A": "Monoamniotic Dichorionic twins",
+    "B": "Diamniotic dichorionic twins",
+    "C": "Ectopic pregnancy",
+    "D": "Normal pregnancy"
+  },
+  "gold": 4,
+  "choice_type": "single",
+  "pred_raw": "D",
+  "pred_parsed": "D",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nThe double decidual sac sign (DDSS) is the best method for ultrasound diagnosis of\n\nOptions:\nA: Monoamniotic Dichorionic twins\nB: Diamniotic dichorionic twins\nC: Ectopic pregnancy\nD: Normal pregnancy\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

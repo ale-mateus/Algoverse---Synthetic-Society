@@ -1,0 +1,19 @@
+{
+  "id": "55f09ba5-b573-4eff-ae60-253ca6db14de",
+  "question": "Loading dose of a drug depends upon:",
+  "options": {
+    "A": "Volume of distribution",
+    "B": "Clearance",
+    "C": "Half life",
+    "D": "Duration of action"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nLoading dose of a drug depends upon:\n\nOptions:\nA: Volume of distribution\nB: Clearance\nC: Half life\nD: Duration of action\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

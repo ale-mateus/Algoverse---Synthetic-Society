@@ -1,0 +1,19 @@
+{
+  "id": "e424e96c-acae-4aa8-b7f8-ed5233943427",
+  "question": "Spermatogenesis takes place in",
+  "options": {
+    "A": "Epididymis",
+    "B": "Seminiferous tubule",
+    "C": "Ductus deferens",
+    "D": "Prostate"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nSpermatogenesis takes place in\n\nOptions:\nA: Epididymis\nB: Seminiferous tubule\nC: Ductus deferens\nD: Prostate\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

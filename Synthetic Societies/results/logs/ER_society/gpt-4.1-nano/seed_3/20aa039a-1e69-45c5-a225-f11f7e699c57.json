@@ -1,0 +1,21 @@
+{
+  "id": "20aa039a-1e69-45c5-a225-f11f7e699c57",
+  "question": "Malaria ?",
+  "options": {
+    "A": "Propagative",
+    "B": "Cyclopropagative",
+    "C": "Cyclodevelopmental",
+    "D": "None of the above"
+  },
+  "gold": 2,
+  "choice_type": "multi",
+  "pred_raw": "A",
+  "pred_parsed": [
+    "A"
+  ],
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nMalaria ?\n\nOptions:\nA: Propagative\nB: Cyclopropagative\nC: Cyclodevelopmental\nD: None of the above\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

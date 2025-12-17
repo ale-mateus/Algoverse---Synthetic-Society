@@ -1,0 +1,19 @@
+{
+  "id": "fc04b645-1376-4492-a8de-b99234d392b9",
+  "question": "First drug to be started in Sheehan's syndrome is ?",
+  "options": {
+    "A": "Gonadotropins",
+    "B": "Oestrogen",
+    "C": "Thyroxine",
+    "D": "Corticosteroids"
+  },
+  "gold": 4,
+  "choice_type": "single",
+  "pred_raw": "D",
+  "pred_parsed": "D",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nFirst drug to be started in Sheehan's syndrome is ?\n\nOptions:\nA: Gonadotropins\nB: Oestrogen\nC: Thyroxine\nD: Corticosteroids\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

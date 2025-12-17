@@ -1,0 +1,21 @@
+{
+  "id": "9d5a1736-ef69-4611-87cd-3f1817103828",
+  "question": "All the following familial syndromes are associated with development of pheochromocytoma except:",
+  "options": {
+    "A": "Sturge-Weber syndrome.",
+    "B": "Von Recklinghausen disease.",
+    "C": "MEN Type II.",
+    "D": "Prader-Willi syndrome."
+  },
+  "gold": 4,
+  "choice_type": "multi",
+  "pred_raw": "A",
+  "pred_parsed": [
+    "A"
+  ],
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nAll the following familial syndromes are associated with development of pheochromocytoma except:\n\nOptions:\nA: Sturge-Weber syndrome.\nB: Von Recklinghausen disease.\nC: MEN Type II.\nD: Prader-Willi syndrome.\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

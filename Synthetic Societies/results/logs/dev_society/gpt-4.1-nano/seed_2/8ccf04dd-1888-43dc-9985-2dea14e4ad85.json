@@ -1,0 +1,19 @@
+{
+  "id": "8ccf04dd-1888-43dc-9985-2dea14e4ad85",
+  "question": "Salivary centers are located in",
+  "options": {
+    "A": "Spinal cord",
+    "B": "Medulla",
+    "C": "Hypothalamus",
+    "D": "Cerebellum"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nSalivary centers are located in\n\nOptions:\nA: Spinal cord\nB: Medulla\nC: Hypothalamus\nD: Cerebellum\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

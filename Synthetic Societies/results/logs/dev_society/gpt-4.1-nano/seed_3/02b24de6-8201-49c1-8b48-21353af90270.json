@@ -1,0 +1,21 @@
+{
+  "id": "02b24de6-8201-49c1-8b48-21353af90270",
+  "question": "Twin pregnancy, but due to two different men cause is ?",
+  "options": {
+    "A": "Superfactation",
+    "B": "Superfecundation",
+    "C": "Both of the above",
+    "D": "Not a realistic situation"
+  },
+  "gold": 3,
+  "choice_type": "multi",
+  "pred_raw": "B",
+  "pred_parsed": [
+    "B"
+  ],
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nTwin pregnancy, but due to two different men cause is ?\n\nOptions:\nA: Superfactation\nB: Superfecundation\nC: Both of the above\nD: Not a realistic situation\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "135abdc5-56ba-4a87-8d7e-7eb11e115fb0",
+  "question": "Components separation technique in hernia helps by:",
+  "options": {
+    "A": "Lesser infection",
+    "B": "Decrease suture line tension",
+    "C": "Lower recurrence",
+    "D": "None of the above"
+  },
+  "gold": 2,
+  "choice_type": "multi",
+  "pred_raw": "B",
+  "pred_parsed": [
+    "B"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nComponents separation technique in hernia helps by:\n\nOptions:\nA: Lesser infection\nB: Decrease suture line tension\nC: Lower recurrence\nD: None of the above\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

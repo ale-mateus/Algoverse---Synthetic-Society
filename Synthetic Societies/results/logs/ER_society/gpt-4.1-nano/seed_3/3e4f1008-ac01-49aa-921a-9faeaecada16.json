@@ -1,0 +1,19 @@
+{
+  "id": "3e4f1008-ac01-49aa-921a-9faeaecada16",
+  "question": "The protective titre of antitoxin to diphtheria following vaccination is",
+  "options": {
+    "A": "0.01 IU/ml",
+    "B": "0.05 IU/ml",
+    "C": "0.1 IU/ml",
+    "D": "0.5 IU/ml"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "C",
+  "pred_parsed": "C",
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nThe protective titre of antitoxin to diphtheria following vaccination is\n\nOptions:\nA: 0.01 IU/ml\nB: 0.05 IU/ml\nC: 0.1 IU/ml\nD: 0.5 IU/ml\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "C"
+  ]
+}

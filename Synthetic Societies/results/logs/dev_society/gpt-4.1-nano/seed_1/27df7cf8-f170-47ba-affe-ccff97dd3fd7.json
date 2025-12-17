@@ -1,0 +1,19 @@
+{
+  "id": "27df7cf8-f170-47ba-affe-ccff97dd3fd7",
+  "question": "The microsomal enzyme involved in the metabolism of omeprazole is",
+  "options": {
+    "A": "CYP 2A",
+    "B": "CYP 2C19",
+    "C": "CYP 2C8",
+    "D": "CYP 2B"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nThe microsomal enzyme involved in the metabolism of omeprazole is\n\nOptions:\nA: CYP 2A\nB: CYP 2C19\nC: CYP 2C8\nD: CYP 2B\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

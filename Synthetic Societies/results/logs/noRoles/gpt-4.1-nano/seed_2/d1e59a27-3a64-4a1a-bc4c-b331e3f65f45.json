@@ -1,0 +1,19 @@
+{
+  "id": "d1e59a27-3a64-4a1a-bc4c-b331e3f65f45",
+  "question": "Vestibular evoked myogenic potential detects lesion of",
+  "options": {
+    "A": "Cochlear Nerve",
+    "B": "Facial Nerve",
+    "C": "Inferior Vestibular Nerve",
+    "D": "Inflammatory Myopathy"
+  },
+  "gold": 3,
+  "choice_type": "single",
+  "pred_raw": "C",
+  "pred_parsed": "C",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nVestibular evoked myogenic potential detects lesion of\n\nOptions:\nA: Cochlear Nerve\nB: Facial Nerve\nC: Inferior Vestibular Nerve\nD: Inflammatory Myopathy\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "C"
+  ]
+}

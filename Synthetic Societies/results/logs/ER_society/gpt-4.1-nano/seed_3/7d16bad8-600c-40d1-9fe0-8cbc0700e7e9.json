@@ -1,0 +1,19 @@
+{
+  "id": "7d16bad8-600c-40d1-9fe0-8cbc0700e7e9",
+  "question": "Injury to the median nerve occurs frequently when following artery is used for taking an ABG sample:",
+  "options": {
+    "A": "Radial artery",
+    "B": "Brachial artery",
+    "C": "External carotid artery",
+    "D": "Femoral artery"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nInjury to the median nerve occurs frequently when following artery is used for taking an ABG sample:\n\nOptions:\nA: Radial artery\nB: Brachial artery\nC: External carotid artery\nD: Femoral artery\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

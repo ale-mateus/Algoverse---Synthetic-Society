@@ -1,0 +1,19 @@
+{
+  "id": "93996803-5c46-40ac-85aa-c12a3ba55d2f",
+  "question": "Which one of the following helps in generating oxygen burst in the neurophils ?",
+  "options": {
+    "A": "NADPH oxidase",
+    "B": "Sod (superoxide dismutase)",
+    "C": "Catalase",
+    "D": "Glutathione peroxidose"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nWhich one of the following helps in generating oxygen burst in the neurophils ?\n\nOptions:\nA: NADPH oxidase\nB: Sod (superoxide dismutase)\nC: Catalase\nD: Glutathione peroxidose\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

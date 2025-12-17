@@ -1,0 +1,21 @@
+{
+  "id": "40d2d3de-6e0d-4fe4-9a2b-9003c8d45c6f",
+  "question": "Which of the following is true regarding essential medicines",
+  "options": {
+    "A": "Drugs for emergency conditions",
+    "B": "Drugs for serious disorders",
+    "C": "Drugs to satisfy priority needs of the populations",
+    "D": "Newer orphan drugs"
+  },
+  "gold": 3,
+  "choice_type": "multi",
+  "pred_raw": "C",
+  "pred_parsed": [
+    "C"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nWhich of the following is true regarding essential medicines\n\nOptions:\nA: Drugs for emergency conditions\nB: Drugs for serious disorders\nC: Drugs to satisfy priority needs of the populations\nD: Newer orphan drugs\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "C"
+  ]
+}

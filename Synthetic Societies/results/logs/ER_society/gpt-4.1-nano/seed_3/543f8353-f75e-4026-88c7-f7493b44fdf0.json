@@ -1,0 +1,21 @@
+{
+  "id": "543f8353-f75e-4026-88c7-f7493b44fdf0",
+  "question": "Masticatory space constitutes the following spaces except:",
+  "options": {
+    "A": "Pterygomandibular space",
+    "B": "Submassetric space.",
+    "C": "Submandibular space.",
+    "D": "Temporal space"
+  },
+  "gold": 3,
+  "choice_type": "multi",
+  "pred_raw": "D",
+  "pred_parsed": [
+    "D"
+  ],
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nMasticatory space constitutes the following spaces except:\n\nOptions:\nA: Pterygomandibular space\nB: Submassetric space.\nC: Submandibular space.\nD: Temporal space\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

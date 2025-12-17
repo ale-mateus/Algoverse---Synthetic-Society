@@ -1,0 +1,19 @@
+{
+  "id": "e6d0b8ca-d278-4f47-8b7e-ae2c9ee0ae3c",
+  "question": "Lucid interval is seen in -a) Extra dural haemorrhageb) Intra dural haemorrhagec) Intra cerebral haemorrhaged) Subarachnoid haemorrhage",
+  "options": {
+    "A": "ab",
+    "B": "a",
+    "C": "ad",
+    "D": "bc"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nLucid interval is seen in -a) Extra dural haemorrhageb) Intra dural haemorrhagec) Intra cerebral haemorrhaged) Subarachnoid haemorrhage\n\nOptions:\nA: ab\nB: a\nC: ad\nD: bc\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

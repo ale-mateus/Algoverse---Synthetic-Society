@@ -1,0 +1,19 @@
+{
+  "id": "d803ccc9-f699-4064-aa21-c55a612e2e03",
+  "question": "NOT a feature of Neurofibromatosis-1: September2012",
+  "options": {
+    "A": "Ash leaf spots",
+    "B": "Family history",
+    "C": "Optic glioma",
+    "D": "Axillary freckle"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nNOT a feature of Neurofibromatosis-1: September2012\n\nOptions:\nA: Ash leaf spots\nB: Family history\nC: Optic glioma\nD: Axillary freckle\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ac26ff20-ddb6-4bc6-be08-095c43c329ab",
+  "question": "The Hemoglobin A1c level indicates the patient's level of glycemic control during the previous",
+  "options": {
+    "A": "1-2 months",
+    "B": "2-3 months",
+    "C": "3-4 months",
+    "D": "4-5 months"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nThe Hemoglobin A1c level indicates the patient's level of glycemic control during the previous\n\nOptions:\nA: 1-2 months\nB: 2-3 months\nC: 3-4 months\nD: 4-5 months\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

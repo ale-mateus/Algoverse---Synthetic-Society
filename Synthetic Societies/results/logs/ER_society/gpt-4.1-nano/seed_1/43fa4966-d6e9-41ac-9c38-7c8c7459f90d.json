@@ -1,0 +1,19 @@
+{
+  "id": "43fa4966-d6e9-41ac-9c38-7c8c7459f90d",
+  "question": "Half- life of radium 226:",
+  "options": {
+    "A": "15.9 years",
+    "B": "159 years",
+    "C": "1620 years",
+    "D": "15900 years"
+  },
+  "gold": 3,
+  "choice_type": "single",
+  "pred_raw": "C",
+  "pred_parsed": "C",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nHalf- life of radium 226:\n\nOptions:\nA: 15.9 years\nB: 159 years\nC: 1620 years\nD: 15900 years\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "C"
+  ]
+}

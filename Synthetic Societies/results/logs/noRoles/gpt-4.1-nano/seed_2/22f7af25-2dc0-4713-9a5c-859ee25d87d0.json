@@ -1,0 +1,19 @@
+{
+  "id": "22f7af25-2dc0-4713-9a5c-859ee25d87d0",
+  "question": "Which of the following best describes a patient with a classical migraine?",
+  "options": {
+    "A": "A unilateral headache with unilateral visual loss and muscle aches",
+    "B": "Left a retro-orbital headache with rhinorrhoea and red eye",
+    "C": "Visual deficit that persists after cessation of a unilateral headache",
+    "D": "Pulsating unilateral headache worsened with the movements of head"
+  },
+  "gold": 4,
+  "choice_type": "single",
+  "pred_raw": "D",
+  "pred_parsed": "D",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nWhich of the following best describes a patient with a classical migraine?\n\nOptions:\nA: A unilateral headache with unilateral visual loss and muscle aches\nB: Left a retro-orbital headache with rhinorrhoea and red eye\nC: Visual deficit that persists after cessation of a unilateral headache\nD: Pulsating unilateral headache worsened with the movements of head\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "111e771e-f00d-4056-a982-757d4bd44ab3",
+  "question": "A 65-year-old man has experienced worsening fatigue for the past 5 months. On physical examination, he is afebrile and has a pulse of 91/min, respirations of 18/min, and blood pressure of 105/60 mm Hg. There is no organomegaly. A stool sample is positive for occult blood. Laboratory findings include hemoglobin of 5.9 g/dL, hematocrit of 18.3%, MCV of 99 mm3, platelet count of 250,000/ mm3, and WBC count of 7800/ mm3. The reticulocyte concentration is 3.9%. No fibrin split products are detected, and direct and indirect Coombs test results are negative. A bone marrow biopsy specimen shows marked erythroid hyperplasia. Which of the following conditions best explains these findings?",
+  "options": {
+    "A": "Aplastic anemia",
+    "B": "Autoimmune hemolytic anemia",
+    "C": "Chronic blood loss",
+    "D": "Iron deficiency anemia"
+  },
+  "gold": 3,
+  "choice_type": "single",
+  "pred_raw": "C",
+  "pred_parsed": "C",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nA 65-year-old man has experienced worsening fatigue for the past 5 months. On physical examination, he is afebrile and has a pulse of 91/min, respirations of 18/min, and blood pressure of 105/60 mm Hg. There is no organomegaly. A stool sample is positive for occult blood. Laboratory findings include hemoglobin of 5.9 g/dL, hematocrit of 18.3%, MCV of 99 mm3, platelet count of 250,000/ mm3, and WBC count of 7800/ mm3. The reticulocyte concentration is 3.9%. No fibrin split products are detected, and direct and indirect Coombs test results are negative. A bone marrow biopsy specimen shows marked erythroid hyperplasia. Which of the following conditions best explains these findings?\n\nOptions:\nA: Aplastic anemia\nB: Autoimmune hemolytic anemia\nC: Chronic blood loss\nD: Iron deficiency anemia\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "C"
+  ]
+}

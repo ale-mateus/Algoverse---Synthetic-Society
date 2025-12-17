@@ -1,0 +1,19 @@
+{
+  "id": "96452419-6636-48c7-a6d0-e1d684b1cbf4",
+  "question": "Causes of iron deficiency anemia are-a) CRFb) Young malec) Celiac sprued) Hook worme) Carcinoma cecum",
+  "options": {
+    "A": "bce",
+    "B": "acde",
+    "C": "abcd",
+    "D": "abde"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nCauses of iron deficiency anemia are-a) CRFb) Young malec) Celiac sprued) Hook worme) Carcinoma cecum\n\nOptions:\nA: bce\nB: acde\nC: abcd\nD: abde\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

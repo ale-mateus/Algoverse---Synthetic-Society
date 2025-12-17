@@ -1,0 +1,19 @@
+{
+  "id": "e4bbfa85-da02-4377-8c47-5ffb72d2d54b",
+  "question": "Respiratory rate in a 2 month old, to label it tachypnea is \u2013",
+  "options": {
+    "A": "40",
+    "B": "50",
+    "C": "60",
+    "D": "70"
+  },
+  "gold": 3,
+  "choice_type": "single",
+  "pred_raw": "C",
+  "pred_parsed": "C",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nRespiratory rate in a 2 month old, to label it tachypnea is \u2013\n\nOptions:\nA: 40\nB: 50\nC: 60\nD: 70\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "C"
+  ]
+}

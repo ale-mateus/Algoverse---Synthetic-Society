@@ -1,0 +1,21 @@
+{
+  "id": "57a1dd04-026e-4e56-9691-b49d80e35b69",
+  "question": "True stereopsis is perceived due to the following-",
+  "options": {
+    "A": "Overlay of contours",
+    "B": "Motion parallax",
+    "C": "Bi- nasal disparity",
+    "D": "Linear perspective"
+  },
+  "gold": 3,
+  "choice_type": "multi",
+  "pred_raw": "C",
+  "pred_parsed": [
+    "C"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nTrue stereopsis is perceived due to the following-\n\nOptions:\nA: Overlay of contours\nB: Motion parallax\nC: Bi- nasal disparity\nD: Linear perspective\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "C"
+  ]
+}

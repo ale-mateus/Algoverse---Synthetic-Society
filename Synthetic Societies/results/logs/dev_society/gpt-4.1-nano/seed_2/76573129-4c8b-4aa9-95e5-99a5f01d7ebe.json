@@ -1,0 +1,21 @@
+{
+  "id": "76573129-4c8b-4aa9-95e5-99a5f01d7ebe",
+  "question": "A patient gives hideg recurrent oral ulcers. The ulcers are small with a yellow floor surrounded by an erythematous halo on lips. He also has multiple, tender nodules on shin. The probable diagnosis is",
+  "options": {
+    "A": "Pemphigus vulgaris",
+    "B": "Bechet's syndrome",
+    "C": "Herpes Labialis",
+    "D": "Fixed drug eruption"
+  },
+  "gold": 2,
+  "choice_type": "multi",
+  "pred_raw": "B",
+  "pred_parsed": [
+    "B"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nA patient gives hideg recurrent oral ulcers. The ulcers are small with a yellow floor surrounded by an erythematous halo on lips. He also has multiple, tender nodules on shin. The probable diagnosis is\n\nOptions:\nA: Pemphigus vulgaris\nB: Bechet's syndrome\nC: Herpes Labialis\nD: Fixed drug eruption\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

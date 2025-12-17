@@ -1,0 +1,19 @@
+{
+  "id": "7d244172-0717-4e98-b91b-028c5bb4abe0",
+  "question": "What is the normal size of an optic disc in diameter?",
+  "options": {
+    "A": "0.5 mm",
+    "B": "1.5 mm",
+    "C": "5.5 mm",
+    "D": "10.5 mm"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nWhat is the normal size of an optic disc in diameter?\n\nOptions:\nA: 0.5 mm\nB: 1.5 mm\nC: 5.5 mm\nD: 10.5 mm\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "b0bae284-e5dc-4d80-97c3-59cfe72e8b4d",
+  "question": "Bile ductopenia seen in",
+  "options": {
+    "A": "GVHD",
+    "B": "Alcoholic hepatitis",
+    "C": "Autoimmune hepatitis",
+    "D": "Cirrhosis"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nBile ductopenia seen in\n\nOptions:\nA: GVHD\nB: Alcoholic hepatitis\nC: Autoimmune hepatitis\nD: Cirrhosis\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

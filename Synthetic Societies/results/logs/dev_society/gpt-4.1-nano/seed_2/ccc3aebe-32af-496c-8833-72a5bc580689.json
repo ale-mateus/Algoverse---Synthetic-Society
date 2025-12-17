@@ -1,0 +1,21 @@
+{
+  "id": "ccc3aebe-32af-496c-8833-72a5bc580689",
+  "question": "OCP's are contraindicated in all except :",
+  "options": {
+    "A": "Intermittent vaginal bleeding",
+    "B": "Uterine fibroids",
+    "C": "H/0 thromboembolism",
+    "D": "Cardiac abnormalities"
+  },
+  "gold": 2,
+  "choice_type": "multi",
+  "pred_raw": "B",
+  "pred_parsed": [
+    "B"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nOCP's are contraindicated in all except :\n\nOptions:\nA: Intermittent vaginal bleeding\nB: Uterine fibroids\nC: H/0 thromboembolism\nD: Cardiac abnormalities\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

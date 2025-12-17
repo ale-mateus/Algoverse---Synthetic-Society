@@ -1,0 +1,19 @@
+{
+  "id": "d83d38f8-d84c-442d-8bca-4c67bc9f3e29",
+  "question": "After suxamethonium 50mg, apnea persists for one hour",
+  "options": {
+    "A": "Treatment with cholnesterase is indicated",
+    "B": "Probab1y an atypical cholinesterase is present",
+    "C": "Treatment with stored blood is indicated",
+    "D": "Apnea may be due to low serum potassium concentration"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nAfter suxamethonium 50mg, apnea persists for one hour\n\nOptions:\nA: Treatment with cholnesterase is indicated\nB: Probab1y an atypical cholinesterase is present\nC: Treatment with stored blood is indicated\nD: Apnea may be due to low serum potassium concentration\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

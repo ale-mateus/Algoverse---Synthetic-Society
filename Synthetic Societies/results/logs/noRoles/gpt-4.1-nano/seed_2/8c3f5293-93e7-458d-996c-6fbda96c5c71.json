@@ -1,0 +1,19 @@
+{
+  "id": "8c3f5293-93e7-458d-996c-6fbda96c5c71",
+  "question": "Which of the following is utmost important factor considered in balanced occlusion with little change in esthetics and change in inclination or amplitude leads to the loss of facial appearance?",
+  "options": {
+    "A": "Inclination of condyle guidance",
+    "B": "Compensating curve of spec.",
+    "C": "Inclination of incisal guidance",
+    "D": "Cuspal height and angulation"
+  },
+  "gold": 3,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nWhich of the following is utmost important factor considered in balanced occlusion with little change in esthetics and change in inclination or amplitude leads to the loss of facial appearance?\n\nOptions:\nA: Inclination of condyle guidance\nB: Compensating curve of spec.\nC: Inclination of incisal guidance\nD: Cuspal height and angulation\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

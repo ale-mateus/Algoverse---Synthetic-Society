@@ -1,0 +1,19 @@
+{
+  "id": "b595f5fb-522f-4b72-a89b-b158cf382227",
+  "question": "ADH requires NAD+ for catalytic activity. In the reaction catalyzed by ADH, an alcohol is oxidized to an aldehyde as NAD+ is reduced to NADH and dissociates from the enzyme. The NAD+ is functioning as a (an):",
+  "options": {
+    "A": "Apoenzyme.",
+    "B": "Coenzyme-co substrate.",
+    "C": "Coenzyme-prosthetic group.",
+    "D": "Cofactor."
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nADH requires NAD+ for catalytic activity. In the reaction catalyzed by ADH, an alcohol is oxidized to an aldehyde as NAD+ is reduced to NADH and dissociates from the enzyme. The NAD+ is functioning as a (an):\n\nOptions:\nA: Apoenzyme.\nB: Coenzyme-co substrate.\nC: Coenzyme-prosthetic group.\nD: Cofactor.\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

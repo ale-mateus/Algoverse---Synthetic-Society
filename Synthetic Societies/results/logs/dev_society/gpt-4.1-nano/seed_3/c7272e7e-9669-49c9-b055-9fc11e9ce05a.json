@@ -1,0 +1,19 @@
+{
+  "id": "c7272e7e-9669-49c9-b055-9fc11e9ce05a",
+  "question": "Anemia is caused by deficiency of which micronutrient?",
+  "options": {
+    "A": "Iron",
+    "B": "Potassium",
+    "C": "Phosphorus",
+    "D": "Nickel"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nAnemia is caused by deficiency of which micronutrient?\n\nOptions:\nA: Iron\nB: Potassium\nC: Phosphorus\nD: Nickel\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

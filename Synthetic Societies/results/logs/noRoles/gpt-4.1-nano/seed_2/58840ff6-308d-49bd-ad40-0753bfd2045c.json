@@ -1,0 +1,19 @@
+{
+  "id": "58840ff6-308d-49bd-ad40-0753bfd2045c",
+  "question": "Hodgkins lymphoma is caused by:",
+  "options": {
+    "A": "EBV",
+    "B": "CMV",
+    "C": "HHV6",
+    "D": "HHV8"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nHodgkins lymphoma is caused by:\n\nOptions:\nA: EBV\nB: CMV\nC: HHV6\nD: HHV8\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

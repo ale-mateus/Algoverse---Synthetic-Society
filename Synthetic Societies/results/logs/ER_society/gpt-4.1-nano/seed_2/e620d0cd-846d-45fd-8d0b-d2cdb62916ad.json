@@ -1,0 +1,19 @@
+{
+  "id": "e620d0cd-846d-45fd-8d0b-d2cdb62916ad",
+  "question": "A characteristic feature of nephrotic syndrome in children \u2013",
+  "options": {
+    "A": "Lipid casts in urine",
+    "B": "WBC casts in urine",
+    "C": "RBC casts in urine",
+    "D": "Albumin in urine"
+  },
+  "gold": 3,
+  "choice_type": "single",
+  "pred_raw": "D",
+  "pred_parsed": "D",
+  "correct": false,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nA characteristic feature of nephrotic syndrome in children \u2013\n\nOptions:\nA: Lipid casts in urine\nB: WBC casts in urine\nC: RBC casts in urine\nD: Albumin in urine\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

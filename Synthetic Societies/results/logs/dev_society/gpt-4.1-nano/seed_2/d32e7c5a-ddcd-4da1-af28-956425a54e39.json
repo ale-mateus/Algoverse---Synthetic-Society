@@ -1,0 +1,19 @@
+{
+  "id": "d32e7c5a-ddcd-4da1-af28-956425a54e39",
+  "question": "Most Severe degree of alkalosis occurs in obstruction of -",
+  "options": {
+    "A": "Cardiac end",
+    "B": "Pylorus",
+    "C": "Ileocaecal region",
+    "D": "Colon"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nMost Severe degree of alkalosis occurs in obstruction of -\n\nOptions:\nA: Cardiac end\nB: Pylorus\nC: Ileocaecal region\nD: Colon\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

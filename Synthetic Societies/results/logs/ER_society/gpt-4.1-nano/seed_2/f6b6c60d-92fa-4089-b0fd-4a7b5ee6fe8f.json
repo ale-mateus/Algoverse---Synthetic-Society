@@ -1,0 +1,21 @@
+{
+  "id": "f6b6c60d-92fa-4089-b0fd-4a7b5ee6fe8f",
+  "question": "Cardiac dominance is based on",
+  "options": {
+    "A": "Anterior interventricular aery",
+    "B": "Posterior interventricular aery",
+    "C": "Circumflex aery",
+    "D": "None of the above"
+  },
+  "gold": 2,
+  "choice_type": "multi",
+  "pred_raw": "B",
+  "pred_parsed": [
+    "B"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nCardiac dominance is based on\n\nOptions:\nA: Anterior interventricular aery\nB: Posterior interventricular aery\nC: Circumflex aery\nD: None of the above\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "905d75c0-7025-4108-b439-41d391b44839",
+  "question": "Acridine orange is a fluorescent dye used to bind?",
+  "options": {
+    "A": "DNA and RNA",
+    "B": "Protein",
+    "C": "Lipid",
+    "D": "Carbohydrates"
+  },
+  "gold": 1,
+  "choice_type": "single",
+  "pred_raw": "A",
+  "pred_parsed": "A",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nAcridine orange is a fluorescent dye used to bind?\n\nOptions:\nA: DNA and RNA\nB: Protein\nC: Lipid\nD: Carbohydrates\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}

@@ -72,19 +72,29 @@ async def main():
     parser.add_argument("--model", default="gpt-4.1-nano")
     parser.add_argument("--seed", type=int, default=1)
     parser.add_argument("--label", required=False, default="default")
+    parser.add_argument("--mcq", default="False")   # <<< NEW
     args = parser.parse_args()
 
     json_path = args.json
     society_name = os.path.splitext(os.path.basename(json_path))[0]
 
-    output_dir = os.path.join(
-        "conversations",
-        society_name,
-        args.label,
-        args.provider,
-        args.model,
-        f"seed_{args.seed}"
-    )
+    if args.mcq == "True":
+        output_dir = os.path.join(
+            "results",
+            society_name,
+            args.model,
+            f"seed_{args.seed}"
+        )
+    else:
+        output_dir = os.path.join(
+            "conversations",
+            society_name,
+            args.label,
+            args.provider,
+            args.model,
+            f"seed_{args.seed}"
+        )
+
     os.makedirs(output_dir, exist_ok=True)
 
     agents, settings, entry_point, edges = create_society_from_json(
@@ -100,8 +110,13 @@ async def main():
         edges=edges,
         task=args.task
     )
+    if args.mcq == "True":
+        filename = f"{args.label}.txt" 
+    else:
+        filename = "conversation.txt"
 
-    output_file = os.path.join(output_dir, "conversation.txt")
+    output_file = os.path.join(output_dir, filename)
+
     with open(output_file, "w", encoding="utf-8") as f:
         for speaker, msg in convo:
             f.write(f"{speaker}:\n{msg}\n\n")

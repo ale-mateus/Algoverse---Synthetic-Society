@@ -1,0 +1,21 @@
+{
+  "id": "2ded1d27-0d49-4c4d-8694-dc5a90289a92",
+  "question": "Second polor body is released at -",
+  "options": {
+    "A": "Birth",
+    "B": "Puberty",
+    "C": "Fertilization",
+    "D": "None"
+  },
+  "gold": 3,
+  "choice_type": "multi",
+  "pred_raw": "C",
+  "pred_parsed": [
+    "C"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nSecond polor body is released at -\n\nOptions:\nA: Birth\nB: Puberty\nC: Fertilization\nD: None\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "C"
+  ]
+}

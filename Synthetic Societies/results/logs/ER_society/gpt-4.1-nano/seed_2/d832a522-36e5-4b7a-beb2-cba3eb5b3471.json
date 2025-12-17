@@ -1,0 +1,19 @@
+{
+  "id": "d832a522-36e5-4b7a-beb2-cba3eb5b3471",
+  "question": "NOT a feature of ventilator associated pneumonia",
+  "options": {
+    "A": "Fever",
+    "B": "Tachycardia",
+    "C": "New shadows on chest X-ray",
+    "D": "Leucocytosis"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nNOT a feature of ventilator associated pneumonia\n\nOptions:\nA: Fever\nB: Tachycardia\nC: New shadows on chest X-ray\nD: Leucocytosis\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

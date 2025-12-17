@@ -1,0 +1,19 @@
+{
+  "id": "c84590de-de67-45f8-954e-d6d59797e486",
+  "question": "AED stands for?",
+  "options": {
+    "A": "Automatic external defibrillator",
+    "B": "Automated external defibrillator",
+    "C": "Automatic electrical defibrillator",
+    "D": "Automated electrical defibrillator"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nAED stands for?\n\nOptions:\nA: Automatic external defibrillator\nB: Automated external defibrillator\nC: Automatic electrical defibrillator\nD: Automated electrical defibrillator\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

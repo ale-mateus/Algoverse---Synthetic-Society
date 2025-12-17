@@ -1,0 +1,19 @@
+{
+  "id": "e4120f2a-9083-446e-bf3c-102444b03f6a",
+  "question": "Which of the following is the basis for referred pain?",
+  "options": {
+    "A": "Visceral pain signals and pain signals from the skin synapse with separate populations of neurons in the dorsal horn",
+    "B": "Visceral pain transmission and pain transmission from the skin are received by a common set of neurons in the thalamus",
+    "C": "Visceral pain signals are rarely of sufficient magnitude to exceed the threshold of activation of dorsal horn neurons",
+    "D": "Some visceral pain signals and pain signals from the skin provide convergent input to a common set of neurons in the dorsal horn"
+  },
+  "gold": 4,
+  "choice_type": "single",
+  "pred_raw": "D",
+  "pred_parsed": "D",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nWhich of the following is the basis for referred pain?\n\nOptions:\nA: Visceral pain signals and pain signals from the skin synapse with separate populations of neurons in the dorsal horn\nB: Visceral pain transmission and pain transmission from the skin are received by a common set of neurons in the thalamus\nC: Visceral pain signals are rarely of sufficient magnitude to exceed the threshold of activation of dorsal horn neurons\nD: Some visceral pain signals and pain signals from the skin provide convergent input to a common set of neurons in the dorsal horn\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

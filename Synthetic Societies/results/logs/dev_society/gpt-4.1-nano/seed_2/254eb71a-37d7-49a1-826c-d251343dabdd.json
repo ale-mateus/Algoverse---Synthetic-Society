@@ -1,0 +1,21 @@
+{
+  "id": "254eb71a-37d7-49a1-826c-d251343dabdd",
+  "question": "Infective form of T. brucei ?",
+  "options": {
+    "A": "Amastigote",
+    "B": "Trypomastigote",
+    "C": "Egg",
+    "D": "None"
+  },
+  "gold": 2,
+  "choice_type": "multi",
+  "pred_raw": "B",
+  "pred_parsed": [
+    "B"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nInfective form of T. brucei ?\n\nOptions:\nA: Amastigote\nB: Trypomastigote\nC: Egg\nD: None\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

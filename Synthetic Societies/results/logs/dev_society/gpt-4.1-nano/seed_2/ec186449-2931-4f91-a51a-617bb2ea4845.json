@@ -1,0 +1,19 @@
+{
+  "id": "ec186449-2931-4f91-a51a-617bb2ea4845",
+  "question": "Which Vitamin deficiency results in poor wound healing?",
+  "options": {
+    "A": "K",
+    "B": "C",
+    "C": "D",
+    "D": "E"
+  },
+  "gold": 2,
+  "choice_type": "single",
+  "pred_raw": "B",
+  "pred_parsed": "B",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nWhich Vitamin deficiency results in poor wound healing?\n\nOptions:\nA: K\nB: C\nC: D\nD: E\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "B"
+  ]
+}

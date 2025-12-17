@@ -1,0 +1,21 @@
+{
+  "id": "fb0e7921-83ac-405d-8f6f-22b5218fa4d1",
+  "question": "Substrate level phosphorylation in TCA cycle is in step?",
+  "options": {
+    "A": "Isocitrate dehydrogenase",
+    "B": "Malate dehydrogenase",
+    "C": "Aconitase",
+    "D": "Succinate thiokinase"
+  },
+  "gold": 4,
+  "choice_type": "multi",
+  "pred_raw": "D",
+  "pred_parsed": [
+    "D"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nSubstrate level phosphorylation in TCA cycle is in step?\n\nOptions:\nA: Isocitrate dehydrogenase\nB: Malate dehydrogenase\nC: Aconitase\nD: Succinate thiokinase\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

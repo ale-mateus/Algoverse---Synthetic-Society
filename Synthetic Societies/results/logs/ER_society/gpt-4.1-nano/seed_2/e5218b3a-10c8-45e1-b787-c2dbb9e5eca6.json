@@ -1,0 +1,19 @@
+{
+  "id": "e5218b3a-10c8-45e1-b787-c2dbb9e5eca6",
+  "question": "Treatment of CMV retinitis in AIDS patient is -",
+  "options": {
+    "A": "Amantadine",
+    "B": "Fludrabine",
+    "C": "Oseltamivir",
+    "D": "Valganciclovir"
+  },
+  "gold": 4,
+  "choice_type": "single",
+  "pred_raw": "D",
+  "pred_parsed": "D",
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nTreatment of CMV retinitis in AIDS patient is -\n\nOptions:\nA: Amantadine\nB: Fludrabine\nC: Oseltamivir\nD: Valganciclovir\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

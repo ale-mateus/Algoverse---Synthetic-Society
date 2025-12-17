@@ -1,0 +1,21 @@
+{
+  "id": "eec3aa33-de39-4ea2-8999-0ba9198c5c6b",
+  "question": "All are true regarding NK cells except -",
+  "options": {
+    "A": "CD 16 & CD 56 positive",
+    "B": "Secrete complement like substance",
+    "C": "Impoant role in viral infected cell",
+    "D": "None"
+  },
+  "gold": 4,
+  "choice_type": "multi",
+  "pred_raw": "D",
+  "pred_parsed": [
+    "D"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nAll are true regarding NK cells except -\n\nOptions:\nA: CD 16 & CD 56 positive\nB: Secrete complement like substance\nC: Impoant role in viral infected cell\nD: None\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "D"
+  ]
+}

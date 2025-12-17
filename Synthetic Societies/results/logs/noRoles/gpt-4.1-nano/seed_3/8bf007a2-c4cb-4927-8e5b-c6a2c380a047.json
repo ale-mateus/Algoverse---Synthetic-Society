@@ -1,0 +1,21 @@
+{
+  "id": "8bf007a2-c4cb-4927-8e5b-c6a2c380a047",
+  "question": "Cell wall of bacillus anthracis is composed of -",
+  "options": {
+    "A": "Peptidoglycan",
+    "B": "Polysaccharide",
+    "C": "Lipopolysaccharide",
+    "D": "Polypeptide"
+  },
+  "gold": 1,
+  "choice_type": "multi",
+  "pred_raw": "A",
+  "pred_parsed": [
+    "A"
+  ],
+  "correct": true,
+  "messages": [
+    "You are the finalizer agent. Answer the following multiple-choice question.\n\nQuestion:\nCell wall of bacillus anthracis is composed of -\n\nOptions:\nA: Peptidoglycan\nB: Polysaccharide\nC: Lipopolysaccharide\nD: Polypeptide\n\nRespond ONLY with the letter(s) of the correct option(s).",
+    "A"
+  ]
+}
