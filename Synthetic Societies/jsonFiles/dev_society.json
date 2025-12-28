@@ -3,7 +3,7 @@
   "description": "A fully emergent free-talking multi-agent society where each agent has a personality, expertise, and autonomy. Agents spontaneously collaborate, debate, and converge on solutions.",
 
   "settings": {
-    "max_round": 20,
+    "max_round": 5,
     "free_talk": true
   },
 

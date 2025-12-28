@@ -1,22 +1,22 @@
-import json
-import asyncio
 import os
-import re
+import random
 from agents.societies import create_society_from_json
+from run import autonomous_loop
 
-LETTER_PATTERN = re.compile(r"\b([A-D])\b", re.IGNORECASE)
 
-def extract_letters(text, multi=False):
-    text = text.upper()
-    if multi:
-        return sorted(list(set(LETTER_PATTERN.findall(text))))
-    else:
-        m = LETTER_PATTERN.search(text)
-        return m.group(1) if m else None
+def get_model_answer(conversation_log):
+    speaker, msg = conversation_log[-1]
+    if speaker.lower() != "finalizer":
+        raise ValueError(f"Last speaker is not finalizer: {speaker}")
+    ans = msg.strip().upper()
+    if ans not in {"A", "B", "C", "D"}:
+        raise ValueError(f"Invalid finalizer output: {ans}")
+    return ans
+
 
 def build_prompt(ex):
     return f"""
-You are the finalizer agent. Answer the following multiple-choice question.
+This is a multiple-choice medical question.
 
 Question:
 {ex["question"]}
@@ -27,85 +27,105 @@ B: {ex["opb"]}
 C: {ex["opc"]}
 D: {ex["opd"]}
 
-Respond ONLY with the letter(s) of the correct option(s).
+Instructions:
+- Agents may discuss freely.
+- Reach a consensus on the correct answer.
+- Do NOT finalize yet.
+
+Begin discussion.
 """.strip()
 
-async def run_single_mcq_with_logs(agent, prompt):
-    messages = []
-    last = ""
 
-    async for event in agent.run_stream(task=prompt):
+async def run_finalizer(finalizer, convo):
+    transcript = ""
+    for speaker, msg in convo:
+        transcript += f"{speaker}:\n{msg}\n\n"
+
+    final_msg = ""
+    async for event in finalizer.run_stream(
+        task=(
+            "You are the finalizer.\n"
+            "Based ONLY on the discussion below, choose exactly ONE best answer.\n"
+            "Even if multiple options seem partially correct, select the single "
+            "most standard answer expected in medical entrance exams.\n\n"
+            "Discussion:\n"
+            f"{transcript}\n"
+            "Output ONLY the letter A, B, C, or D."
+        )
+    ):
         if hasattr(event, "content") and event.content:
-            last = event.content
-            messages.append(event.content)
+            final_msg = event.content.strip()
 
-    return last.strip(), messages
+    return final_msg
 
 
 async def run_mcq_eval(json_path, model, seed, examples, society_name):
+    random.seed(seed)
+
     agents, settings, entry_point, edges = create_society_from_json(
-        json_path, model_name=model, provider="openai"
+        json_path,
+        model_name=model,
+        provider="openai"
     )
 
-    if "finalizer" in agents:
-        finalizer = agents["finalizer"]
-    else:
-        print(f"[WARNING] Society {society_name} has no finalizer. Choosing a random agent.")
-        finalizer = list(agents.values())[-1]
+    finalizer = None
+    discussion_agents = {}
 
-    correct = 0
+    for name, agent in agents.items():
+        if name.lower() == "finalizer":
+            finalizer = agent
+        else:
+            discussion_agents[name] = agent
+
+    if finalizer is None:
+        raise RuntimeError("Finalizer agent not found in society JSON")
+
     total = len(examples)
+    correct = 0
 
-    print(f"Evaluating {total} questions...")
+    print("\n========================================")
+    print("Running MCQ Evaluation (Autonomous Loop)")
+    print(f"Society: {society_name}")
+    print(f"Model: {model}")
+    print(f"Seed: {seed}")
+    print(f"Num questions: {total}")
+    print("========================================\n")
 
-    log_dir = f"results/logs/{society_name}/{model}/seed_{seed}"
-    os.makedirs(log_dir, exist_ok=True)
+    base_dir = f"results/mcq/{society_name}/{model}/seed_{seed}"
+    os.makedirs(base_dir, exist_ok=True)
 
     for i, ex in enumerate(examples, 1):
-        prompt = build_prompt(ex)
-        pred_text, msg_log = await run_single_mcq_with_logs(finalizer, prompt)
-
-        if ex["choice_type"] == "single":
-            pred = extract_letters(pred_text, multi=False)
-            gold = chr(ord("A") + (ex["cop"] - 1))
-            is_correct = (pred == gold)
-
-        elif ex["choice_type"] == "multi":
-            pred = extract_letters(pred_text, multi=True)
-            gold = sorted([
-                chr(ord("A") + idx)
-                for idx in range(4)
-                if ex["cop"] == idx + 1
-            ])
-            is_correct = (pred == gold)
-
-        else:
-            is_correct = False
-
         qid = ex.get("id", f"q_{i}")
-        out_path = os.path.join(log_dir, f"{qid}.json")
-        with open(out_path, "w") as f:
-            json.dump({
-                "id": qid,
-                "question": ex["question"],
-                "options": {
-                    "A": ex["opa"],
-                    "B": ex["opb"],
-                    "C": ex["opc"],
-                    "D": ex["opd"]
-                },
-                "gold": ex["cop"],
-                "choice_type": ex["choice_type"],
-                "pred_raw": pred_text,
-                "pred_parsed": pred,
-                "correct": is_correct,
-                "messages": msg_log
-            }, f, indent=2)
+        print(f"[Q {i}/{total}] ID={qid}")
 
+        prompt = build_prompt(ex)
+
+        convo = await autonomous_loop(
+            agents=discussion_agents,
+            settings=settings,
+            entry_point=entry_point,
+            edges=edges,
+            task=prompt
+        )
+
+        final_msg = await run_finalizer(finalizer, convo)
+        convo.append(("finalizer", final_msg))
+
+        pred = get_model_answer(convo)
+        gold = chr(ord("A") + (ex["cop"] - 1))
+
+        is_correct = pred == gold
         if is_correct:
             correct += 1
 
-        if i % 20 == 0:
-            print(f"Processed {i}/{total}...")
+        output_file = os.path.join(base_dir, f"{qid}.txt")
+        with open(output_file, "w", encoding="utf-8") as f:
+            for speaker, msg in convo:
+                f.write(f"{speaker}:\n{msg}\n\n")
 
-    return correct / total
+        print(f"Predicted: {pred} | Gold: {gold} | Correct: {is_correct}")
+        print(f"[SYSTEM] Conversation saved to: {output_file}\n")
+
+    acc = correct / total
+    print(f"\nFinal Accuracy: {acc:.4f}")
+    return acc

@@ -4,37 +4,31 @@ import random
 import asyncio
 from mcq_eval import run_mcq_eval
 
-SOCIETY_DIR = "jsonFiles"
+SOCIETY_DIR = "jsonMCQ"
 TRAIN_JSON = "datasets/MEDMCQA/train.json"
 RESULTS_DIR = "results"
 
 MODEL = "gpt-4.1-nano"
-SEEDS = [1, 2, 3]
-SAMPLE_SIZE = 100
+SEEDS = [1]
+SAMPLE_SIZE = 5
+SPLIT_NAME = "train_sample"
 
-
-def load_sampled_train():
+def load_sampled_train(seed):
+    random.seed(seed)
     with open(TRAIN_JSON, "r") as f:
-        lines = f.readlines()
-
-    lines = [json.loads(l) for l in lines]
-    sample = random.sample(lines, SAMPLE_SIZE)
-
-    print(f"\nLoaded {SAMPLE_SIZE} sampled training questions.\n")
-    return sample
-
+        lines = [json.loads(line) for line in f]
+    return random.sample(lines, SAMPLE_SIZE)
 
 def save_accuracy(split, society, model, seed, acc):
     out_dir = os.path.join(RESULTS_DIR, split, society, model, f"seed_{seed}")
     os.makedirs(out_dir, exist_ok=True)
-
     with open(os.path.join(out_dir, "accuracy.txt"), "w") as f:
         f.write(str(acc))
 
-
 def main():
-    examples = load_sampled_train()
-    societies = sorted([f for f in os.listdir(SOCIETY_DIR) if f.endswith(".json")])
+    societies = sorted(
+        f for f in os.listdir(SOCIETY_DIR) if f.endswith(".json")
+    )
 
     all_results = {}
 
@@ -42,31 +36,35 @@ def main():
         society_name = soc_file.replace(".json", "")
         json_path = os.path.join(SOCIETY_DIR, soc_file)
 
-        print(f"\n--- Society: {society_name} ---")
+        print(f"\n=== Society: {society_name} ===\n")
 
         soc_results = []
 
         for seed in SEEDS:
-            print(f"Running model={MODEL}, seed={seed}...")
-            acc = asyncio.run(
-                run_mcq_eval(json_path, MODEL, seed, examples, society_name)
-            )
-            print(f"Accuracy: {acc:.4f}")
+            print(f"[Seed {seed}] Sampling data")
+            examples = load_sampled_train(seed)
 
-            save_accuracy("train_sample", society_name, MODEL, seed, acc)
+            acc = asyncio.run(
+                run_mcq_eval(
+                    json_path=json_path,
+                    model=MODEL,
+                    seed=seed,
+                    examples=examples,
+                    society_name=society_name,
+                )
+            )
+
+            save_accuracy(SPLIT_NAME, society_name, MODEL, seed, acc)
             soc_results.append(acc)
 
         all_results[society_name] = sum(soc_results) / len(soc_results)
 
-    # Save summary
-    summary_path = os.path.join(RESULTS_DIR, "accuracy_summary.json")
     os.makedirs(RESULTS_DIR, exist_ok=True)
-
+    summary_path = os.path.join(RESULTS_DIR, SPLIT_NAME, "accuracy_summary.json")
     with open(summary_path, "w") as f:
         json.dump(all_results, f, indent=2)
 
-    print(f"\nSaved accuracy summary to {summary_path}")
-
+    print(f"\n[SYSTEM] Accuracy summary saved to: {summary_path}\n")
 
 if __name__ == "__main__":
     main()

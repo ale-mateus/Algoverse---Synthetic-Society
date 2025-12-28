@@ -3,7 +3,7 @@
     "description": "A structured but free-talking ER multi-agent society where each agent embodies a distinct medical role. Agents communicate autonomously, debate clinical decisions, escalate concerns, and converge on a patient plan. Each role has its own priorities, tone, and domain expertise.",
   
     "settings": {
-      "max_round": 20,
+      "max_round": 5,
       "free_talk": true
     },
   
