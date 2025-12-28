@@ -26,7 +26,7 @@ def regex_final(agent_name, response):
 async def autonomous_loop(agents, settings, entry_point, edges, task):
     print("[SYSTEM] Free-Talk Mode Activated\n")
     conversation_log = []
-    max_round = settings.get("max_round", 20)
+    max_round = settings.get("max_round", 5)
     global_context = f"Conversation begins:\nUser task: {task}\n"
     current_message = task
     agent_names = list(agents.keys())

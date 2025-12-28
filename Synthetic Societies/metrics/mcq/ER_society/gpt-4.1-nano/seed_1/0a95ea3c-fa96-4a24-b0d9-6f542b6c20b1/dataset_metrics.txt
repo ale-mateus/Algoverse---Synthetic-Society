@@ -1,0 +1,11 @@
+Turn Dominance:
+  emt: 0.6667
+  er_nurse: 0.1667
+  finalizer: 0.1667
+
+Token Dominance:
+  emt: 0.6621
+  er_nurse: 0.3352
+  finalizer: 0.0027
+
+Conversation Length (tokens): 364
