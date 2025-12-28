@@ -1,2 +1,4 @@
 datasets/MEDMCQA/train.json
 datasets/MEDMCQA/test.json
+.DS_Store
+__pycache__/
