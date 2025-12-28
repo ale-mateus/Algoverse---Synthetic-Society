@@ -1,0 +1,42 @@
+{
+    "society_name": "Emergent Software Development Collective",
+    "description": "A fully emergent free-talking multi-agent society where each agent has a personality, expertise, and autonomy. Agents spontaneously collaborate, debate, and converge on solutions.",
+  
+    "settings": {
+      "max_round": 5,
+      "free_talk": true
+    },
+  
+    "agents": [
+      {
+        "name": "architect",
+        "description": "System Architect",
+        "system_message": "You are the Architect. You think in terms of structure, components, scalability, abstractions, and long-term maintainability.",
+        "llm_config_override": null
+      },
+      {
+        "name": "engineer",
+        "description": "Software Engineer",
+        "system_message": "You are the Engineer. You focus on implementation, algorithms, efficiency, and practical execution.",
+        "llm_config_override": null
+      },
+      {
+        "name": "analyst",
+        "description": "Quality & Reliability Analyst",
+        "system_message": "You are the Analyst. You critically evaluate assumptions, identify flaws, and test edge cases.",
+        "llm_config_override": null
+      },
+      {
+        "name": "finalizer",
+        "description": "Decision Finalizer",
+        "system_message": "You are the Finalizer. Do NOT add new reasoning. Do NOT introduce new information. Read the conversation and output ONLY the final chosen option letter (A, B, C, or D). Output the letter on its own line.",
+        "llm_config_override": null
+      }
+    ],
+  
+    "graph": {
+      "entry_point": "finalizer",
+      "edges": []
+    }
+  }
+  

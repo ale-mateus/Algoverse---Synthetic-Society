@@ -1,0 +1,54 @@
+{
+    "society_name": "Emergent Emergency Response Collective",
+    "description": "A structured but free-talking ER multi-agent society where each agent embodies a distinct medical role.",
+  
+    "settings": {
+      "max_round": 5,
+      "free_talk": true
+    },
+  
+    "agents": [
+      {
+        "name": "er_physician",
+        "description": "Emergency Room Attending Physician",
+        "system_message": "You are the ER Physician. You manage emergency cases using clinical judgment and evidence-based medicine.",
+        "llm_config_override": null
+      },
+      {
+        "name": "er_nurse",
+        "description": "Senior Emergency Room Nurse",
+        "system_message": "You are the ER Nurse. You focus on patient monitoring, safety, and bedside care.",
+        "llm_config_override": null
+      },
+      {
+        "name": "er_tech",
+        "description": "Emergency Department Technician",
+        "system_message": "You are the ER Tech. You focus on logistics, procedures, and execution.",
+        "llm_config_override": null
+      },
+      {
+        "name": "emt",
+        "description": "Emergency Medical Technician",
+        "system_message": "You are the EMT. You provide prehospital context and field observations.",
+        "llm_config_override": null
+      },
+      {
+        "name": "consult_surgeon",
+        "description": "On-Call Trauma / General Surgeon",
+        "system_message": "You are the Surgeon. You focus on surgical decision-making and escalation.",
+        "llm_config_override": null
+      },
+      {
+        "name": "finalizer",
+        "description": "Clinical Decision Finalizer",
+        "system_message": "You are the Finalizer. Do NOT add new medical reasoning. Do NOT introduce new facts. Read the discussion and output ONLY the final answer letter (A, B, C, or D). Output the letter on its own line.",
+        "llm_config_override": null
+      }
+    ],
+  
+    "graph": {
+      "entry_point": "finalizer",
+      "edges": []
+    }
+  }
+  
