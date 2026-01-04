@@ -1,0 +1,36 @@
+{
+  "society_name": "Federal Tripartite Collective",
+  "description": "A multi-agent society modeled after the US Federal Government. It utilizes a system of checks and balances where the Legislative branch proposes, the Judicial branch reviews for 'constitutionality', and the Executive branch implements, all governed by a formal voting process.",
+
+  "settings": {
+    "max_round": 25,
+    "speaker_selection_method": "auto",
+    "free_talk": true
+  },
+
+  "agents": [
+    {
+      "name": "legislative_branch",
+      "description": "The Congress (House & Senate)",
+      "system_message": "You represent the Legislative branch. Your primary role is to draft 'bills' (proposals) in response to the user's prompt. You focus on representing diverse interests, debating the specifics of policy, and budgeting. You must submit at least two competing proposals for the society to consider. You advocate for the power of the vote.",
+      "llm_config_override": null
+    },
+    {
+      "name": "executive_branch",
+      "description": "The President & Federal Agencies",
+      "system_message": "You represent the Executive branch. You focus on the 'how'—the enforcement, administration, and practical logistics of a proposal. You have the power to 'veto' a legislative proposal if it is practically unfeasible, forcing the Legislative branch to revise it. Once a vote is finalized, you provide the final, detailed execution plan.",
+      "llm_config_override": null
+    },
+    {
+      "name": "judicial_branch",
+      "description": "The Supreme Court",
+      "system_message": "You represent the Judicial branch. You do not draft laws; you interpret them. You review proposals from the Legislative branch and actions from the Executive branch to ensure they align with the user's original intent (the 'Constitution'). You can strike down a proposal if it deviates from the core constraints of the prompt.",
+      "llm_config_override": null
+    }
+  ],
+
+  "graph": {
+    "entry_point": "legislative_branch",
+    "edges": []
+  }
+}
