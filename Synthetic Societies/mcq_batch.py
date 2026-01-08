@@ -10,7 +10,7 @@ RESULTS_DIR = "results"
 
 MODEL = "gpt-4.1-nano"
 SEEDS = [1]
-SAMPLE_SIZE = 5
+SAMPLE_SIZE = 100
 SPLIT_NAME = "train_sample"
 
 def load_sampled_train(seed):
