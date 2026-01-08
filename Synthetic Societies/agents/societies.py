@@ -16,8 +16,7 @@ def parse_condition(cond_str):
 
 def create_society_from_json(
     json_path,
-    model_name="gpt-4.1-nano",
-    provider="openai"
+    model_name="gpt-4.1-nano"
 ):
     with open(json_path, "r") as f:
         data = json.load(f)
@@ -32,7 +31,6 @@ def create_society_from_json(
             name=a["name"],
             system_message=a.get("system_message", ""),
             model_name=model_name,
-            provider=provider
         )
 
     entry_point = graph_def.get("entry_point")
