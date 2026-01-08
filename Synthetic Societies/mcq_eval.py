@@ -65,7 +65,6 @@ async def run_mcq_eval(json_path, model, seed, examples, society_name):
     agents, settings, entry_point, edges = create_society_from_json(
         json_path,
         model_name=model,
-        provider="openai"
     )
 
     finalizer = None
