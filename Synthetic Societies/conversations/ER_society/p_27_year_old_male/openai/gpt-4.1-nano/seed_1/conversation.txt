@@ -1,106 +1,29 @@
-er_tech:
-Initiating rapid assessment. Start with two large-bore IVs, get STAT blood samples—ABG, CBC, troponins, chem profile, lactate. Apply high-flow O2 via non-rebreather. Prepare for immediate bedside ECG. Will also monitor vitals continuously. Stay ready to transport for possible imaging once stabilized.
+er_nurse:
+First, I would immediately establish IV access with two large-bore IVs and start rapid fluid resuscitation with isotonic saline to address hypovolemia. I’d attach a cardiac monitor to assess rhythm and obtain vital signs continuously. 
 
-er_tech:
-Blood pressures are dropping; HR remains high. ECG is being set up at the bedside. Ongoing vitals show persistent tachycardia and hypotension. Blood samples are being drawn; ABG returning soon. Prepare for possible quick transport if patient's condition worsens. Ultrasonography of the abdomen is also on standby if intra-abdominal pathology is suspected.
+While doing that, I’d check his airway, breathing, and neurological status to ensure airway patency and protect against further deterioration. Given his condition, I’d administer supplemental oxygen via non-rebreather mask to improve SpO2 and prepare for possible advanced airway management if his mental status worsens.
+
+Next, I would draw blood for labs—CBC, electrolytes, blood glucose, renal function, coagulation profile, and perhaps point-of-care testing for quick assessment. A quick bedside glucose check is essential to rule out hypoglycemia as a cause of his altered mental status. 
+
+Given his symptoms suggest possible hypovolemic shock or another acute process, I would consider an ECG to evaluate for arrhythmias or ischemia. 
+
+I would also alert the rapid response team and prepare for possible advanced interventions like intubation if he becomes more unresponsive or airway protection becomes necessary.
 
 emt:
-EMT: Copy all. Patient remains tachycardic at 142 and hypotensive at 82 over 50. SpO2 now at 91% on high-flow O2. No signs of trauma visible. Blood samples and ABG are being processed. ECG is in place showing possible ischemic changes—awaiting cardiology. Preparing for rapid transport if not stabilizing. IV access secured with fluids ongoing. Continue monitoring vitals and reassess. Scene stable, but patient critically ill.
+EMT: Copy, er_nurse. Situation is a 27-year-old male, altered mental status, pale, diaphoretic, barely responsive after collapsing at gym. Vitals: BP 82/50, HR 142, RR 28, SpO2 91%. Initiated IV access with two large-bore sticks, started rapid isotonic saline infusion. Cardiac monitor showing tachycardia, likely sinus. Administered high-flow oxygen via NRB. Bedside glucose is 60 mg/dL. No signs of trauma. Scene suggests possible hypovolemia or other shock etiology. Preparing to monitor and support airway as needed. Will continue to assess and update.
 
 er_nurse:
-Understood. Given the persistent hypotension and tachycardia, I want to ensure we're maximizing volume resuscitation. I'll reassess the IV sites—should I consider adding a third line if access allows? Also, are there any signs of volume overload or pulmonary edema before administering more fluids? Meanwhile, I’ll review the blood gas and lab results as they come in to guide further management, including considering vasopressors if fluid resuscitation isn't sufficient. The ECG findings could suggest ischemia—are there any symptoms of chest pain or weakness reported? We’ll need to prepare for possible activation of cardiology for urgent intervention if indicated.
+Thank you for the update. I’ll give a small bolus of Dextrose 25% (D10) cautiously to address his hypoglycemia—around 25 grams IV, considering his altered mental status. I’ll also reassess his response to fluids and monitor his vital signs closely. 
 
-emt:
-EMT: No reports of chest pain or weakness so far, but patient’s vitals are unstable despite initial fluids. No obvious signs of volume overload at this moment—lungs clear on auscultation. I can attempt to secure a third IV line if needed, but patient’s veins are a bit difficult. Watching for any signs of deterioration; ready to assist with vasopressors if required. Will update once labs and diagnostics return. Scene remains secure, and patient is being closely monitored.
+Since his blood pressure is very low and HR high, I’ll keep a close eye on his urine output if a Foley is inserted later, and consider ordering labs to check for electrolyte imbalances, kidney function, and possible markers of cardiac stress. 
 
-er_nurse:
-Thanks, I appreciate that. Let's prioritize getting a third IV in if we can. Since the veins are challenging, I’ll try to locate an additional access site—preferably a larger vein in the contralateral arm. Meanwhile, I’ll start considering vasopressors like norepinephrine to support his blood pressure once fluids plateau or if his hemodynamics worsen. 
-
-I'll also continue to closely monitor his mental status—barely responsive is concerning for ongoing hypoperfusion or possibly metabolic derangement. Once the labs and blood gas are back, we'll have more guidance. Are there any new changes in his skin perfusion or capillary refill? Also, get a quick bedside assessment for any other signs of systemic instability.
-
-er_tech:
-Blood flow to the skin is maintained at this moment, but capillary refill is delayed, about 4 seconds. Skin remains pale and cool, with no mottling yet. Patient remains minimally responsive—responding slowly to commands, grimacing with palpation. No new signs of edema or cyanosis. Labs are coming back shortly, including ABG showing low pH and elevated lactate indicating ongoing hypoperfusion. Keep up the fluid resuscitation and prepare for vasopressor titration if needed.  
-Third IV is being secured in the opposite arm now. Continuing to monitor vitals and prepare for possible early intervention once labs confirm further steps.
-
-summarizer:
-The patient is a 27-year-old male presenting with altered mental status, hypotension (BP 82/50), tachycardia (HR 142), tachypnea (RR 28), and SpO2 91%. Initial assessment indicates signs of hypoperfusion, with delayed capillary refill (4 seconds), pallor, cool skin, and minimal responsiveness. Laboratory and diagnostic efforts include rapid blood work, ABG analysis showing acidemia and elevated lactate, and bedside ECG revealing possible ischemic changes.
-
-Interventions initiated involve establishing two large-bore IV lines with ongoing fluid resuscitation, high-flow oxygen via non-rebreather, and bedside monitoring. The response to fluids has not stabilized the patient; he remains hypotensive and tachycardic. A third IV line is being attempted, given difficulty with venous access. Continuous assessment for signs of volume overload is ongoing, with no current evidence of pulmonary edema. The patient’s skin perfusion is maintained but delayed capillary refill indicates ongoing hypoperfusion.
-
-Vasopressor support (norepinephrine) is contemplated pending lab results confirming severity of shock. The ECG shows possible ischemic changes, though the patient denies chest pain or weakness; arrhythmia or ischemic cardiac etiology is suspected.
-
-Current management priorities include aggressive volume resuscitation, preparation for vasopressor therapy, close monitoring of hemodynamics, and assessment of cardiac function and perfusion status. Further diagnostic clarity, including cardiac and abdominal imaging, may be pursued once hemodynamics stabilize sufficiently to allow transport.
-
-The clinical picture suggests distributive or cardiogenic shock, with differential considerations including septic shock, cardiac ischemia, or other causes of hypoperfusion. The team remains vigilant, ready to escalate supportive measures and initiate targeted interventions based on ongoing laboratory and diagnostic findings.  
-ERROR: Only finalizer may say FINAL.
-
-er_nurse:
-Given his ongoing instability despite fluids, I’m considering starting norepinephrine to support BP. I’ll administer it cautiously through the third line, titrating as needed once we see how his blood pressure responds and confirmation from labs. I’ll also prepare for rapid transport if his condition deteriorates further, but for now, I want to stabilize him as best as possible here.
-
-While we wait for the rest of the labs and imaging, I’ll reassess his neurological status and skin perfusion periodically. It’s critical that we keep him warm and monitor for any signs of worsening organ perfusion or signs of pulmonary edema once we administer vasopressors.  
-
-I’ll check on his ECG findings again—any new changes or ongoing ischemic signs? Also, ensure that cardiology and critical care teams are on standby for transfer and further management once stabilized.
-
-er_nurse:
-That sounds like a solid plan. I'll set up the norepinephrine infusion at a titrated dose, being cautious given his young age and the possibility of underlying cardiogenic or septic shock. I’ll also make sure to monitor his heart rate and blood pressure very closely during titration to avoid overcorrection. 
-
-Additionally, I'll double-check that his ECG is being continuously monitored for any arrhythmias or worsening ischemic changes. Once his BP stabilizes to a safer range, we can consider more definitive imaging—like bedside echo—to evaluate cardiac function. 
-
-Meanwhile, I’ll keep reassessing his mental status, skin perfusion, and urine output if possible, to guide further interventions. We should also prepare to activate cardiology for urgent consultation or intervention once we get the labs back.
-
-consult_surgeon:
-Understood. Continue vigilant hemodynamic monitoring. Once norepinephrine starts, titrate carefully to maintain MAP above 65 mm Hg. Obtain a bedside transthoracic echocardiogram as soon as feasible to assess cardiac function, chamber size, and any wall motion abnormalities suggestive of ischemia or cardiomyopathy. Also, coordinate with cardiology urgently for possible invasive evaluation if indicated. Keep deferring non-emergent imaging until stability is achieved but prioritize critical intervention if the patient decompensates further. Prepare for rapid operative intervention if signs of ongoing hemorrhage, intra-abdominal catastrophe, or cardiac tamponade emerge.
-
-er_tech:
-Norepinephrine infusion is being prepared, starting at low rate and titrating carefully. The bedside echo is arranged for as soon as the patient is stabilized enough for transport. Cardiology has been alerted for immediate consultation, ready to expedite invasive procedures if indicated. Vitals are being closely watched; MAP currently around 60-65 mm Hg with initial norepinephrine titration. Will continue aggressive monitoring and reassess cerebral perfusion and organ function continuously. No signs of worsening pulmonary edema yet, but we remain vigilant. Keep the team updated on lab results and clinical response.
+I’d like to get an ECG now to rule out arrhythmias or signs of ischemia, given his tachycardia. Monitoring his mental status, vitals, and response to initial treatments will guide whether he needs airway intervention or other advanced support.  
+ 
+I’ll also prepare for possible vasopressor support if his BP doesn’t improve with fluids, but only after reassessment and confirming no contraindications.
 
 er_physician:
-Given the ongoing instability despite fluid resuscitation and initiation of vasopressor support, we must continue to titrate norepinephrine carefully to maintain a MAP above 65 mm Hg. The bedside echocardiogram should be conducted as soon as he is stable enough for transfer. We need to keep a close eye on his mental status, skin perfusion, urine output, and signs of organ hypoperfusion. 
-
-The pattern so far suggests possible cardiogenic or distributive shock, with ischemic changes on ECG raising concern for an acute cardiac event. Once the echo is available, it will help clarify cardiac function, wall motion, and ejection fraction, guiding further management—whether that involves inotropic support, urgent cardiology intervention, or consideration for advanced airway or invasive monitoring.
-
-Are there any new changes in his vitals or mental status? Also, continue to monitor for signs of pulmonary edema—if his oxygenation or work of breathing worsens, we may need to adjust ventilatory support or escalate care.
-
-er_tech:
-Vitals remain unstable, with MAP around 62 despite norepinephrine titration. He is still minimally responsive, with delayed capillary refill and cool extremities. The bedside echo has just been performed; early interpretations suggest reduced ejection fraction and some global hypokinesia, raising concern for cardiogenic shock. No overt signs of pulmonary edema yet, but oxygenation remains marginal; he's on high-flow O2.
-
-We’re preparing to involve cardiology for urgent assessment and potential invasive procedures. He’s being closely monitored for arrhythmias or deterioration. Continue titrating vasopressors carefully, and keep the team ready for possible escalation, including initiation of inotropes or advanced cardiac support if indicated. The labs are still processing, but early labs indicate metabolic acidosis and elevated lactate, confirming ongoing hypoperfusion. We need to act swiftly to optimize his hemodynamics and cardiac function.
+EMT: Understood. Administering D10 IV now—giving 25 grams carefully over a few minutes. Monitoring his mental status for any improvement. Continuing to keep a close eye on his vitals. Noticing his blood pressure remains low and tachycardia persists. Will prepare for further volume resuscitation and consider vasopressors if no adequate response to fluids. Also, ECG results should be available shortly. Will inform you immediately once we have the ECG and further labs.
 
 er_physician:
-Given the bedside echo findings suggestive of significant myocardial dysfunction and ongoing hypoperfusion, we should consider adding inotropic support, such as dobutamine, to improve cardiac contractility. We need to prepare for that while cautiously adjusting our vasopressors to prevent excessive afterload reduction.
-
-Continuous cardiac monitoring is vital to detect any arrhythmias or worsening function. The elevated lactate and metabolic acidosis reinforce the urgency for aggressive support. Once cardiology is available, we should expedite invasive assessment, possibly including coronary angiography if ischemia is suspected, or consider advanced therapies like intra-aortic balloon pump if he deteriorates further.
-
-In addition, keep assessing for pulmonary edema or complications of cardiogenic shock that might require ventilatory adjustments. Let's also keep a close eye on urine output and mental status — these are critical indicators of perfusion. Our immediate goal is stabilizing his cardiac output and maintaining adequate perfusion pressures.
-
-summarizer:
-The patient continues to demonstrate signs of persistent hemodynamic instability, with MAP remaining around 62-65 mm Hg despite titration of norepinephrine. bedside echocardiography indicates reduced ejection fraction with global hypokinesia, suggesting significant myocardial dysfunction consistent with cardiogenic shock. Labs reveal ongoing metabolic acidosis with elevated lactate, confirming ongoing hypoperfusion. The patient's mental status remains minimal, and peripheral perfusion shows delayed capillary refill, cool extremities, but no current overt pulmonary edema.
-
-Current management includes escalation to inotropic support with consideration of dobutamine to enhance myocardial contractility, with cautious titration to avoid excessive afterload reduction. Continual cardiac monitoring for arrhythmias or worsening cardiac function is maintained. The plan involves rapid involvement of cardiology for further invasive assessment, such as urgent coronary angiography if ischemia is confirmed, and potential advanced therapies like intra-aortic balloon pump if deterioration persists.
-
-Fluid resuscitation has reached a limit given ongoing pulmonary status; attention is now focused on supporting cardiac output and perfusion pressure. Close surveillance of urine output, mental status, and oxygenation is ongoing to assess response and guide further interventions. There is no current evidence of pulmonary edema, but the clinical course mandates vigilant monitoring for secondary complications. The team remains prepared for escalation of support, including advanced hemodynamic measures and surgical consultation if indicated, to optimize systemic perfusion and address underlying cardiac pathology.
-
-er_physician:
-Given the evidence of significant myocardial dysfunction and ongoing hypoperfusion, our priority now is to optimize cardiac support. Initiating a low-dose dobutamine infusion would help improve myocardial contractility, but we must carefully titrate to avoid decreasing systemic vascular resistance excessively. Simultaneously, continue to monitor for any arrhythmias or signs of worsening cardiac output.
-
-In the meantime, complete the bedside echocardiogram to confirm cardiac chamber sizes, ejection fraction, and look for any structural abnormalities that might impact management. With the cardiology team on standby, we should prepare for urgent invasive assessment—particularly coronary angiography—if ischemia remains a concern, and consider advanced support like intra-aortic balloon pump if hypotension persists despite inotropes.
-
-Furthermore, since fluid status appears optimized but he still isn't stable, we need to be vigilant for signs of pulmonary edema—keeping in mind that vasopressors and inotropes can destabilize pulmonary status. Ensuring proper ventilator coordination and oxygenation is key. We also need to focus on maintaining close neuro-perfusion, renal output, and systemic oxygen delivery. Continuous reassessment of vitals, mental status, and peripheral perfusion will guide how aggressive we need to be with supportive measures going forward.
-
-summarizer:
-The patient remains critically unstable with persistent hypotension and signs of low cardiac output despite vasopressor support, with MAP around 62-65 mm Hg. Bedside echocardiography indicates marked myocardial dysfunction, with reduced ejection fraction and global hypokinesia, confirming a diagnosis of cardiogenic shock. Laboratory results show ongoing metabolic acidosis and elevated lactate levels, consistent with inadequate tissue perfusion.
-
-In response, initiation of low-dose dobutamine is underway, aiming to improve myocardial contractility while cautiously monitoring for potential decreases in systemic vascular resistance or arrhythmias. The clinical team continues to prepare for urgent invasive assessment, including coronary angiography, to evaluate for ischemia, and has standby plans for advanced circulatory support such as intra-aortic balloon pump if deterioration persists despite pharmacologic measures.
-
-Monitoring is intensified, focusing on cardiac rhythm, neuro-perfusion, urine output, and oxygenation. Attention is given to preventing pulmonary edema, especially given the use of inotropes and vasopressors, through careful ventilatory management and continuous reassessment of pulmonary status. The team commits to ongoing stabilization efforts with a multidisciplinary approach, adjusting support based on evolving clinical, laboratory, and imaging data, with the goal of restoring adequate tissue perfusion and addressing underlying myocardial dysfunction.
-
-summarizer:
-Despite aggressive pharmacologic support with norepinephrine and initiation of low-dose dobutamine, the patient remains hypotensive with MAP around 62-65 mm Hg, and bedside echocardiography continues to show severely reduced ejection fraction with global hypokinesia. His lactate levels remain elevated, and metabolic acidosis persists, indicating ongoing inadequate tissue perfusion. Clinically, he remains minimally responsive with delayed capillary refill, cool extremities, and no overt signs of pulmonary edema at this stage, though continuous monitoring is essential.
-
-In light of his persistent cardiogenic shock, discussions regarding escalation to advanced mechanical circulatory support, such as intra-aortic balloon pump insertion or ECMO, are underway, pending cardiology consultation and further hemodynamic assessment. The immediate focus remains on optimizing cardiac output and systemic perfusion while avoiding volume overload and pulmonary complications.
-
-The medical team will expedite invasive cardiac evaluation, including coronary angiography, once the patient stabilizes sufficiently for transfer. Concurrently, supportive measures such as ensuring adequate oxygenation, vigilant neuro-perfusion, and ongoing metabolic management are being maintained. Close multidisciplinary coordination is key to tailoring further interventions aimed at restoring adequate systemic perfusion and addressing the underlying myocardial dysfunction.
-
-emt:
-ER_Nurse: Given the ongoing need for circulatory support, I'll start preparing the intra-aortic balloon pump setup and coordinate with cardiology for rapid transfer once the patient stabilizes further. We’ll keep monitoring his vitals closely—currently MAP is holding around 62-65 with the dobutamine and norepinephrine. I’ll also make sure all invasive equipment is ready for insertion, and we'll keep him warm to prevent further metabolic derangement. We'll reconvene quickly once cardiology is here to discuss the next steps.
+er_nurse: Thank you. His mental status shows minimal improvement after the D10, but his BP remains refractory to initial fluid boluses. The ECG has just come back, showing sinus tachycardia with no signs of ischemia or arrhythmia. We are ready with additional fluids and vasopressors if needed. I’ll continue to monitor him closely and prepare to insert a Foley catheter to assess urine output as a further indicator of perfusion. Will update you as more data becomes available.
 

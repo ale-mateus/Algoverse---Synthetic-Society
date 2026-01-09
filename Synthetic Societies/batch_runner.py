@@ -33,7 +33,7 @@ jobs = [
     #("openrouter", "qwen/qwen-2.5-72b-instruct")
 ]
 
-seeds = [1, 2, 3]
+seeds = [1]
 
 def run_single(json_path, task, provider, model, seed, label):
     print(f"\nRunning society={json_path}, provider={provider}, model={model}, seed={seed}")

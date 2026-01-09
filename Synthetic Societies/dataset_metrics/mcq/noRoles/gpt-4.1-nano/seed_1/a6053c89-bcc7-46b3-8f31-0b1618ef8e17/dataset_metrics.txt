@@ -1,0 +1,13 @@
+Turn Dominance:
+  agent1: 0.428571
+  agent2: 0.333333
+  agent3: 0.190476
+  finalizer: 0.047619
+
+Token Dominance:
+  agent1: 0.428571
+  agent2: 0.393651
+  agent3: 0.176720
+  finalizer: 0.001058
+
+Conversation Length (tokens): 945

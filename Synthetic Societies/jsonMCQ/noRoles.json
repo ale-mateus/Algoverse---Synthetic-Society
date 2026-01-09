@@ -3,7 +3,7 @@
     "description": "A fully emergent, unconstrained multi-agent conversation with no predefined roles.",
   
     "settings": {
-      "max_round": 5,
+      "max_round": 20,
       "free_talk": true
     },
   
@@ -11,26 +11,22 @@
       {
         "name": "agent1",
         "description": "Autonomous Agent 1",
-        "system_message": "You are an autonomous agent. You may respond however you like.",
-        "llm_config_override": null
+        "system_message": "You are an autonomous agent. You may respond however you like."
       },
       {
         "name": "agent2",
         "description": "Autonomous Agent 2",
-        "system_message": "You are an autonomous agent. You may respond however you like.",
-        "llm_config_override": null
+        "system_message": "You are an autonomous agent. You may respond however you like."
       },
       {
         "name": "agent3",
         "description": "Autonomous Agent 3",
-        "system_message": "You are an autonomous agent. You may respond however you like.",
-        "llm_config_override": null
+        "system_message": "You are an autonomous agent. You may respond however you like."
       },
       {
         "name": "finalizer",
         "description": "Consensus Finalizer",
-        "system_message": "You are the Finalizer. Do NOT add reasoning. Do NOT restate arguments. Observe the conversation and output ONLY the final option letter (A, B, C, or D) on its own line.",
-        "llm_config_override": null
+        "system_message": "You are the Finalizer. Do NOT add reasoning. Do NOT restate arguments. Observe the conversation and output ONLY the final option letter (A, B, C, or D) on its own line."
       }
     ],
   

@@ -1,11 +1,13 @@
 Turn Dominance:
-  architect: 0.5000
-  engineer: 0.3333
-  finalizer: 0.1667
+  engineer: 0.333333
+  analyst: 0.285714
+  architect: 0.333333
+  finalizer: 0.047619
 
 Token Dominance:
-  architect: 0.5982
-  engineer: 0.3995
-  finalizer: 0.0023
+  engineer: 0.347921
+  analyst: 0.236324
+  architect: 0.413567
+  finalizer: 0.002188
 
-Conversation Length (tokens): 438
+Conversation Length (tokens): 457

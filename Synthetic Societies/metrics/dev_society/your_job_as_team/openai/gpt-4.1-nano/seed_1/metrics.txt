@@ -1,13 +1,15 @@
 Turn Dominance:
-  analyst: 0.2000
-  summarizer: 0.3500
-  engineer: 0.3000
-  architect: 0.1500
+  architect: 0.3333
+  summarizer: 0.1667
+  analyst: 0.1667
+  engineer: 0.1667
+  I suggest the following modules: 0.1667
 
 Token Dominance:
-  analyst: 0.1567
-  summarizer: 0.4462
-  engineer: 0.2729
-  architect: 0.1242
+  architect: 0.2133
+  summarizer: 0.2046
+  analyst: 0.1153
+  engineer: 0.2334
+  I suggest the following modules: 0.2334
 
-Conversation Length (tokens): 1627
+Conversation Length (tokens): 347

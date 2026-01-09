@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/prishapriyadashini/Downloads/Synthetic Societies/venv/bin/python3.12" "$0" "$@"
+'''exec' "/Users/prishapriyadashini/Downloads/Algoverse---Synthetic-Society/Synthetic Societies/venv/bin/python3.11" "$0" "$@"
 ' '''
 import sys
 from openai.cli import main

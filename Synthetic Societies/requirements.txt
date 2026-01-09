@@ -9,3 +9,5 @@ matplotlib>=3.7,<3.11
 huggingface_hub>=0.21.0
 python-dotenv>=1.0.0
 wget
+transformers>=4.40.0
+sentencepiece
