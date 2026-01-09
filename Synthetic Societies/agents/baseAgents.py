@@ -1,42 +1,21 @@
 from autogen_agentchat.agents import AssistantAgent
-from autogen_ext.models.openai import OpenAIChatCompletionClient
+from autogen_ext.models.openai import AzureOpenAIChatCompletionClient
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
-def get_model_client(model_name: str, provider: str):
-    if provider == "openai":
-        return OpenAIChatCompletionClient(
-            model=model_name,
-            api_key=os.getenv("OPENAI_API_KEY"),
-            base_url="https://api.openai.com/v1",
-            model_info=None
-        )
+def get_model_client(model_name: str):
+    return AzureOpenAIChatCompletionClient(
+        model=model_name,
+        azure_deployment=model_name,   
+        azure_endpoint=os.environ["AZURE_OPENAI_ENDPOINT"],
+        api_key=os.environ["AZURE_OPENAI_API_KEY"],
+        api_version="2024-12-01-preview",
+    )
 
-   # elif provider == "openrouter":
-        dummy_model_info = {
-            "vision": False,
-            "function_calling": False,
-            "json_output": False,
-            "family": "openrouter",
-            "input_cost_per_1k_tokens": 0,
-            "output_cost_per_1k_tokens": 0,
-            "max_tokens": 32768
-        }
-
-        return OpenAIChatCompletionClient(
-            model=model_name,
-            api_key=os.getenv("OPENROUTER_API_KEY"),
-            base_url="https://openrouter.ai/api/v1",
-            model_info=dummy_model_info,
-            extra_body={"provider": {"fallback_models": []}}
-        )
-
-    else:
-        raise ValueError(provider)
-
-def create_agent(name: str, system_message: str, model_name: str, provider: str):
-    client = get_model_client(model_name, provider)
+def create_agent(name: str, system_message: str, model_name: str):
     return AssistantAgent(
         name=name,
         system_message=system_message,
-        model_client=client
+        model_client=get_model_client(model_name),
     )
