@@ -1,15 +1,15 @@
 import os
 import random
+import asyncio 
 from agents.societies import create_society_from_json
-from run import autonomous_loop
-
+from mcqRun import autonomous_loop
 
 def get_model_answer(conversation_log):
     speaker, msg = conversation_log[-1]
     if speaker.lower() != "finalizer":
         raise ValueError(f"Last speaker is not finalizer: {speaker}")
     ans = msg.strip().upper()
-    if ans not in {"A", "B", "C", "D"}:
+    if ans not in {"A", "B", "C", "D", "N/A"}:
         raise ValueError(f"Invalid finalizer output: {ans}")
     return ans
 
@@ -45,12 +45,21 @@ async def run_finalizer(finalizer, convo):
     async for event in finalizer.run_stream(
         task=(
             "You are the finalizer.\n"
-            "Based ONLY on the discussion below, choose exactly ONE best answer.\n"
-            "Even if multiple options seem partially correct, select the single "
-            "most standard answer expected in medical entrance exams.\n\n"
-            "Discussion:\n"
-            f"{transcript}\n"
-            "Output ONLY the letter A, B, C, or D."
+"Please read the discussion below and identify the answer option that the agents converged on.\n\n"
+
+"Guidelines:\n"
+"- Select the option (A, B, C, or D) that is clearly supported in the discussion.\n"
+"- Do not select an option that is described as incorrect or eliminated.\n"
+"- If the discussion eliminates all but one option, select the remaining option.\n"
+"- For EXCEPT or NOT questions, select the option identified as incorrect.\n"
+"- If no clear conclusion is present, respond with N/A.\n\n"
+
+"Discussion:\n"
+f"{transcript}\n\n"
+
+"Respond with one of the following: A, B, C, D, or N/A."
+
+
         )
     ):
         if hasattr(event, "content") and event.content:
@@ -65,7 +74,6 @@ async def run_mcq_eval(json_path, model, seed, examples, society_name):
     agents, settings, entry_point, edges = create_society_from_json(
         json_path,
         model_name=model,
-        provider="openai"
     )
 
     finalizer = None
@@ -99,17 +107,24 @@ async def run_mcq_eval(json_path, model, seed, examples, society_name):
         print(f"[Q {i}/{total}] ID={qid}")
 
         prompt = build_prompt(ex)
+        while True:
+            try:
+                convo = await autonomous_loop(
+                    agents=discussion_agents,
+                    settings=settings,
+                    task=prompt
+                )
 
-        convo = await autonomous_loop(
-            agents=discussion_agents,
-            settings=settings,
-            entry_point=entry_point,
-            edges=edges,
-            task=prompt
-        )
+                final_msg = await run_finalizer(finalizer, convo)
+                convo.append(("finalizer", final_msg))
+                break
 
-        final_msg = await run_finalizer(finalizer, convo)
-        convo.append(("finalizer", final_msg))
+            except Exception as e:
+                if "RateLimit" in str(e) or "429" in str(e):
+                    print("[SYSTEM] Rate limit hit — sleeping 65s and retrying...")
+                    await asyncio.sleep(65)
+                else:
+                    raise
 
         pred = get_model_answer(convo)
         gold = chr(ord("A") + (ex["cop"] - 1))
@@ -125,6 +140,8 @@ async def run_mcq_eval(json_path, model, seed, examples, society_name):
 
         print(f"Predicted: {pred} | Gold: {gold} | Correct: {is_correct}")
         print(f"[SYSTEM] Conversation saved to: {output_file}\n")
+
+        await asyncio.sleep(0.5)
 
     acc = correct / total
     print(f"\nFinal Accuracy: {acc:.4f}")
