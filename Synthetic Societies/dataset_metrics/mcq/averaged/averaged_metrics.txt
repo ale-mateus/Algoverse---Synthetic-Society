@@ -1,0 +1,29 @@
+Turn Dominance:
+  agent1: 0.107937
+  agent3: 0.106349
+  agent2: 0.103175
+  finalizer: 0.047619
+  architect: 0.107937
+  analyst: 0.105556
+  engineer: 0.103968
+  er_tech: 0.062698
+  consult_surgeon: 0.069841
+  er_nurse: 0.058730
+  emt: 0.060317
+  er_physician: 0.065873
+
+Token Dominance:
+  agent1: 0.109510
+  agent3: 0.110033
+  agent2: 0.113689
+  finalizer: 0.000372
+  architect: 0.116424
+  analyst: 0.113465
+  engineer: 0.103299
+  er_tech: 0.057209
+  consult_surgeon: 0.083563
+  er_nurse: 0.051615
+  emt: 0.061115
+  er_physician: 0.079704
+
+Conversation Length (tokens): 2870.7

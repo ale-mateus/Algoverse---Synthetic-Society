@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 
 tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
 
-# IMPORTANT: only these are valid speakers
 ALLOWED_SPEAKERS = {
     "architect",
     "engineer",
@@ -24,29 +23,29 @@ ALLOWED_SPEAKERS = {
 
 def parse_convo(filepath):
     convo = []
+    current_speaker = None
+    current_lines = []
+
     with open(filepath, "r", encoding="utf-8") as f:
-        blocks = f.read().strip().split("\n\n")
+        for line in f:
+            line = line.rstrip()
 
-    for block in blocks:
-        lines = block.strip().split("\n")
-        if len(lines) < 2:
-            continue
+            if line.endswith(":"):
+                speaker = line[:-1].strip()
+                if speaker in ALLOWED_SPEAKERS:
+                    if current_speaker and current_lines:
+                        convo.append((current_speaker, "\n".join(current_lines).strip()))
+                    current_speaker = speaker
+                    current_lines = []
+                else:
+                    if current_speaker:
+                        current_lines.append(line)
+            else:
+                if current_speaker:
+                    current_lines.append(line)
 
-        header = lines[0].strip()
-
-        if not header.endswith(":"):
-            continue
-
-        speaker = header[:-1].strip()
-
-        if speaker not in ALLOWED_SPEAKERS:
-            continue
-
-        message = "\n".join(lines[1:]).strip()
-        if not message:
-            continue
-
-        convo.append((speaker, message))
+    if current_speaker and current_lines:
+        convo.append((current_speaker, "\n".join(current_lines).strip()))
 
     return convo
 
@@ -78,7 +77,7 @@ def compute_metrics(convo):
     }
 
 
-def save_metrics(metrics, out_dir, fname="dataset_metrics.txt"):
+def save_metrics(metrics, out_dir, fname):
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, fname)
 
@@ -120,7 +119,7 @@ def analyze_convo_file(txt_path):
     out_dir = txt_path.replace("results", "dataset_metrics").rsplit(".", 1)[0]
     os.makedirs(out_dir, exist_ok=True)
 
-    save_metrics(metrics, out_dir)
+    save_metrics(metrics, out_dir, "dataset_metrics.txt")
 
     plot_metric(
         metrics["turn_dominance"],
@@ -146,13 +145,57 @@ def walk_all_mcq_txt(base_dir="results"):
     return txts
 
 
+def average_dicts(dicts):
+    avg = defaultdict(float)
+    for d in dicts:
+        for k, v in d.items():
+            avg[k] += v
+    n = len(dicts)
+    return {k: v / n for k, v in avg.items()}
+
+
 def main():
     txt_files = walk_all_mcq_txt()
+    society_metrics = defaultdict(list)
 
     for txt in txt_files:
-        analyze_convo_file(txt)
+        metrics = analyze_convo_file(txt)
+        if metrics is None:
+            continue
+        society = txt.split(os.sep)[1]
+        society_metrics[society].append(metrics)
 
-    print("\nAll MCQ conversations processed (single seed).\n")
+    for society, metrics_list in society_metrics.items():
+        avg_turn = average_dicts([m["turn_dominance"] for m in metrics_list])
+        avg_token = average_dicts([m["token_dominance"] for m in metrics_list])
+        avg_len = sum(m["conversation_length"] for m in metrics_list) / len(metrics_list)
+
+        out_dir = os.path.join("dataset_metrics", society, "averaged")
+        os.makedirs(out_dir, exist_ok=True)
+
+        save_metrics(
+            {
+                "turn_dominance": avg_turn,
+                "token_dominance": avg_token,
+                "conversation_length": avg_len
+            },
+            out_dir,
+            "averaged_metrics.txt"
+        )
+
+        plot_metric(
+            avg_turn,
+            f"{society} Avg Turn Dominance",
+            os.path.join(out_dir, "avg_turn_dominance.png")
+        )
+
+        plot_metric(
+            avg_token,
+            f"{society} Avg Token Dominance",
+            os.path.join(out_dir, "avg_token_dominance.png")
+        )
+
+    print("\nAll MCQ conversations processed (averaged per society).\n")
 
 
 if __name__ == "__main__":

@@ -5,9 +5,9 @@ Turn Dominance:
   finalizer: 0.047619
 
 Token Dominance:
-  agent1: 0.428571
-  agent2: 0.393651
-  agent3: 0.176720
-  finalizer: 0.001058
+  agent1: 0.609075
+  agent2: 0.283773
+  agent3: 0.106896
+  finalizer: 0.000256
 
-Conversation Length (tokens): 945
+Conversation Length (tokens): 3901

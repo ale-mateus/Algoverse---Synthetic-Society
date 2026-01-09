@@ -7,11 +7,11 @@ Turn Dominance:
   finalizer: 0.047619
 
 Token Dominance:
-  er_tech: 0.368370
-  er_physician: 0.168756
-  emt: 0.096432
-  consult_surgeon: 0.220829
-  er_nurse: 0.144648
-  finalizer: 0.000964
+  er_tech: 0.327909
+  er_physician: 0.290887
+  emt: 0.134662
+  consult_surgeon: 0.129373
+  er_nurse: 0.116762
+  finalizer: 0.000407
 
-Conversation Length (tokens): 1037
+Conversation Length (tokens): 2458
