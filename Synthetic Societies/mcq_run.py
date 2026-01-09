@@ -3,9 +3,15 @@ import argparse
 import re
 import random
 import os
+
 from run import run_agent, regex_final
 
+
 async def autonomous_loop(agents, settings, task):
+    """
+    Multi-agent discussion loop.
+    Agents speak in randomized order to avoid fixed turn biases.
+    """
     print("[SYSTEM] MCQ Discussion Started\n")
 
     conversation_log = []
@@ -19,6 +25,7 @@ async def autonomous_loop(agents, settings, task):
         speaker_name = random.choice(agent_names)
         speaker = agents[speaker_name]
 
+        # Retry logic API timeouts
         while True:
             try:
                 response = await run_agent(speaker, current_message)
@@ -31,11 +38,11 @@ async def autonomous_loop(agents, settings, task):
                     raise
 
         response = regex_final(speaker_name, response)
-
         print(f"[{speaker_name.upper()}]: {response}")
 
         conversation_log.append((speaker_name, response))
 
+        # Early stopping condition if a FINAL signal appears (Never happens)
         if speaker_name == "finalizer" and re.search(
             r"^\s*FINAL\s*$",
             response,
